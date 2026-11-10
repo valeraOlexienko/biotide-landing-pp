@@ -6,7 +6,8 @@
 
 Biotide draws your three biorhythm cycles from your birth date, then tests them on you. A thirty-second check-in each evening shows which curves match how you actually feel, and only the ones that fit shape your readings and your best days. For iPhone and iPad.
 
-[![Download Biotide on the App Store](https://biotide.app/images/download-on-the-app-store.svg)](https://apps.apple.com/app/id6829585627)
+Coming soon to the App Store
+
 [See how it works](#how)
 
 - Free to download
@@ -129,7 +130,7 @@ Made by
 :   An independent developer. This is the official website.
 
 Where to get it
-:   The [App Store](https://apps.apple.com/app/id6829585627), iPhone and iPad with iOS 26 or later. There is no Android version.
+:   Coming soon to the App Store, for iPhone and iPad with iOS 26 or later. There is no Android version.
 
 Price
 :   Free to download, no ads. Biotide Plus is optional: weekly, yearly or a one-time purchase.
@@ -182,8 +183,8 @@ Biotide is an independent app, and biotide.app is its official website. Question
 
 ## Test the curves on yourself.
 
-Free on the App Store for iPhone and iPad. No account, and your data stays with you.
+Coming soon to the App Store for iPhone and iPad, free to download. No account, and your data stays with you.
 
-[![Download Biotide on the App Store](https://biotide.app/images/download-on-the-app-store.svg)](https://apps.apple.com/app/id6829585627)
+Coming soon to the App Store
 
 For reflection and planning. Biorhythms are not proven science or medical advice.

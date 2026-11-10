@@ -19,6 +19,7 @@ Biotide draws the three classic biorhythm cycles (physical over 23 days, emotion
 - **Apple Health (Plus)**: sleep, heart rate variability, resting heart rate and respiratory rate compared with your own usual, never with norms; read only
 - **Widgets**: Home Screen and Lock Screen; the small widget is free
 - **Platforms**: iPhone and iPad, iOS 26 or later; optional iCloud sync between them
+- **Availability**: not on the App Store yet; coming soon
 - **Languages**: English and Ukrainian
 
 ## Cost Model
