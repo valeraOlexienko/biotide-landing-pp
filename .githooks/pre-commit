@@ -1,0 +1,24 @@
+#!/bin/sh
+# Blocks a commit that breaks the site's SEO rules or leaves stale Markdown mirrors.
+# Enable once per clone: git config core.hooksPath .githooks
+# Skip in an emergency: git commit --no-verify
+
+cd "$(git rev-parse --show-toplevel)" || exit 1
+
+# Only run when site files are part of the commit.
+git diff --cached --name-only | grep -qE '\.html$|\.html\.md$|sitemap\.xml$|llms\.txt$|^scripts/' || exit 0
+
+python3 scripts/check_seo.py || exit 1
+python3 scripts/sync_chrome.py --check || exit 1
+
+if python3 -c "import bs4, markdownify" 2>/dev/null; then
+    python3 scripts/html_to_md.py >/dev/null
+    if ! git diff --quiet -- '*.html.md'; then
+        echo "Markdown mirrors were stale and have been regenerated. Review and stage them:"
+        git diff --stat -- '*.html.md'
+        echo "  git add '*.html.md'"
+        exit 1
+    fi
+else
+    echo "warning  beautifulsoup4/markdownify not installed; skipping the Markdown mirror check (CI still runs it)"
+fi

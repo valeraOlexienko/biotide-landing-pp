@@ -1,0 +1,60 @@
+name: Verify Markdown mirrors
+
+# Verifies that committed .md mirrors match their HTML source of truth, and
+# that the SEO rules hold. Regenerate locally with scripts/html_to_md.py.
+
+on:
+  pull_request:
+    paths:
+      - "**.html"
+      - "**.html.md"
+      - "**/sitemap.xml"
+      - "**/llms.txt"
+      - "scripts/**"
+      - ".github/workflows/markdown-mirror.yml"
+  push:
+    branches: [main]
+    paths:
+      - "**.html"
+      - "**.html.md"
+      - "**/sitemap.xml"
+      - "**/llms.txt"
+      - "scripts/**"
+      - ".github/workflows/markdown-mirror.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: markdown-mirror-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install "beautifulsoup4>=4.12,<5" "markdownify>=0.13,<2"
+
+      - name: SEO rules
+        run: python3 scripts/check_seo.py
+
+      - name: Header, banner and footer identical on every page
+        run: python3 scripts/sync_chrome.py --check
+
+      - name: Verify generated Markdown mirrors are committed
+        run: |
+          python3 scripts/html_to_md.py
+          if [[ -n "$(git status --porcelain -- '*.html.md')" ]]; then
+            echo "Markdown mirrors are missing or stale. Run: python3 scripts/html_to_md.py"
+            git status --short -- '*.html.md'
+            git diff -- '*.html.md'
+            exit 1
+          fi

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="system">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5f6f8" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0f1217" media="(prefers-color-scheme: dark)">
+    <title>Page not found | Biotide</title>
+    <meta name="robots" content="noindex">
+    <link rel="preload" href="/fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- Absolute paths: a 404 can be served at any depth. -->
+    <link rel="stylesheet" href="/themes/default.css?v=1">
+    <link rel="stylesheet" href="/styles.css?v=1">
+    <script>try{document.documentElement.dataset.theme=localStorage.getItem('biotide_theme')||'system'}catch(e){document.documentElement.dataset.theme='system'}</script>
+    <link rel="icon" type="image/png" href="/images/favicon.png?v=1">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png?v=1">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<!-- chrome:header (identical on every page; edit here, then run python3 scripts/sync_chrome.py) -->
+<header class="site-header">
+    <div class="site-header-inner">
+        <a class="brand" href="/">Biotide</a>
+        <nav class="site-nav" aria-label="Main">
+            <a href="/#features">Features</a>
+            <a href="/#how">How it works</a>
+            <a href="/#pricing">Pricing</a>
+            <a href="/#faq">FAQ</a>
+            <a class="nav-cta" href="https://apps.apple.com/app/id6829585627" data-cta="nav">Get the app</a>
+        </nav>
+        <div class="theme-toggle">
+        <fieldset class="theme-toggle-group">
+            <legend class="visually-hidden">Theme</legend>
+            <label class="theme-option">
+                <input type="radio" name="theme" data-theme-value="light">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                <span class="visually-hidden">Light theme</span>
+            </label>
+            <label class="theme-option">
+                <input type="radio" name="theme" data-theme-value="dark">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <span class="visually-hidden">Dark theme</span>
+            </label>
+            <label class="theme-option">
+                <input type="radio" name="theme" data-theme-value="system">
+                <svg aria-hidden="true" class="icon-desktop" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><path d="M8 21h8M12 17v4"/></svg>
+                <svg aria-hidden="true" class="icon-mobile" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+                <span class="visually-hidden">System theme</span>
+            </label>
+        </fieldset>
+    </div>
+    </div>
+</header>
+<!-- /chrome:header -->
+
+<!-- chrome:consent (the regional consent banner; wording is set by site.js) -->
+<div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Analytics preferences" aria-hidden="true" style="display: none;">
+    <div class="cookie-content">
+        <p id="cookie-message">We use cookies for analytics to improve your experience</p>
+        <div class="cookie-buttons">
+            <button type="button" id="cookie-accept" class="cookie-btn accept">Accept</button>
+            <button type="button" id="cookie-reject" class="cookie-btn reject">Reject</button>
+        </div>
+    </div>
+</div>
+<!-- /chrome:consent -->
+
+<main id="main" class="article-page">
+    <a href="/" class="back-link">Back to home</a>
+    <h1>There is no page here.</h1>
+    <p class="subtitle">The address may have changed, or the link that brought you here is out of date.</p>
+    <p>The <a href="/">homepage</a> has everything on one screen. If you were looking for a guide, these are the current ones:</p>
+    <ul>
+        <!-- <li><a href="/example-guide.html">Guide title</a></li> -->
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+    </ul>
+    <div class="cta-block">
+        <p>Or skip the reading and try the app.</p>
+        <a href="https://apps.apple.com/app/id6829585627" class="app-store-badge" aria-label="Download Biotide on the App Store"><img src="/images/download-on-the-app-store.svg" alt="Download Biotide on the App Store" width="156" height="52"></a>
+    </div>
+</main>
+
+<!-- chrome:footer (identical on every page; edit here, then run python3 scripts/sync_chrome.py) -->
+<footer class="site-footer">
+    <div class="footer-grid">
+        <div class="footer-about">
+            <p class="footer-heading">Biotide</p>
+            <p>A daily biorhythm chart and energy tracker for iPhone and iPad that tests the three cycles against how you feel, with compatibility and best days. Made by Biotide. <!-- If other products share the name: "Not affiliated with other apps or websites that use a similar name." and set REQUIRED_FOOTER_TEXT in scripts/check_seo.py --></p>
+            <a href="https://apps.apple.com/app/id6829585627">Download on the App Store</a>
+        </div>
+        <nav aria-label="Guides">
+            <p class="footer-heading">Guides</p>
+            <ul>
+                <li><a href="/#how">How it works</a></li>
+                <li><a href="/#faq">FAQ</a></li>
+                <!-- <li><a href="/example-guide.html">Guide title</a></li> -->
+            </ul>
+        </nav>
+        <nav aria-label="Company">
+            <p class="footer-heading">Company</p>
+            <ul>
+                <li><a href="/privacy.html">Privacy Policy</a></li>
+                <li><a href="#" id="cookie-settings">Cookie Settings</a></li>
+                <li><a href="mailto:support@biotide.app">support@biotide.app</a></li>
+                <li><a href="https://biotide.app" target="_blank" rel="noopener">Biotide</a></li>
+            </ul>
+        </nav>
+        <div>
+            <p class="footer-heading">Please note</p>
+            <p>A short disclaimer for the category, or delete this column (and set .footer-grid to three columns).</p>
+        </div>
+    </div>
+    <p class="copyright">&copy; <span id="year">2026</span> Biotide. All rights reserved.</p>
+</footer>
+<!-- /chrome:footer -->
+<script src="/site.js?v=1"></script>
+</body>
+</html>

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="system">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- theme-color = --paper of the theme file, light and dark. Update both when the theme changes. -->
+    <meta name="theme-color" content="#f5f6f8" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0f1217" media="(prefers-color-scheme: dark)">
+    <link rel="preload" href="fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="themes/default.css?v=1">
+    <link rel="stylesheet" href="styles.css?v=1">
+    <!-- Title: under 60 characters, brand + what it is + platform. Add "Official Site" only if other products share the name. -->
+    <title>Biotide: Daily Biorhythm Chart & Energy Tracker</title>
+    <!-- Description: max 160 characters, one sentence a searcher would click. -->
+    <meta name="description" content="A daily biorhythm chart and energy tracker for iPhone and iPad that tests the three cycles against how you feel, with compatibility and best days.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <!-- Applies the stored theme before first paint so there is no flash. Key must match THEME_KEY in site.js. -->
+    <script>try{document.documentElement.dataset.theme=localStorage.getItem('biotide_theme')||'system'}catch(e){document.documentElement.dataset.theme='system'}</script>
+    <link rel="canonical" href="https://biotide.app/">
+    <link rel="alternate" type="text/markdown" href="https://biotide.app/index.html.md" title="Markdown version for AI agents">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Biotide: Daily Biorhythm Chart & Energy Tracker">
+    <meta property="og:description" content="A daily biorhythm chart and energy tracker for iPhone and iPad that tests the three cycles against how you feel, with compatibility and best days.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://biotide.app/">
+    <meta property="og:image" content="https://biotide.app/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Biotide: Daily Biorhythm Chart & Energy Tracker">
+    <meta property="og:site_name" content="Biotide">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Biotide: Daily Biorhythm Chart & Energy Tracker">
+    <meta name="twitter:description" content="A daily biorhythm chart and energy tracker for iPhone and iPad that tests the three cycles against how you feel, with compatibility and best days.">
+    <meta name="twitter:image" content="https://biotide.app/images/og-image.png">
+
+    <!-- Apple Smart App Banner (Safari on iOS shows a native install banner). Remove for a non-App-Store product. -->
+    <meta name="apple-itunes-app" content="app-id=6829585627">
+
+    <!-- Favicon (platform formats on purpose; everything else on the site is WebP) -->
+    <link rel="icon" type="image/png" href="images/favicon.png?v=1">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png?v=1">
+
+    <!-- JSON-LD: exactly one block per page, one @graph. #organization and #website are
+         defined on every page; #app is defined here only and may be referenced from other
+         pages. FAQ questions must equal the visible <summary> text word for word
+         (scripts/check_seo.py enforces all of this). -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://biotide.app/#organization",
+                "name": "Biotide",
+                "url": "https://biotide.app",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://biotide.app/images/logo.png",
+                    "width": 512,
+                    "height": 512
+                },
+                "sameAs": [
+                    "https://apps.apple.com/app/id6829585627"
+                ],
+                "parentOrganization": {
+                    "@type": "Organization",
+                    "name": "Biotide",
+                    "url": "https://biotide.app"
+                }
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://biotide.app/#website",
+                "url": "https://biotide.app",
+                "name": "Biotide",
+                "description": "A daily biorhythm chart and energy tracker for iPhone and iPad that tests the three cycles against how you feel, with compatibility and best days.",
+                "publisher": {
+                    "@id": "https://biotide.app/#organization"
+                }
+            },
+            {
+                "@type": "MobileApplication",
+                "@id": "https://biotide.app/#app",
+                "name": "Biotide",
+                "description": "A daily biorhythm chart and energy tracker for iPhone and iPad that tests the three cycles against how you feel, with compatibility and best days.",
+                "applicationCategory": "UtilitiesApplication",
+                "operatingSystem": "iOS 26 or later",
+                "availableOnDevice": [
+                    "iPhone",
+                    "iPad"
+                ],
+                "softwareVersion": "1.0",
+                "datePublished": "2026-11-08",
+                "dateModified": "2026-11-08",
+                "inLanguage": [
+                    "en"
+                ],
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://apps.apple.com/app/id6829585627",
+                    "seller": {
+                        "@id": "https://biotide.app/#organization"
+                    }
+                },
+                "installUrl": "https://apps.apple.com/app/id6829585627",
+                "featureList": [
+                    "Feature one, as a short phrase",
+                    "Feature two",
+                    "Feature three",
+                    "No account required"
+                ],
+                "screenshot": [
+                    {
+                        "@type": "ImageObject",
+                        "url": "https://biotide.app/images/placeholder-screen.png",
+                        "width": 603,
+                        "height": 1311,
+                        "caption": "Biotide: what this screen shows, in one sentence"
+                    }
+                ],
+                "creator": {
+                    "@id": "https://biotide.app/#organization"
+                }
+            },
+            {
+                "@type": "FAQPage",
+                "@id": "https://biotide.app/#faq",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "What does Biotide cost?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Biotide is free on the App Store. There is no subscription, no ads, and no in-app purchase."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Is my data private?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. Biotide needs no account and keeps your data on your device. See the privacy policy for the details."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Which devices does Biotide run on?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "iPhone and iPad with iOS 26 or later. There is no Android version."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Who makes Biotide?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Biotide is made by Biotide. biotide.app is its official website."
+                        }
+                    }
+                ]
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://biotide.app/#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://biotide.app/"
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<!-- chrome:header (identical on every page; edit here, then run python3 scripts/sync_chrome.py) -->
+<header class="site-header">
+    <div class="site-header-inner">
+        <a class="brand" href="/">Biotide</a>
+        <nav class="site-nav" aria-label="Main">
+            <a href="/#features">Features</a>
+            <a href="/#how">How it works</a>
+            <a href="/#pricing">Pricing</a>
+            <a href="/#faq">FAQ</a>
+            <a class="nav-cta" href="https://apps.apple.com/app/id6829585627" data-cta="nav">Get the app</a>
+        </nav>
+        <div class="theme-toggle">
+        <fieldset class="theme-toggle-group">
+            <legend class="visually-hidden">Theme</legend>
+            <label class="theme-option">
+                <input type="radio" name="theme" data-theme-value="light">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                <span class="visually-hidden">Light theme</span>
+            </label>
+            <label class="theme-option">
+                <input type="radio" name="theme" data-theme-value="dark">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <span class="visually-hidden">Dark theme</span>
+            </label>
+            <label class="theme-option">
+                <input type="radio" name="theme" data-theme-value="system">
+                <svg aria-hidden="true" class="icon-desktop" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><path d="M8 21h8M12 17v4"/></svg>
+                <svg aria-hidden="true" class="icon-mobile" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+                <span class="visually-hidden">System theme</span>
+            </label>
+        </fieldset>
+    </div>
+    </div>
+</header>
+<!-- /chrome:header -->
+
+<!-- chrome:consent (the regional consent banner; wording is set by site.js) -->
+<div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Analytics preferences" aria-hidden="true" style="display: none;">
+    <div class="cookie-content">
+        <p id="cookie-message">We use cookies for analytics to improve your experience</p>
+        <div class="cookie-buttons">
+            <button type="button" id="cookie-accept" class="cookie-btn accept">Accept</button>
+            <button type="button" id="cookie-reject" class="cookie-btn reject">Reject</button>
+        </div>
+    </div>
+</div>
+<!-- /chrome:consent -->
+
+<main id="main">
+    <!-- HERO. H1 = the one-line promise (the same sentence works as og:title). The lead names
+         the product, what it is, and who it is for in plain words; answer engines quote it. -->
+    <section class="hero" aria-labelledby="hero-title">
+        <div class="wrap hero-grid">
+            <div class="hero-copy">
+                <h1 id="hero-title">Daily Biorhythm Chart & Energy Tracker</h1>
+                <p class="lead">Biotide is a daily biorhythm chart and energy tracker for iPhone and iPad that tests the three cycles against how you feel, with compatibility and best days.</p>
+                <div class="hero-actions">
+                    <a href="https://apps.apple.com/app/id6829585627" class="app-store-badge" aria-label="Download Biotide on the App Store" data-cta="hero"><img src="images/download-on-the-app-store.svg" alt="Download Biotide on the App Store" width="156" height="52"></a>
+                    <a class="text-link" href="#how">See how it works</a>
+                </div>
+                <ul class="hero-facts" aria-label="At a glance">
+                    <li>Free, no ads</li>
+                    <li>No account</li>
+                    <li>Data stays on your device</li>
+                    <li>iOS 26 or later</li>
+                </ul>
+                <!-- Optional compliance or disclaimer line (e.g. "For educational purposes only ..."):
+                <p class="hero-note">...</p> -->
+            </div>
+            <div class="hero-visual">
+                <!-- A real app screen. Either a cut-out of an App Store frame (WebP) or Apple's bezel
+                     with a real 1206x2622 screenshot in it (see addons/device-frame in the boilerplate).
+                     Never a drawn or imitation phone. -->
+                <img src="images/placeholder-screen.png" width="603" height="1311" alt="Biotide: the main screen, described in one sentence for people who cannot see it" fetchpriority="high">
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES as a definition list: term = the feature, definition = what it does for the user. -->
+    <section class="section" id="features">
+        <div class="wrap">
+            <div class="section-head">
+                <h2>What is in the app</h2>
+                <p>One sentence on who this is for and what they get.</p>
+            </div>
+            <dl class="methods">
+                <div><dt>Feature one</dt><dd>What it does, in the user's words.</dd></div>
+                <div><dt>Feature two</dt><dd>What it does.</dd></div>
+                <div><dt>Feature three</dt><dd>What it does.</dd></div>
+                <div><dt>Feature four</dt><dd>What it does.</dd></div>
+                <div><dt>Privacy</dt><dd>No account, no backend. Your data stays on your device.</dd></div>
+                <div><dt>Languages</dt><dd>English. <!-- list them all; they are a search term each --></dd></div>
+            </dl>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS: three real screens with a caption each. -->
+    <section class="section" id="how">
+        <div class="wrap">
+            <div class="section-head">
+                <h2>How it works</h2>
+                <p>Three steps, in the order a new user takes them.</p>
+            </div>
+            <div class="trio">
+                <figure>
+                    <div class="shot"><img src="images/placeholder-screen.png" width="603" height="1311" alt="Biotide step one: what the screen shows" loading="lazy"></div>
+                    <figcaption><h3>Step one</h3><p>What the user does and sees.</p></figcaption>
+                </figure>
+                <figure>
+                    <div class="shot"><img src="images/placeholder-screen.png" width="603" height="1311" alt="Biotide step two: what the screen shows" loading="lazy"></div>
+                    <figcaption><h3>Step two</h3><p>What the user does and sees.</p></figcaption>
+                </figure>
+                <figure>
+                    <div class="shot"><img src="images/placeholder-screen.png" width="603" height="1311" alt="Biotide step three: what the screen shows" loading="lazy"></div>
+                    <figcaption><h3>Step three</h3><p>What the user does and sees.</p></figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING. Keep the numbers identical to App Store Connect and the schema offers. If the
+         app is free, one panel is enough. -->
+    <section class="section" id="pricing">
+        <div class="wrap">
+            <div class="section-head">
+                <h2>What it costs</h2>
+            </div>
+            <div class="price-grid">
+                <div class="price">
+                    <h3>Free</h3>
+                    <p class="figure num">$0</p>
+                    <p>Everything in the app, from day one.</p>
+                    <ul>
+                        <li>No subscription</li>
+                        <li>No ads</li>
+                        <li>No in-app purchases</li>
+                    </ul>
+                </div>
+                <div class="price">
+                    <h3>Optional</h3>
+                    <p class="figure num">$0.00<small>a month</small></p>
+                    <p>Describe the optional tier, or delete this panel.</p>
+                </div>
+            </div>
+            <p class="price-note">Prices in US dollars; local prices are set by the App Store. <!-- date any competitor claim --></p>
+        </div>
+    </section>
+
+    <!-- SCREENS: the App Store frames as an endless strip (site.js clones the group).
+         Export the frames as WebP around 560px wide; these are also the schema screenshots.
+    <section class="section" id="screens">
+        <div class="wrap">
+            <div class="section-head"><h2>The app, screen by screen</h2></div>
+        </div>
+        <div class="marquee">
+            <div class="marquee-group">
+                <img src="images/screenshot-1.webp" width="560" height="1216" alt="Biotide: caption for frame one" loading="lazy">
+                <img src="images/screenshot-2.webp" width="560" height="1216" alt="Biotide: caption for frame two" loading="lazy">
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!-- STATED PLAINLY: what the product does and does not do, limits, accuracy. Both
+         reference sites have this section; answer engines quote it and it heads off refunds. -->
+    <section class="section accuracy" id="accuracy">
+        <div class="wrap">
+            <div class="section-head">
+                <h2>Stated plainly</h2>
+            </div>
+            <p>One or two paragraphs on what the app can and cannot do, how accurate it is, and what it is not (medical advice, a guarantee, an official product of a trademark holder).</p>
+        </div>
+    </section>
+
+    <!-- AT A GLANCE: the facts an AI answer needs, as a definition list. Keep in step with llms.txt. -->
+    <section class="section" id="glance">
+        <div class="wrap">
+            <div class="section-head">
+                <h2>Biotide at a glance</h2>
+            </div>
+            <dl class="glance">
+                <dt>What it is</dt>
+                <dd>A daily biorhythm chart and energy tracker for iPhone and iPad that tests the three cycles against how you feel, with compatibility and best days.</dd>
+                <dt>Made by</dt>
+                <dd>Biotide. This is the official website.</dd>
+                <dt>Where to get it</dt>
+                <dd>The <a href="https://apps.apple.com/app/id6829585627">App Store</a>, iOS 26 or later. There is no Android version.</dd>
+                <dt>Price</dt>
+                <dd>Free.</dd>
+                <dt>Account</dt>
+                <dd>None. Your data stays on your device.</dd>
+                <dt>Languages</dt>
+                <dd>English.</dd>
+            </dl>
+        </div>
+    </section>
+
+    <!-- FAQ: <details> items whose <summary> text is IDENTICAL to the FAQPage schema questions. -->
+    <section class="section" id="faq">
+        <div class="wrap">
+            <div class="section-head">
+                <h2>Frequently asked questions</h2>
+            </div>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>What does Biotide cost?</summary>
+                    <p>Biotide is free on the App Store. There is no subscription, no ads, and no in-app purchase.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Is my data private?</summary>
+                    <p>Yes. Biotide needs no account and keeps your data on your device. See the <a href="privacy.html">privacy policy</a> for the details.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Which devices does Biotide run on?</summary>
+                    <p>iPhone and iPad with iOS 26 or later. There is no Android version.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Who makes Biotide?</summary>
+                    <p>Biotide is made by <a href="https://biotide.app" rel="noopener">Biotide</a>. biotide.app is its official website.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUESTIONS PEOPLE ASK: Google "People also ask" questions near the product's topic, as
+         open <h3> + paragraphs. On purpose NOT <details> and NOT in the FAQPage schema: the
+         first sentence must be a self-contained answer.
+    <section class="section" id="questions">
+        <div class="wrap">
+            <div class="section-head">
+                <h2>Questions people ask</h2>
+            </div>
+            <div class="asked">
+                <div class="asked-item">
+                    <h3>A question as people type it?</h3>
+                    <p>The direct answer in the first sentence. Then the nuance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!-- GUIDES: one line per content page, newest first; <time> = the page's datePublished.
+         Uncomment when the first guide exists (python3 scripts/new_page.py creates one).
+    <section class="section" id="guides">
+        <div class="wrap">
+            <div class="section-head">
+                <h2>Guides</h2>
+                <p>Longer reads, with sources.</p>
+            </div>
+            <ul class="guides">
+                <li><a href="example-guide.html">Guide title as a question?</a><p>One line on what it answers.</p><time datetime="2026-11-08">November 2026</time></li>
+            </ul>
+        </div>
+    </section>
+    -->
+
+    <section class="cta-band">
+        <div class="wrap">
+            <h2>Free on the App Store. Nothing to cancel.</h2>
+            <p class="lead">One closing sentence.</p>
+            <a href="https://apps.apple.com/app/id6829585627" class="app-store-badge" aria-label="Download Biotide on the App Store" data-cta="footer"><img src="images/download-on-the-app-store.svg" alt="Download Biotide on the App Store" width="156" height="52"></a>
+            <!-- <p class="muted fine">Disclaimer, if the category needs one.</p> -->
+        </div>
+    </section>
+</main>
+
+<!-- chrome:footer (identical on every page; edit here, then run python3 scripts/sync_chrome.py) -->
+<footer class="site-footer">
+    <div class="footer-grid">
+        <div class="footer-about">
+            <p class="footer-heading">Biotide</p>
+            <p>A daily biorhythm chart and energy tracker for iPhone and iPad that tests the three cycles against how you feel, with compatibility and best days. Made by Biotide. <!-- If other products share the name: "Not affiliated with other apps or websites that use a similar name." and set REQUIRED_FOOTER_TEXT in scripts/check_seo.py --></p>
+            <a href="https://apps.apple.com/app/id6829585627">Download on the App Store</a>
+        </div>
+        <nav aria-label="Guides">
+            <p class="footer-heading">Guides</p>
+            <ul>
+                <li><a href="/#how">How it works</a></li>
+                <li><a href="/#faq">FAQ</a></li>
+                <!-- <li><a href="example-guide.html">Guide title</a></li> -->
+            </ul>
+        </nav>
+        <nav aria-label="Company">
+            <p class="footer-heading">Company</p>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="#" id="cookie-settings">Cookie Settings</a></li>
+                <li><a href="mailto:support@biotide.app">support@biotide.app</a></li>
+                <li><a href="https://biotide.app" target="_blank" rel="noopener">Biotide</a></li>
+            </ul>
+        </nav>
+        <div>
+            <p class="footer-heading">Please note</p>
+            <p>A short disclaimer for the category, or delete this column (and set .footer-grid to three columns).</p>
+        </div>
+    </div>
+    <p class="copyright">&copy; <span id="year">2026</span> Biotide. All rights reserved.</p>
+</footer>
+<!-- /chrome:footer -->
+<script src="site.js?v=1"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="system">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5f6f8" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0f1217" media="(prefers-color-scheme: dark)">
+    <!-- Title under 60 chars: the question people search, or "X alternative for iPhone". -->
+    <title>{{TITLE}}</title>
+    <meta name="description" content="{{DESCRIPTION}}">
+    <meta name="robots" content="index, follow">
+    <link rel="preload" href="fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="themes/default.css?v=1">
+    <link rel="stylesheet" href="styles.css?v=1">
+    <script>try{document.documentElement.dataset.theme=localStorage.getItem('biotide_theme')||'system'}catch(e){document.documentElement.dataset.theme='system'}</script>
+    <link rel="canonical" href="https://biotide.app/{{SLUG}}.html">
+    <link rel="alternate" type="text/markdown" href="https://biotide.app/{{SLUG}}.html.md" title="Markdown version for AI agents">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{HEADLINE}}">
+    <meta property="og:description" content="{{DESCRIPTION}}">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://biotide.app/{{SLUG}}.html">
+    <meta property="og:image" content="https://biotide.app/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Biotide">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{HEADLINE}}">
+    <meta name="twitter:description" content="{{DESCRIPTION}}">
+    <meta name="twitter:image" content="https://biotide.app/images/og-image.png">
+
+    <link rel="icon" type="image/png" href="images/favicon.png?v=1">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png?v=1">
+
+    <!-- Article schema: datePublished never changes after the first commit (the homepage guides
+         list shows it); dateModified, the visible "Last updated" and the sitemap lastmod move
+         together on every content change. FAQ questions = the <summary> texts, word for word. -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://biotide.app/#organization",
+                "name": "Biotide",
+                "url": "https://biotide.app",
+                "logo": {"@type": "ImageObject", "url": "https://biotide.app/images/logo.png", "width": 512, "height": 512}
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://biotide.app/#website",
+                "url": "https://biotide.app",
+                "name": "Biotide",
+                "publisher": {"@id": "https://biotide.app/#organization"}
+            },
+            {
+                "@type": "Article",
+                "@id": "https://biotide.app/{{SLUG}}.html#article",
+                "headline": "{{HEADLINE}}",
+                "description": "{{DESCRIPTION}}",
+                "url": "https://biotide.app/{{SLUG}}.html",
+                "inLanguage": "en",
+                "datePublished": "{{DATE}}",
+                "dateModified": "{{DATE}}",
+                "author": {"@id": "https://biotide.app/#organization"},
+                "publisher": {"@id": "https://biotide.app/#organization"},
+                "image": "https://biotide.app/images/og-image.png",
+                "isPartOf": {"@id": "https://biotide.app/#website"},
+                "about": {"@id": "https://biotide.app/#app"},
+                "mainEntityOfPage": "https://biotide.app/{{SLUG}}.html"
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://biotide.app/{{SLUG}}.html#breadcrumb",
+                "itemListElement": [
+                    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://biotide.app/"},
+                    {"@type": "ListItem", "position": 2, "name": "{{SHORT_TITLE}}", "item": "https://biotide.app/{{SLUG}}.html"}
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "@id": "https://biotide.app/{{SLUG}}.html#faq",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "A question readers of this page ask?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "The answer, complete in itself, as plain text."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+{{HEADER}}
+
+{{CONSENT}}
+
+<main id="main" class="article-page">
+    <a href="/" class="back-link">Back to home</a>
+    <article>
+        <h1>{{HEADLINE}}</h1>
+        <p class="subtitle">One or two sentences: what the reader gets from this page.</p>
+        <p class="article-meta">Published by Biotide · Last updated {{DATE_LONG}}</p>
+
+        <!-- The direct answer, two to four sentences, complete without the rest of the page.
+             This is what Google's answer box and AI engines quote. -->
+        <div class="answer-box"><p><strong>Short answer:</strong> ...</p></div>
+
+        <h2>The first section, as a question or a plain statement</h2>
+        <p>Paragraphs of at most four sentences. Numbers get a source; each source is a link in the list at the end.</p>
+
+        <h2>A table, if the page compares things</h2>
+        <div class="comparison-table-wrap">
+            <table class="comparison-table">
+                <thead><tr><th scope="col">What</th><th scope="col">Biotide</th><th scope="col">The other one</th></tr></thead>
+                <tbody>
+                    <tr><th scope="row">Price</th><td>Free</td><td>Verified on {{DATE_LONG}}; check the live listing</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Frequently asked questions</h2>
+        <div class="faq-list">
+            <details class="faq-item">
+                <summary>A question readers of this page ask?</summary>
+                <p>The answer, complete in itself, as plain text.</p>
+            </details>
+        </div>
+
+        <h2>Sources</h2>
+        <ul class="source-list">
+            <li><a href="https://example.org/" target="_blank" rel="noopener">Author or body, Title (year)</a></li>
+        </ul>
+
+        <div class="cta-block">
+            <p>One sentence that connects the page's topic to the app.</p>
+            <a href="https://apps.apple.com/app/id6829585627" class="app-store-badge" aria-label="Download Biotide on the App Store"><img src="images/download-on-the-app-store.svg" alt="Download Biotide on the App Store" width="156" height="52"></a>
+        </div>
+
+        <h2>Related reading</h2>
+        <ul>
+            <li><a href="/">Biotide homepage</a></li>
+        </ul>
+        <p class="note-box">This guide is general information, not medical, legal or financial advice. <!-- adapt or delete --></p>
+    </article>
+</main>
+
+{{FOOTER}}
+<script src="site.js?v=1"></script>
+</body>
+</html>

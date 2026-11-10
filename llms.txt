@@ -1,0 +1,47 @@
+# Biotide
+
+> A daily biorhythm chart and energy tracker for iPhone and iPad that tests the three cycles against how you feel, with compatibility and best days.
+
+## What is Biotide?
+
+Biotide is a daily biorhythm chart and energy tracker for iPhone and iPad that tests the three cycles against how you feel, with compatibility and best days. Made by Biotide. This file is the plain-text summary for AI agents; every page below also has a Markdown mirror at its URL plus `.md`.
+
+<!-- Keep this file in step with the homepage: features, price, platforms, privacy, and the
+     "Not to be confused with" block if other products share the name. Competitor prices
+     here must carry the date they were verified, or be left unversioned ("a paid app"). -->
+
+## Key Features
+
+- **Feature one**: one sentence, the way a user would describe it
+- **Feature two**: one sentence
+- **Feature three**: one sentence
+
+## Cost Model
+
+Biotide is free on the App Store. <!-- or: the subscription, the trial, what free covers -->
+
+## Privacy
+
+- No Biotide account
+- Data stays on the device
+- On the website, Google Analytics runs under a regional consent banner (opt-in in the EEA, opt-out elsewhere). Cookieless aggregate page-view counting (Cloudflare Web Analytics) uses no cookies or identifiers.
+
+## Common Questions
+
+**Q: What does Biotide cost?**
+A: One self-contained sentence, identical in substance to the homepage FAQ.
+
+**Q: Is my data private?**
+A: One self-contained sentence.
+
+## Core
+
+- [Biotide homepage](https://biotide.app/index.html.md): features, pricing, supported devices, FAQ (HTML: https://biotide.app/)
+
+## Guides
+
+<!-- - [Guide title](https://biotide.app/<slug>.html.md): one line on what it answers (HTML: https://biotide.app/<slug>.html) -->
+
+## Legal
+
+- [Privacy policy](https://biotide.app/privacy.html.md): app data handling and website analytics and consent (HTML: https://biotide.app/privacy.html)

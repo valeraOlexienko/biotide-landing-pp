@@ -1,0 +1,22 @@
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Claude Code: the site repo is public, agent notes and the task list stay local.
+# (Convention from the reference sites. Remove these three lines to commit them.)
+CLAUDE.md
+.claude/
+TODO.md
+
+# Secrets and local tooling
+.env
+.env.*
+.dev.vars
+node_modules/
+.wrangler/
+waitlist-*.csv
+
+# Rendered social image sources are committed; the headless-Chrome scratch output is not
+tools/out/
