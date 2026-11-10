@@ -4,30 +4,41 @@
 <meta charset="utf-8">
 <title>Biotide social card</title>
 <!-- 1200x630 social preview (og:image / twitter:image). Rendered to images/og-image.png by
-     tools/render_og.sh with headless Chrome. Dark stage in the brand's ink colour, the brand,
-     one headline, one line, the URL, and a real app screen on the right. Re-render whenever
-     the headline, palette or hero screen changes. -->
+     tools/render_og.sh with headless Chrome. The app's own light ground and ink (Shared/Colors.xcassets
+     in the app: Ground #fbfaf7, Ink #1d1d1f, InkSecondary #6b6b70), the real app icon, one headline,
+     one line (the App Store promotional text), the URL, and Apple's iPhone 17 bezel with a real Today
+     screen from the app's screenshot mode. The bezel is used as is: no shadow, tilt, crop or copy on
+     it. Re-render whenever the headline, the icon or the hero screen changes. -->
 <style>
     @font-face { font-family: "Instrument Sans"; font-weight: 400 700; src: url("../fonts/instrument-sans-latin.woff2") format("woff2"); }
     * { margin: 0; box-sizing: border-box; }
     html, body { width: 1200px; height: 630px; overflow: hidden; }
-    body { background: #151a22; color: #f5f6f8; font-family: "Instrument Sans", -apple-system, sans-serif; position: relative; }
-    .text { position: absolute; left: 72px; top: 88px; width: 640px; }
-    .brand { display: flex; align-items: center; gap: 14px; font-size: 26px; font-weight: 600; letter-spacing: -0.01em; margin-bottom: 40px; opacity: 0.9; }
-    .brand img { width: 44px; height: 44px; border-radius: 10px; }
-    h1 { font-size: 64px; font-weight: 700; letter-spacing: -0.03em; line-height: 1.02; margin-bottom: 26px; }
-    p { font-size: 25px; line-height: 1.35; color: rgba(245, 246, 248, 0.78); }
-    .url { position: absolute; left: 72px; bottom: 56px; font-size: 22px; opacity: 0.7; }
-    .phone { position: absolute; right: 72px; top: 70px; width: 330px; border-radius: 40px; filter: drop-shadow(0 30px 40px rgba(0, 0, 0, 0.45)); }
+    body { background: #fbfaf7; color: #1d1d1f; font-family: "Instrument Sans", -apple-system, sans-serif; position: relative; }
+    .text { position: absolute; left: 80px; top: 92px; width: 640px; }
+    .brand { display: flex; align-items: center; gap: 16px; font-size: 30px; font-weight: 600; letter-spacing: -0.01em; margin-bottom: 44px; }
+    .brand img { width: 64px; height: 64px; border-radius: 14px; box-shadow: 0 0 0 1px rgba(29, 29, 31, 0.08); }
+    h1 { font-size: 66px; font-weight: 700; letter-spacing: -0.03em; line-height: 1.02; margin-bottom: 28px; }
+    p { font-size: 26px; line-height: 1.38; color: #6b6b70; max-width: 600px; }
+    .url { position: absolute; left: 80px; bottom: 60px; font-size: 22px; font-weight: 600; color: #6b6b70; }
+    /* Apple's bezel (675x1380) with the screen slot measured in the boilerplate's addons/device-frame */
+    .phone { position: absolute; right: 110px; top: 34px; height: 562px; aspect-ratio: 0.4891; }
+    .screen { position: absolute; overflow: hidden; background: #000;
+              left: calc(5.333% - 2px); top: calc(2.5% - 2px); width: calc(89.333% + 4px); height: calc(95% + 4px);
+              border-radius: calc(0.139 * 562px * 0.4891 + 2px); }
+    .screen img { width: 100%; height: 100%; display: block; }
+    .frame { position: absolute; inset: 0; width: 100%; height: 100%; }
 </style>
 </head>
 <body>
 <div class="text">
     <div class="brand"><img src="../images/logo.png" alt="">Biotide</div>
     <h1>Daily Biorhythm Chart & Energy Tracker</h1>
-    <p>A daily biorhythm chart and energy tracker for iPhone and iPad that tests the three cycles against how you feel, with compatibility and best days.</p>
+    <p>Three classic biorhythm curves, checked against how you actually feel. For iPhone and iPad.</p>
 </div>
 <div class="url">biotide.app</div>
-<img class="phone" src="../images/placeholder-screen.png" alt="">
+<div class="phone">
+    <div class="screen"><img src="../images/screen-today.webp" alt=""></div>
+    <img class="frame" src="../images/iphone17-black.webp" alt="">
+</div>
 </body>
 </html>

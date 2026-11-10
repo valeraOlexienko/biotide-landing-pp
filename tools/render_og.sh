@@ -15,7 +15,11 @@ CHROME="${CHROME:-/Applications/Google Chrome.app/Contents/MacOS/Google Chrome}"
 SITE=.
 [ -d public ] && SITE=public
 
-"$CHROME" --headless=new --disable-gpu --hide-scrollbars \
+# A throwaway profile, so the render never touches a running Chrome or its profile.
+PROFILE="$(mktemp -d)"
+trap 'rm -rf "$PROFILE"' EXIT
+
+"$CHROME" --headless=new --user-data-dir="$PROFILE" --no-first-run --disable-gpu --hide-scrollbars \
   --window-size=1200,630 --force-device-scale-factor=1 \
   --screenshot="$PWD/$SITE/images/og-image.png" \
   "file://$PWD/tools/og-image.html" >/dev/null 2>&1

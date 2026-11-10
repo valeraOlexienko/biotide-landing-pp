@@ -1,0 +1,116 @@
+/* Biotide homepage scenes, page-local. The scroll-craft engine (scrollcraft.css/js)
+   stays untouched; it is themed here from the theme file's tokens, so light and dark
+   follow the site's toggle. Colours only through var(--token). */
+:root,
+html[data-theme] {
+  --sc-canvas: var(--paper);
+  --sc-surface: var(--surface);
+  --sc-ink: var(--ink);
+  --sc-ink-soft: var(--muted);
+  --sc-accent: var(--accent);
+  --sc-accent-ink: var(--cta-ink);
+  --sc-font-display: var(--font-display);
+  --sc-font-text: var(--font-body);
+}
+html { scroll-behavior: auto; }
+
+/* The site header is sticky: a pinned stage sits BELOW it (landing.js publishes --hdr). */
+.sc-act--pinned .sc-stage { top: var(--hdr, 0px); height: calc(100vh - var(--hdr, 0px)); height: calc(100svh - var(--hdr, 0px)); }
+/* The act's scroll length, reserved before the engine sets the same span * 100vh, so
+   nothing below it jumps when the scripts arrive (CLS). */
+.how-act { height: 500vh; }
+
+/* ------------------------------------------- the month, as the app draws it (#how) -- */
+.how-intro { padding: var(--section) 0 0; }
+.how-intro .section-head { margin-bottom: 0; }
+.how-stage { display: flex; align-items: center; }
+.how-stage__grid { display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-rows: auto auto; gap: 2rem 4.5rem; align-items: center; width: 100%; }
+.cyc-wrap { grid-column: 1; grid-row: 1; margin: 0; min-width: 0; }
+.cyc { display: block; width: 100%; height: auto; overflow: visible; }
+.cyc__zero { stroke: var(--line); stroke-width: 1.5; stroke-dasharray: 2 6; vector-effect: non-scaling-stroke; }
+.cyc__today { stroke: var(--muted); stroke-width: 1.5; stroke-dasharray: 3 5; vector-effect: non-scaling-stroke; opacity: .7; }
+.cyc__tick, .cyc__best text { fill: var(--muted); font: 500 20px var(--font-body); text-anchor: middle; font-variant-numeric: tabular-nums; }
+.cyc__label { fill: var(--muted); font: 600 19px var(--font-body); text-anchor: middle; }
+.cyc__line { fill: none; stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; transition: opacity 420ms var(--sc-ease-out); }
+.cyc__line--physical, .cyc__fit-row--physical line { stroke: var(--cycle-physical); }
+.cyc__line--emotional, .cyc__fit-row--emotional line { stroke: var(--cycle-emotional); }
+.cyc__line--intellectual, .cyc__fit-row--intellectual line { stroke: var(--cycle-intellectual); }
+.cyc__dot { stroke: var(--paper); stroke-width: 2; vector-effect: non-scaling-stroke; transition: opacity 420ms var(--sc-ease-out); }
+.cyc__dot--physical { fill: var(--cycle-physical); }
+.cyc__dot--emotional { fill: var(--cycle-emotional); }
+.cyc__dot--intellectual { fill: var(--cycle-intellectual); }
+/* the fit is shown: the curve that matched least counts for less, and looks it */
+.cyc.is-weighted .cyc__line--emotional, .cyc.is-weighted .cyc__dot--emotional { opacity: .28; }
+.cyc__cursor { stroke: var(--ink); stroke-width: 1.5; vector-effect: non-scaling-stroke; opacity: 0; }
+.cyc__best rect { fill: var(--ink); opacity: .07; }
+.cyc__best text { fill: var(--ink); font-weight: 700; }
+.cyc__best-label { fill: var(--ink); }
+.cyc__fit text { fill: var(--ink); font: 600 24px var(--font-body); }
+.cyc__fit .cyc__fit-head { font-size: 21px; fill: var(--muted); }
+.cyc__fit .cyc__fit-pct { font-weight: 700; font-size: 30px; text-anchor: end; font-variant-numeric: tabular-nums; }
+.cyc__fit .cyc__fit-verdict { fill: var(--muted); font-size: 20px; font-weight: 500; text-anchor: start; }
+.cyc__fit-row line { stroke-width: 4; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+/* live: everything after the first frame waits for the drawing edge */
+.how-act.is-live .cyc__day, .how-act.is-live .cyc__best, .how-act.is-live .cyc__best-label, .how-act.is-live .cyc__fit { opacity: 0; transition: opacity 320ms var(--sc-ease-out); }
+.how-act.is-live .is-on { opacity: 1; }
+/* not pinned (no engine, or before it mounts): the month is complete and still, without the fit overlay */
+.how-act:not(.sc-act--pinned) .cyc__fit, .how-act:not(.sc-act--pinned) .cyc__cursor { display: none; }
+/* the date at the drawing edge, in the app's chart pill style */
+.cyc__date { display: inline-block; margin: 0 0 .75rem; padding: .35rem .9rem; border: 1px solid var(--line); border-radius: 999px; font: 600 1rem/1.2 var(--font-body); font-variant-numeric: tabular-nums; color: var(--ink); background: var(--surface); }
+.how-act:not(.sc-act--pinned) .cyc__date { display: none; }
+.cyc__note { margin-top: .6rem; font-size: .875rem; color: var(--muted); max-width: 60ch; }
+
+.how-steps { grid-column: 1; grid-row: 2; list-style: none; margin: 0; padding: 0; display: grid; gap: 1.5rem; max-width: 42rem; }
+.how-step { max-width: none; }
+.how-step h3 { font-size: clamp(1.2rem, 1rem + .8vw, 1.6rem); letter-spacing: -0.025em; transition: color 260ms var(--sc-ease-out); }
+.how-step p { margin-top: .5rem; color: var(--muted); font-size: 1rem; transition: opacity 260ms var(--sc-ease-out); }
+/* pinned: the three headings in one row, the paragraphs stacked in one cell sized to
+   the longest and switched by opacity, so nothing changes height */
+.sc-act--pinned .how-steps { grid-template-columns: repeat(3, auto); justify-content: start; gap: .6rem 1.75rem; }
+.sc-act--pinned .how-step { display: contents; }
+.sc-act--pinned .how-step h3 { grid-row: 1; }
+.sc-act--pinned .how-step p { grid-row: 2; grid-column: 1 / -1; margin-top: 0; }
+.sc-act--pinned .how-step:not(.is-on) h3 { color: var(--muted); }
+.sc-act--pinned .how-step:not(.is-on) p { opacity: 0; visibility: hidden; }
+
+/* Apple's bezel, used as is: never moved, tilted, scaled, shadowed or cropped */
+.how-phone { grid-column: 2; grid-row: 1 / 3; width: auto; height: min(74vh, 640px); --pw: calc(min(74vh, 640px) * 0.4891); }
+.how-screen { opacity: 0; }
+.how-screen:first-child { opacity: 1; }
+.how-act + .section { border-top: 1px solid var(--line); }
+
+@media (max-width: 760px) {
+  /* phones: the chart across the top, then the phone with the captions beside it */
+  .how-stage { align-items: flex-start; }
+  .how-stage__grid { grid-template-columns: auto minmax(0, 1fr); grid-template-rows: auto auto; gap: 1rem; padding-top: .75rem; align-items: start; }
+  .cyc-wrap { grid-column: 1 / -1; }
+  .cyc__tick, .cyc__best text { font-size: 30px; }
+  .cyc__label { font-size: 28px; }
+  .cyc__fit text { font-size: 30px; }
+  .cyc__fit .cyc__fit-head { font-size: 28px; }
+  .cyc__fit .cyc__fit-pct { font-size: 36px; }
+  .cyc__fit .cyc__fit-verdict { display: none; }
+  .cyc__date { font-size: .875rem; margin-bottom: .5rem; }
+  .cyc__note { font-size: .78rem; margin-top: .3rem; }
+  .how-phone { grid-column: 1; grid-row: 2; --ph: min(40svh, 320px, calc(100svh - var(--hdr, 0px) - 66vw - 4.5rem)); height: var(--ph); --pw: calc(var(--ph) * 0.4891); }
+  .how-steps { grid-column: 2; grid-row: 2; gap: .6rem; }
+  .sc-act--pinned .how-steps { grid-template-columns: 1fr; gap: .25rem; }
+  .sc-act--pinned .how-step h3 { grid-row: auto; font-size: 1.05rem; }
+  .sc-act--pinned .how-step p { grid-row: 4; grid-column: 1; margin-top: .45rem; font-size: .86rem; line-height: 1.42; }
+}
+/* short phone screens: no room for chart, phone and caption together; the chart and the caption carry it */
+@media (max-width: 760px) and (max-height: 620px) {
+  .how-phone { display: none; }
+  .how-steps { grid-column: 1 / -1; }
+  .sc-act--pinned .how-steps { grid-template-columns: repeat(3, auto); justify-content: start; gap: .3rem 1.1rem; }
+  .sc-act--pinned .how-step h3 { grid-row: 1; }
+  .sc-act--pinned .how-step p { grid-row: 2; grid-column: 1 / -1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cyc__line, .cyc__dot, .how-step h3, .how-step p,
+  .how-act.is-live .cyc__day, .how-act.is-live .cyc__best, .how-act.is-live .cyc__best-label, .how-act.is-live .cyc__fit { transition: none; }
+}
+
+/* the carousel shows bare screens: round them like the display */
+.marquee img { aspect-ratio: 804 / 1748; border-radius: 15.6% / 7.2%; background: #000; }

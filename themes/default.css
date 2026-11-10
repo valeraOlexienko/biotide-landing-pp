@@ -58,6 +58,10 @@
     --cta-bg: #151a22;
     --cta-ink: #ffffff;
     --phone-shadow: drop-shadow(0 30px 40px rgba(21, 26, 34, 0.28));
+    /* the app's three cycle colours (Shared/Colors.xcassets): coral physical, aqua emotional, violet intellectual */
+    --cycle-physical: #f2785c;
+    --cycle-emotional: #0b8f99;
+    --cycle-intellectual: #6b4fd6;
     --font-display: "Instrument Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     --font-body: "Instrument Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     --display-weight: 700;
@@ -83,6 +87,9 @@ html[data-theme="dark"] {
     --cta-bg: #eceff3;
     --cta-ink: #0f1217;
     --phone-shadow: drop-shadow(0 30px 40px rgba(0, 0, 0, 0.6));
+    --cycle-physical: #ff8e74;
+    --cycle-emotional: #3cc8d1;
+    --cycle-intellectual: #a08cff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -102,5 +109,8 @@ html[data-theme="dark"] {
         --cta-bg: #eceff3;
         --cta-ink: #0f1217;
         --phone-shadow: drop-shadow(0 30px 40px rgba(0, 0, 0, 0.6));
+        --cycle-physical: #ff8e74;
+        --cycle-emotional: #3cc8d1;
+        --cycle-intellectual: #a08cff;
     }
 }

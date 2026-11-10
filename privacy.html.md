@@ -4,9 +4,11 @@
 
 # Privacy Policy
 
-Last updated: November 8, 2026
+Last updated: November 10, 2026
 
 Biotide ("we", "our", or "the app") is committed to protecting your privacy. This Privacy Policy explains what information we and our service providers handle when you use our iOS application, the biotide.app website, and related services.
+
+**The short version:** Biotide has no account, no server, no analytics and no advertising in the app. What you enter and what the app reads from Apple Health stays on your device. We never see it.
 
 ## Information We Collect
 
@@ -14,7 +16,34 @@ Biotide does not require account registration or login.
 
 **Stored locally on your device only:**
 
-- App settings (language, measurement units, theme)
+- Your birth date, used to draw your three cycles
+- Your daily check-ins: energy, mood, focus and sleep ratings, and an optional note
+- The people you add: name, birthday, relation, and a photo if you choose one
+- App settings, such as reminder times
+
+This information is kept in the app's private storage on your device. The widgets read your birth date from a storage area shared only between Biotide and its widgets.
+
+## Apple Health
+
+If you choose to connect Apple Health (part of Biotide Plus), Biotide reads four types: sleep analysis, heart rate variability, resting heart rate and respiratory rate. Nothing is read until you allow it in the system permission sheet. Biotide compares these values with your own previous 28 days on your device and shows the result in the app.
+
+Biotide never writes to Apple Health, never copies Health data off your device, never stores it in iCloud, and never uses it for advertising or shares it with anyone. You can turn off access at any time in the Health app or in Settings, Privacy & Security, Health.
+
+## Contacts
+
+If you allow it, Biotide reads the names, birthdays and photos in your contacts to show everyone with a birthday in People. iOS lets you share all your contacts or only the ones you choose, and you can change that at any time in Settings. What Biotide keeps stays on your device and is never uploaded. You can also add a single person through the system contact picker, which gives Biotide only that contact.
+
+## iCloud Sync
+
+iCloud sync is off until you turn it on in the app's Settings, under Data & Sync. When it is on, your birth date, check-ins and the people you added (with any photo you chose for them) are stored in your own private iCloud database through Apple's CloudKit, so your other Apple devices can show them. This sync is operated by Apple, not by us, and is subject to [Apple's Privacy Policy](https://www.apple.com/legal/privacy/). We cannot read your iCloud. Apple Health data, contact photos and your contacts themselves never sync. When you turn sync off, you can choose to delete Biotide's data from iCloud.
+
+## Calendar and Notifications
+
+Adding a day to your calendar uses the system calendar editor; Biotide does not read your calendar. Check-in reminders and transition-day notes are scheduled on your device, and you can turn them off in the app or in Settings.
+
+## Purchases
+
+Biotide Plus subscriptions and the one-time purchase are handled by Apple through the App Store. We do not receive your payment details, your Apple ID or your name; the app only learns whether Plus is active on your account.
 
 ## Third-Party Service Providers
 
@@ -42,18 +71,19 @@ Separately from Google Analytics, this website counts page views with Cloudflare
 
 ## Data We Do Not Collect
 
-- We never ask for your name, email, phone number, address, or any other identifying information.
+- We never receive your name, email, phone number, address, or any other identifying information. The names and birthdays you enter for people stay on your device.
 - We do not require account creation or login.
 - We do not sell, rent, or trade any data to third parties for advertising or any other purpose.
 - We do not use cookies or tracking technologies in the iOS app.
 
 ## Data Retention and Your Control
 
-All app data is stored locally on your device, and you can delete it at any time by:
+All app data is stored locally on your device (and in your own iCloud if you turned on sync). You control it at any time:
 
-- Deleting individual entries within the app
-- Clearing all app data through iOS Settings
-- Uninstalling the app
+- Edit or delete single check-ins and people within the app
+- Export everything as JSON, or your check-ins as CSV, in the app's Settings, under Data & Sync
+- Delete all data from the app in the same place; with iCloud sync on, this deletes it from iCloud too
+- Uninstall the app, which deletes its data on that device
 
 ## European Users (GDPR)
 

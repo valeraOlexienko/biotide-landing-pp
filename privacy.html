@@ -9,8 +9,8 @@
     <meta name="description" content="Biotide privacy policy: no account required, data stays on your device, and how the biotide.app website measures visits.">
     <meta name="robots" content="index, follow">
     <link rel="preload" href="fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="themes/default.css?v=1">
-    <link rel="stylesheet" href="styles.css?v=1">
+    <link rel="stylesheet" href="themes/default.css?v=2">
+    <link rel="stylesheet" href="styles.css?v=2">
     <script>try{document.documentElement.dataset.theme=localStorage.getItem('biotide_theme')||'system'}catch(e){document.documentElement.dataset.theme='system'}</script>
     <link rel="canonical" href="https://biotide.app/privacy.html">
     <link rel="alternate" type="text/markdown" href="https://biotide.app/privacy.html.md" title="Markdown version for AI agents">
@@ -21,9 +21,14 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://biotide.app/privacy.html">
     <meta property="og:site_name" content="Biotide">
+    <meta property="og:image" content="https://biotide.app/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Biotide's icon and the headline Daily Biorhythm Chart & Energy Tracker beside an iPhone showing the app's Today screen">
+    <meta name="twitter:card" content="summary_large_image">
 
-    <link rel="icon" type="image/png" href="images/favicon.png?v=1">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png?v=1">
+    <link rel="icon" type="image/png" href="images/favicon.png?v=2" sizes="64x64">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png?v=2" sizes="180x180">
 
     <script type="application/ld+json">
     {
@@ -49,7 +54,7 @@
                 "name": "Privacy Policy - Biotide",
                 "description": "Privacy Policy for the Biotide app and website",
                 "url": "https://biotide.app/privacy.html",
-                "dateModified": "2026-11-08",
+                "dateModified": "2026-11-10",
                 "inLanguage": "en",
                 "isPartOf": {"@id": "https://biotide.app/#website"},
                 "about": {"@id": "https://biotide.app/#app"},
@@ -121,26 +126,37 @@
     <a href="/" class="back-link">Back to home</a>
     <h1>Privacy Policy</h1>
     <!-- "Last updated" must equal the schema dateModified and the sitemap lastmod. Bump all three together. -->
-    <p class="last-updated">Last updated: November 8, 2026</p>
+    <p class="last-updated">Last updated: November 10, 2026</p>
 
     <p>Biotide ("we", "our", or "the app") is committed to protecting your privacy. This Privacy Policy explains what information we and our service providers handle when you use our iOS application, the biotide.app website, and related services.</p>
+    <p><strong>The short version:</strong> Biotide has no account, no server, no analytics and no advertising in the app. What you enter and what the app reads from Apple Health stays on your device. We never see it.</p>
 
     <h2>Information We Collect</h2>
     <p>Biotide does not require account registration or login.</p>
     <p><strong>Stored locally on your device only:</strong></p>
     <ul>
-        <li><!-- the app's records, e.g. "Your drink logs and session history" --></li>
-        <li>App settings (language, measurement units, theme)</li>
+        <li>Your birth date, used to draw your three cycles</li>
+        <li>Your daily check-ins: energy, mood, focus and sleep ratings, and an optional note</li>
+        <li>The people you add: name, birthday, relation, and a photo if you choose one</li>
+        <li>App settings, such as reminder times</li>
     </ul>
-    <!-- If the app syncs through the user's iCloud:
-    <p><strong>Stored in your personal iCloud (only if you enable iCloud sync):</strong> the same records and settings, synced across your Apple devices via Apple's CloudKit. This sync is operated by Apple, not by us, and is subject to <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</p>
-    -->
+    <p>This information is kept in the app's private storage on your device. The widgets read your birth date from a storage area shared only between Biotide and its widgets.</p>
 
-    <!-- One <h2> per data flow the app has: Apple Health (list every type read and written, say
-         each switch is off until turned on), network requests (name the service and what is sent),
-         subscriptions (Apple handles billing; we never see card details), telemetry (what, why,
-         retention in days). Delete what does not apply. The reference sites' policies are the
-         worked examples: snapnutritionai.app/privacy.html, siplogger.app/privacy.html. -->
+    <h2>Apple Health</h2>
+    <p>If you choose to connect Apple Health (part of Biotide Plus), Biotide reads four types: sleep analysis, heart rate variability, resting heart rate and respiratory rate. Nothing is read until you allow it in the system permission sheet. Biotide compares these values with your own previous 28 days on your device and shows the result in the app.</p>
+    <p>Biotide never writes to Apple Health, never copies Health data off your device, never stores it in iCloud, and never uses it for advertising or shares it with anyone. You can turn off access at any time in the Health app or in Settings, Privacy &amp; Security, Health.</p>
+
+    <h2>Contacts</h2>
+    <p>If you allow it, Biotide reads the names, birthdays and photos in your contacts to show everyone with a birthday in People. iOS lets you share all your contacts or only the ones you choose, and you can change that at any time in Settings. What Biotide keeps stays on your device and is never uploaded. You can also add a single person through the system contact picker, which gives Biotide only that contact.</p>
+
+    <h2>iCloud Sync</h2>
+    <p>iCloud sync is off until you turn it on in the app's Settings, under Data &amp; Sync. When it is on, your birth date, check-ins and the people you added (with any photo you chose for them) are stored in your own private iCloud database through Apple's CloudKit, so your other Apple devices can show them. This sync is operated by Apple, not by us, and is subject to <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>. We cannot read your iCloud. Apple Health data, contact photos and your contacts themselves never sync. When you turn sync off, you can choose to delete Biotide's data from iCloud.</p>
+
+    <h2>Calendar and Notifications</h2>
+    <p>Adding a day to your calendar uses the system calendar editor; Biotide does not read your calendar. Check-in reminders and transition-day notes are scheduled on your device, and you can turn them off in the app or in Settings.</p>
+
+    <h2>Purchases</h2>
+    <p>Biotide Plus subscriptions and the one-time purchase are handled by Apple through the App Store. We do not receive your payment details, your Apple ID or your name; the app only learns whether Plus is active on your account.</p>
 
     <h2>Third-Party Service Providers</h2>
     <p>Depending on how you use the app and this website, the following third parties may process data:</p>
@@ -167,18 +183,19 @@
 
     <h2>Data We Do Not Collect</h2>
     <ul>
-        <li>We never ask for your name, email, phone number, address, or any other identifying information.</li>
+        <li>We never receive your name, email, phone number, address, or any other identifying information. The names and birthdays you enter for people stay on your device.</li>
         <li>We do not require account creation or login.</li>
         <li>We do not sell, rent, or trade any data to third parties for advertising or any other purpose.</li>
         <li>We do not use cookies or tracking technologies in the iOS app.</li>
     </ul>
 
     <h2>Data Retention and Your Control</h2>
-    <p>All app data is stored locally on your device, and you can delete it at any time by:</p>
+    <p>All app data is stored locally on your device (and in your own iCloud if you turned on sync). You control it at any time:</p>
     <ul>
-        <li>Deleting individual entries within the app</li>
-        <li>Clearing all app data through iOS Settings</li>
-        <li>Uninstalling the app</li>
+        <li>Edit or delete single check-ins and people within the app</li>
+        <li>Export everything as JSON, or your check-ins as CSV, in the app's Settings, under Data &amp; Sync</li>
+        <li>Delete all data from the app in the same place; with iCloud sync on, this deletes it from iCloud too</li>
+        <li>Uninstall the app, which deletes its data on that device</li>
     </ul>
 
     <h2>European Users (GDPR)</h2>
@@ -225,15 +242,16 @@
     <div class="footer-grid">
         <div class="footer-about">
             <p class="footer-heading">Biotide</p>
-            <p>A daily biorhythm chart and energy tracker for iPhone and iPad that tests the three cycles against how you feel, with compatibility and best days. Made by Biotide. <!-- If other products share the name: "Not affiliated with other apps or websites that use a similar name." and set REQUIRED_FOOTER_TEXT in scripts/check_seo.py --></p>
+            <p>A daily biorhythm chart and energy tracker for iPhone and iPad that tests the three cycles against how you feel, with compatibility and best days.</p>
             <a href="https://apps.apple.com/app/id6829585627">Download on the App Store</a>
         </div>
         <nav aria-label="Guides">
             <p class="footer-heading">Guides</p>
             <ul>
                 <li><a href="/#how">How it works</a></li>
+                <li><a href="/#pricing">Pricing</a></li>
+                <li><a href="/#accuracy">Stated plainly</a></li>
                 <li><a href="/#faq">FAQ</a></li>
-                <!-- <li><a href="example-guide.html">Guide title</a></li> -->
             </ul>
         </nav>
         <nav aria-label="Company">
@@ -247,7 +265,7 @@
         </nav>
         <div>
             <p class="footer-heading">Please note</p>
-            <p>A short disclaimer for the category, or delete this column (and set .footer-grid to three columns).</p>
+            <p>Biotide is for reflection and planning. Biorhythm theory is not supported by research, and nothing in the app is medical advice.</p>
         </div>
     </div>
     <p class="copyright">&copy; <span id="year">2026</span> Biotide. All rights reserved.</p>

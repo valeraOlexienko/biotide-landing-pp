@@ -4,35 +4,54 @@
 
 ## What is Biotide?
 
-Biotide is a daily biorhythm chart and energy tracker for iPhone and iPad that tests the three cycles against how you feel, with compatibility and best days. Made by Biotide. This file is the plain-text summary for AI agents; every page below also has a Markdown mirror at its URL plus `.md`.
+Biotide draws the three classic biorhythm cycles (physical over 23 days, emotional over 28, intellectual over 33) from your birth date, then checks them against how you actually feel through a thirty-second daily check-in. It finds good days for exams, interviews, dates, races and important conversations, and shows biorhythm compatibility with the people around you. It is an independent app; biotide.app is its official website. Every page below also has a Markdown mirror at its URL plus `.md`.
 
-<!-- Keep this file in step with the homepage: features, price, platforms, privacy, and the
-     "Not to be confused with" block if other products share the name. Competitor prices
-     here must carry the date they were verified, or be left unversioned ("a paid app"). -->
+<!-- Keep this file in step with the homepage: features, price, platforms, privacy. -->
 
 ## Key Features
 
-- **Feature one**: one sentence, the way a user would describe it
-- **Feature two**: one sentence
-- **Feature three**: one sentence
+- **Daily biorhythm chart**: physical, emotional and intellectual values for any day, drawn from your birth date, scrollable back and forward in time from a week to three months
+- **Your day in words**: what to lean into and what to go easy on, with transition days (the classic "critical days") marked in advance
+- **Daily check-in**: energy, mood, focus and last night's sleep, each rated 1 to 5 in about thirty seconds
+- **Do the curves fit you?**: after 14 check-ins, how often each curve matched how you felt; a curve that doesn't fit counts for less and can drop out
+- **Prime days**: the best days in the next 30, 60 or 90 days for an exam, interview, pitch, date, race, trip, creative work, big decision or important conversation, alone or with someone
+- **Biorhythm compatibility**: people added by birthday or from Contacts, a match percentage, a day-by-day view and the next good day to talk
+- **Apple Health (Plus)**: sleep, heart rate variability, resting heart rate and respiratory rate compared with your own usual, never with norms; read only
+- **Widgets**: Home Screen and Lock Screen; the small widget is free
+- **Platforms**: iPhone and iPad, iOS 26 or later; optional iCloud sync between them
+- **Languages**: English and Ukrainian
 
 ## Cost Model
 
-Biotide is free on the App Store. <!-- or: the subscription, the trial, what free covers -->
+Biotide is free to download, with no ads. The chart, readings, check-ins, the curve match, people and compatibility, Prime days and the small widget are free. Biotide Plus is optional (weekly or yearly with a free trial on the yearly plan, or a one-time purchase) and adds Apple Health signals, each curve charted against your check-ins, the full check-in history, Prime days tuned to you and every widget size. Prices are shown in the App Store.
+
+## Honesty
+
+Biorhythm theory is not supported by research: a 1998 review of 134 studies (Hines, Psychological Reports) found the curves did no better than chance. Biotide treats them as a starting guess to test against your own check-ins, never as a prediction. It is for reflection and planning, not medical advice.
 
 ## Privacy
 
-- No Biotide account
-- Data stays on the device
+- No Biotide account; no servers, analytics or advertising in the app
+- Birth date, check-ins and people stay on the device, or in the user's own private iCloud if they turn on sync
+- Apple Health data is only read, never written, never synced and never leaves the device
 - On the website, Google Analytics runs under a regional consent banner (opt-in in the EEA, opt-out elsewhere). Cookieless aggregate page-view counting (Cloudflare Web Analytics) uses no cookies or identifiers.
 
 ## Common Questions
 
+**Q: What is a biorhythm?**
+A: One of three cycles that, according to a theory popular since the 1970s, start on the day you were born: physical (23 days), emotional (28) and intellectual (33); Biotide draws all three as a daily biorhythm chart.
+
+**Q: What are critical days in a biorhythm?**
+A: The days a cycle crosses zero; Biotide calls them transition days and marks them in advance.
+
+**Q: How does biorhythm compatibility work?**
+A: Biotide compares your three cycles with another person's from both birthdays, shows a match percentage and finds the days that look good for both of you.
+
 **Q: What does Biotide cost?**
-A: One self-contained sentence, identical in substance to the homepage FAQ.
+A: Free to download with no ads; Biotide Plus is an optional subscription or one-time purchase that adds Apple Health signals, full history, tuned best days and every widget size.
 
 **Q: Is my data private?**
-A: One self-contained sentence.
+A: Yes; there is no account and no server, data stays on the device or in the user's own iCloud, and Apple Health data never leaves the device.
 
 ## Core
 
@@ -44,4 +63,4 @@ A: One self-contained sentence.
 
 ## Legal
 
-- [Privacy policy](https://biotide.app/privacy.html.md): app data handling and website analytics and consent (HTML: https://biotide.app/privacy.html)
+- [Privacy policy](https://biotide.app/privacy.html.md): app data handling, Apple Health, Contacts, iCloud, and website analytics and consent (HTML: https://biotide.app/privacy.html)

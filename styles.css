@@ -116,7 +116,7 @@ p, li, dd, dt { max-width: 62ch; }
 .trio { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
 .trio figure { margin: 0; display: flex; flex-direction: column; }
 .trio .shot { background: var(--surface); border-radius: var(--radius-lg); height: clamp(300px, 26vw, 400px); padding: 2rem 1.5rem 0; overflow: hidden; display: flex; justify-content: center; align-items: flex-start; }
-.trio img { width: min(250px, 100%); filter: var(--phone-shadow); }
+.trio img { width: min(250px, 100%); border-radius: var(--radius-lg); filter: var(--phone-shadow); }
 .trio figcaption { padding: 1.25rem 0.25rem 0; }
 .trio h3 { margin-bottom: 0.35rem; }
 .trio p { color: var(--muted); max-width: none; }
@@ -192,6 +192,7 @@ p, li, dd, dt { max-width: 62ch; }
 
 /* accuracy / "stated plainly" */
 .accuracy p { max-width: 66ch; }
+.accuracy p + p { margin-top: 1rem; }
 
 /* final cta */
 .cta-band { background: var(--surface); padding: var(--section) 0; }
@@ -290,4 +291,45 @@ p, li, dd, dt { max-width: 62ch; }
 @media (prefers-reduced-motion: reduce) {
     .faq-item summary::after { transition: none; }
     .marquee img { transition: none; }
+}
+
+/* ---------- device frame ---------- */
+/* Apple's iPhone 17 bezel with a real screen in the slot (addons/device-frame in the boilerplate).
+
+   Markup:
+   <div class="phone hero-phone">
+     <div class="phone__screen"><img src="images/screen-main.webp" width="1206" height="2622" alt="..."></div>
+     <img class="phone__frame" src="images/iphone17-black.webp" width="675" height="1380" alt="" aria-hidden="true">
+   </div>
+
+   Apple's product-image rules: the bezel is used as is, never moved, tilted, scaled, animated,
+   shadowed or cropped, and never carries copy. Only real app screens go in the slot
+   (1206x2622 from an iPhone 17 simulator; 804x1748 exports have the same shape), no drawn UI.
+   --sx/--sy/--sw/--sh place the screen inside the device box as fractions, --sr is the screen
+   corner radius as a fraction of the device width: screen 1206x2622 at 72,69 in the 1350x2760
+   bezel from developer.apple.com/design/resources (Black finish; Sage was used on the other site). */
+.phone {
+    position: relative; width: 100%; aspect-ratio: 0.4891; --pw: 15rem;
+    --sx: 0.05333; --sy: 0.025; --sw: 0.89333; --sh: 0.95; --sr: 0.139;
+}
+.phone__screen {
+    position: absolute; overflow: hidden; background: #000;
+    /* bleed 2px under the bezel's black ring: an exact fit leaves a hairline of page showing
+       where both curved edges are antialiased (checked with a magenta-background pixel test) */
+    --bleed: 2px;
+    left: calc(var(--sx) * 100% - var(--bleed)); top: calc(var(--sy) * 100% - var(--bleed));
+    width: calc(var(--sw) * 100% + 2 * var(--bleed)); height: calc(var(--sh) * 100% + 2 * var(--bleed));
+    border-radius: calc(var(--sr) * var(--pw) + var(--bleed));
+}
+.phone__screen img { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; object-fit: fill; }
+img.phone__frame { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; pointer-events: none; }
+
+/* in the hero: the bezel and its screen keep their own box, and no shadow */
+.hero-grid { align-items: center; }
+.hero-visual { height: auto; display: flex; justify-content: center; padding: clamp(2rem, 1rem + 3vw, 4rem) 0; }
+.hero-phone { width: auto; height: min(74vh, 640px); --pw: calc(min(74vh, 640px) * 0.4891); }
+.hero-visual .phone img { left: 0; top: 0; transform: none; filter: none; width: 100%; }
+@media (max-width: 760px) {
+    .hero-visual { padding: .5rem 0 2.5rem; }
+    .hero-phone { height: auto; width: min(62vw, 280px); --pw: min(62vw, 280px); }
 }
