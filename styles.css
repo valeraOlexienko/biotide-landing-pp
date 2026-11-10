@@ -99,8 +99,6 @@ p, li, dd, dt { max-width: 62ch; }
 /* until release: a label in the App Store badge's place (Apple's badge is only for apps that are live) */
 .soon-badge { display: inline-flex; align-items: center; min-height: 52px; margin: 0; padding: 0 1.25rem; border-radius: 12px; background: var(--cta-bg); color: var(--cta-ink); font-weight: 600; font-size: 1rem; max-width: none; cursor: default; }
 .cta-band .soon-badge { margin-top: 1.75rem; }
-.site-nav .nav-cta--soon { cursor: default; }
-.site-nav .nav-cta--soon:hover { opacity: 1; }
 .button { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--cta-bg); color: var(--cta-ink); text-decoration: none; font-weight: 600; padding: 0.8rem 1.25rem; border-radius: 999px; border: 0; font: inherit; cursor: pointer; }
 .button:hover { color: var(--cta-ink); opacity: 0.92; }
 .text-link { font-weight: 600; color: var(--ink); text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 2px; text-underline-offset: 0.2em; }

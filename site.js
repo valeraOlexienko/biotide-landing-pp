@@ -8,7 +8,7 @@
     var CONSENT_KEY = "biotide_cookie_consent";
     // Google Analytics 4 measurement id ("G-XXXXXXXXXX"). Empty = no analytics,
     // no banner, and the footer's "Cookie Settings" link is hidden.
-    var GA_ID = "";
+    var GA_ID = "G-NWPC6R9NBW";
     // OpenAI ChatGPT Ads measurement pixel (Ads Manager -> Conversions -> data
     // source). Empty = off. When set, the banner wording covers "our ads" and
     // the privacy policy's Website Analytics section must describe it
