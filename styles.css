@@ -92,6 +92,7 @@ p, li, dd, dt { max-width: 62ch; }
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); gap: 2rem 4rem; align-items: end; }
 .hero-copy { padding: clamp(3rem, 2rem + 4vw, 6rem) 0 clamp(3rem, 2rem + 3vw, 5rem); }
 .hero-copy h1 { max-width: 14ch; }
+.hero-kicker { display: block; margin-bottom: 0.6rem; font: 600 0.875rem/1.4 var(--font-body); letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent-ink); max-width: 40ch; }
 .hero-copy .lead { margin-top: 1.5rem; max-width: 52ch; }
 .hero-actions { display: flex; align-items: center; gap: 1.25rem 1.75rem; flex-wrap: wrap; margin-top: 2rem; }
 .app-store-badge img { height: 52px; width: auto; }

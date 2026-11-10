@@ -2,9 +2,9 @@
 
 > **Markdown version** of [https://biotide.app/](https://biotide.app/) — a clean, agent-friendly mirror of the HTML page.
 
-# Daily Biorhythm Chart & Energy Tracker
+# Daily biorhythm chart & energy tracker Check if it’s really your rhythm
 
-Biotide is a daily biorhythm chart and energy tracker for iPhone and iPad. It draws your three cycles from your birth date, then checks them against how you actually feel, and finds good days for what is coming up, alone or with the people around you.
+Biotide draws your three biorhythm cycles from your birth date, then tests them on you. A thirty-second check-in each evening shows which curves match how you actually feel, and only the ones that fit shape your readings and your best days. For iPhone and iPad.
 
 [![Download Biotide on the App Store](https://biotide.app/images/download-on-the-app-store.svg)](https://apps.apple.com/app/id6829585627)
 [See how it works](#how)
@@ -18,9 +18,16 @@ For reflection and planning. Biorhythms are not proven science or medical advice
 
 ![Biotide's daily biorhythm chart for Tuesday, November 10: physical 0, emotional +78, intellectual −37, the three curves across the month, and the day in words: a transition day for the physical cycle, good for time with people](https://biotide.app/images/screen-today.webp?v=1)
 
+## Most biorhythm apps tell you. Biotide asks you.
+
+The three curves are the theory’s guess. Your evening check-ins are the test: energy, mood, focus and sleep, each from 1 to 5. After 14 check-ins Biotide shows how often each curve matched how you felt. A curve that fits keeps its say; one that doesn’t counts for less in your readings and plans, and can drop out entirely. With Plus, your sleep and heart signals from Apple Health join the test.
+
 ## What is in the app
 
-The classic biorhythm calculator and chart, plus the part most biorhythm apps leave out: checking the curves against you.
+The classic biorhythm calculator and chart, checked against you every evening.
+
+Is it really your rhythm?
+:   After 14 check-ins Biotide shows how often each curve matched how you felt. A curve that doesn’t fit you counts for less in your readings and plans, and can drop out entirely.
 
 Daily biorhythm chart
 :   Physical, emotional and intellectual values for any day, worked out from your birth date. Drag the chart back or forward in time, from a week to three months at a glance.
@@ -30,9 +37,6 @@ Your day in words
 
 Thirty-second check-in
 :   Rate your energy, mood, focus and last night’s sleep from 1 to 5 each evening. A gentle reminder helps, and skips the days you have already logged.
-
-Do the curves fit you?
-:   After 14 check-ins Biotide shows how often each curve matched how you felt. A curve that doesn’t fit you counts for less in your readings and plans, and can drop out entirely.
 
 Prime days
 :   Pick what is coming, from an exam or a job interview to a date, a race or an important conversation, and get the best days in the next 30, 60 or 90 days. Already have a date? See how it looks and whether a nearby day is better.
@@ -147,6 +151,10 @@ The science
 ### What is a biorhythm?
 
 A biorhythm is one of three cycles that, according to a theory popular since the 1970s, start on the day you were born: physical over 23 days, emotional over 28 days and intellectual over 33 days. Biotide works out all three from your birth date and draws them as a daily biorhythm chart.
+
+### How is Biotide different from other biorhythm apps?
+
+Most biorhythm apps draw the curves and tell you how your day will go. Biotide also asks you, with a thirty-second evening check-in of energy, mood, focus and sleep. After 14 check-ins it shows how often each curve matched how you felt, and a curve that doesn’t fit you counts for less in your readings and plans, or drops out entirely.
 
 ### What are critical days in a biorhythm?
 

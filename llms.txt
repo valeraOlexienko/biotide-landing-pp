@@ -47,6 +47,9 @@ A: The days a cycle crosses zero; Biotide calls them transition days and marks t
 **Q: How does biorhythm compatibility work?**
 A: Biotide compares your three cycles with another person's from both birthdays, shows a match percentage and finds the days that look good for both of you.
 
+**Q: How is Biotide different from other biorhythm apps?**
+A: Most biorhythm apps draw the curves and stop; Biotide tests them with a thirty-second evening check-in, shows after 14 check-ins how often each curve matched how you felt, and lets the curves that don't fit count for less.
+
 **Q: What does Biotide cost?**
 A: Free to download with no ads; Biotide Plus is an optional subscription or one-time purchase that adds Apple Health signals, full history, tuned best days and every widget size.
 
