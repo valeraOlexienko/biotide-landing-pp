@@ -1,6 +1,6 @@
 # Biotide
 
-> A daily biorhythm chart and energy tracker for iPhone and iPad that tests the three cycles against how you feel, with compatibility and best days.
+> A daily biorhythm chart and energy tracker for iPhone that tests the three cycles against how you feel, with compatibility and best days.
 
 ## What is Biotide?
 
@@ -13,18 +13,18 @@ Biotide draws the three classic biorhythm cycles (physical over 23 days, emotion
 - **Daily biorhythm chart**: physical, emotional and intellectual values for any day, drawn from your birth date, scrollable back and forward in time from a week to three months
 - **Your day in words**: what to lean into and what to go easy on, with transition days (the classic "critical days") marked in advance
 - **Daily check-in**: energy, mood, focus and last night's sleep, each rated 1 to 5 in about thirty seconds
-- **Do the curves fit you?**: after 14 check-ins, how often each curve matched how you felt; a curve that doesn't fit counts for less and can drop out
-- **Prime days**: the best days in the next 30, 60 or 90 days for an exam, interview, pitch, date, race, trip, creative work, big decision or important conversation, alone or with someone
-- **Biorhythm compatibility**: people added by birthday or from Contacts, a match percentage, a day-by-day view and the next good day to talk
+- **Do the curves fit you? (Plus)**: after 14 check-ins, how often each curve matched how you felt; a curve that doesn't fit counts for less and can drop out
+- **Prime days (Plus)**: the best days in the next 30, 60 or 90 days for an exam, interview, pitch, date, race, trip, creative work, big decision or important conversation, alone or with someone
+- **Biorhythm compatibility (Plus)**: people added by birthday or from Contacts, a match percentage, a day-by-day view and the next good day to talk
 - **Apple Health (Plus)**: sleep, heart rate variability, resting heart rate and respiratory rate compared with your own usual, never with norms; read only
-- **Widgets**: Home Screen and Lock Screen; the small widget is free
-- **Platforms**: iPhone and iPad, iOS 26 or later; optional iCloud sync between them
+- **Widgets (Plus)**: Home Screen and Lock Screen, every size
+- **Platforms**: iPhone, iOS 26 or later; optional iCloud sync (Plus); no iPad or Android version
 - **Availability**: not on the App Store yet; coming soon
 - **Languages**: English and Ukrainian
 
 ## Cost Model
 
-Biotide is free to download, with no ads. The chart, readings, check-ins, the curve match, people and compatibility, Prime days and the small widget are free. Biotide Plus is optional (weekly or yearly with a free trial on the yearly plan, or a one-time purchase) and adds Apple Health signals, each curve charted against your check-ins, the full check-in history, Prime days tuned to you and every widget size. Prices are shown in the App Store.
+Biotide is free to download, with no ads. Free: the daily chart and readings (classic curves), the evening check-in with a reminder, transition-day notes, and export as JSON or CSV. Biotide Plus is optional: weekly, monthly or yearly (monthly and yearly with a free trial), or a one-time purchase. It adds people and compatibility, Prime days and the forecast calendar, how often each curve fits you with readings and plans tuned to it, Apple Health signals, iCloud sync and every widget. Prices are shown in the App Store before buying.
 
 ## Honesty
 
@@ -49,10 +49,10 @@ A: The days a cycle crosses zero; Biotide calls them transition days and marks t
 A: Biotide compares your three cycles with another person's from both birthdays, shows a match percentage and finds the days that look good for both of you.
 
 **Q: How is Biotide different from other biorhythm apps?**
-A: Most biorhythm apps draw the curves and stop; Biotide tests them with a thirty-second evening check-in, shows after 14 check-ins how often each curve matched how you felt, and lets the curves that don't fit count for less.
+A: Most biorhythm apps draw the curves and stop; Biotide tests them with a thirty-second evening check-in, and with Plus shows after 14 check-ins how often each curve matched how you felt, and lets the curves that don't fit count for less.
 
 **Q: What does Biotide cost?**
-A: Free to download with no ads; Biotide Plus is an optional subscription or one-time purchase that adds Apple Health signals, full history, tuned best days and every widget size.
+A: Free to download with no ads: the chart, the reading, check-ins, reminders and export. Biotide Plus (weekly, monthly or yearly, or a one-time purchase) adds people and compatibility, Prime days and the forecast calendar, how often each curve fits you, Apple Health, iCloud sync and every widget.
 
 **Q: Is my data private?**
 A: Yes; there is no account and no server, data stays on the device or in the user's own iCloud, and Apple Health data never leaves the device.

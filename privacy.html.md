@@ -4,7 +4,7 @@
 
 # Privacy Policy
 
-Last updated: November 10, 2026
+Last updated: November 11, 2026
 
 Biotide ("we", "our", or "the app") is committed to protecting your privacy. This Privacy Policy explains what information we and our service providers handle when you use our iOS application, the biotide.app website, and related services.
 
@@ -35,7 +35,7 @@ If you allow it, Biotide reads the names, birthdays and photos in your contacts 
 
 ## iCloud Sync
 
-iCloud sync is off until you turn it on in the app's Settings, under Data & Sync. When it is on, your birth date, check-ins and the people you added (with any photo you chose for them) are stored in your own private iCloud database through Apple's CloudKit, so your other Apple devices can show them. This sync is operated by Apple, not by us, and is subject to [Apple's Privacy Policy](https://www.apple.com/legal/privacy/). We cannot read your iCloud. Apple Health data, contact photos and your contacts themselves never sync. When you turn sync off, you can choose to delete Biotide's data from iCloud.
+iCloud sync, part of Biotide Plus, is off until you turn it on in the app's Settings, under Data & Sync. When it is on, your birth date, check-ins and the people you added (with any photo you chose for them) are stored in your own private iCloud database through Apple's CloudKit, so your other Apple devices can show them. This sync is operated by Apple, not by us, and is subject to [Apple's Privacy Policy](https://www.apple.com/legal/privacy/). We cannot read your iCloud. Apple Health data, contact photos and your contacts themselves never sync. When you turn sync off, you can choose to delete Biotide's data from iCloud.
 
 ## Calendar and Notifications
 
