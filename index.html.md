@@ -17,7 +17,7 @@ Coming soon to the App Store
 
 For reflection and planning. Biorhythms are not proven science or medical advice.
 
-![Biotide's daily biorhythm chart for Tuesday, November 10: physical 0, emotional +78, intellectual −37, the three curves across the month, and the day in words: a transition day for the physical cycle, good for time with people](https://biotide.app/images/screen-today.webp?v=1)
+![Biotide's daily biorhythm chart for Tuesday, November 10: physical 0, emotional +78, intellectual −37, the three curves across the month, and the day in words: a transition day for the physical cycle, good for time with people](https://biotide.app/images/screen-today.webp?v=2)
 
 ## Most biorhythm apps tell you. Biotide asks you.
 
@@ -73,7 +73,7 @@ Sample data, as on the screens: the cycles for a birth date of 12 March 1988, tw
 
    Pick an exam, an interview or an important conversation, and Biotide ranks the days ahead with the curves that fit you: here, the 15th, 17th and 19th.
 
-![Biotide's Today screen for Tuesday, November 10: physical 0, emotional +78, intellectual −37 and the three curves across the month](https://biotide.app/images/screen-today.webp?v=1)![The daily check-in: energy, mood, focus and last night's sleep, each rated from 1 to 5, with an optional note](https://biotide.app/images/screen-checkin.webp?v=1)![Insights: Apple Health signals against your usual, two weeks of check-in averages, and how often each curve matched how you felt](https://biotide.app/images/screen-insights.webp?v=1)![Prime days for an exam: the best days in the next 30, the first on Tuesday, November 17](https://biotide.app/images/screen-plan.webp?v=1)
+![Biotide's Today screen for Tuesday, November 10: physical 0, emotional +78, intellectual −37 and the three curves across the month](https://biotide.app/images/screen-today.webp?v=2)![The daily check-in: energy, mood, focus and last night's sleep, each rated from 1 to 5, with an optional note](https://biotide.app/images/screen-checkin.webp?v=2)![Insights: Apple Health signals against your usual, two weeks of check-in averages, and how often each curve matched how you felt](https://biotide.app/images/screen-insights.webp?v=2)![Prime days for an exam: the best days in the next 30, the first on Tuesday, November 17](https://biotide.app/images/screen-plan.webp?v=2)
 
 ## What it costs
 
@@ -109,12 +109,12 @@ Prices are set by the App Store and shown in your currency before you buy. Subsc
 
 Real screens from the app, with sample data: today, the check-in, Insights, Prime days, a compatibility view and People.
 
-![Today: the three cycle values and the daily biorhythm chart for the month](https://biotide.app/images/screen-today.webp?v=1)
-![The daily check-in: energy, mood, focus and sleep, each from 1 to 5](https://biotide.app/images/screen-checkin.webp?v=1)
-![Insights: Apple Health signals against your usual and how often each curve matched how you felt](https://biotide.app/images/screen-insights.webp?v=1)
-![Prime days: the best days in the next 30 for an exam](https://biotide.app/images/screen-plan.webp?v=1)
-![Biorhythm compatibility with Anna: a 46% match, each cycle's share, both curves on one chart and a day-by-day strip for an important conversation](https://biotide.app/images/screen-compatibility.webp?v=1)
-![People: Dad, Anna and Mark with their match and their next good day to talk](https://biotide.app/images/screen-people.webp?v=1)
+![Today: the three cycle values and the daily biorhythm chart for the month](https://biotide.app/images/screen-today.webp?v=2)
+![The daily check-in: energy, mood, focus and sleep, each from 1 to 5](https://biotide.app/images/screen-checkin.webp?v=2)
+![Insights: Apple Health signals against your usual and how often each curve matched how you felt](https://biotide.app/images/screen-insights.webp?v=2)
+![Prime days: the best days in the next 30 for an exam](https://biotide.app/images/screen-plan.webp?v=2)
+![Biorhythm compatibility with Anna: a 46% match, each cycle's share, both curves on one chart and a day-by-day strip for an important conversation](https://biotide.app/images/screen-compatibility.webp?v=2)
+![People: Anna, starred, then Dad and Mark, with their match and their next good day to talk](https://biotide.app/images/screen-people.webp?v=2)
 
 ## Stated plainly
 

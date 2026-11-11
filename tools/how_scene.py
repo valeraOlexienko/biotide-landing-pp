@@ -138,11 +138,15 @@ def svg():
     return "\n                    ".join(e)
 
 
+# Each screen comes in light and dark (images/screen-NAME.webp and screen-NAME-dark.webp); the dark one is a
+# <source data-dark> that site.js points at the page's theme.
+SCREEN_VERSION = 2
+
 SCREENS = [
-    ("today", 0, "images/screen-today.webp?v=1", "Biotide's Today screen for Tuesday, November 10: physical 0, emotional +78, intellectual −37 and the three curves across the month"),
-    ("checkin", 0, "images/screen-checkin.webp?v=1", "The daily check-in: energy, mood, focus and last night's sleep, each rated from 1 to 5, with an optional note"),
-    ("insights", 1, "images/screen-insights.webp?v=1", "Insights: Apple Health signals against your usual, two weeks of check-in averages, and how often each curve matched how you felt"),
-    ("plan", 2, "images/screen-plan.webp?v=1", "Prime days for an exam: the best days in the next 30, the first on Tuesday, November 17"),
+    ("today", 0, "images/screen-today.webp", "Biotide's Today screen for Tuesday, November 10: physical 0, emotional +78, intellectual −37 and the three curves across the month"),
+    ("checkin", 0, "images/screen-checkin.webp", "The daily check-in: energy, mood, focus and last night's sleep, each rated from 1 to 5, with an optional note"),
+    ("insights", 1, "images/screen-insights.webp", "Insights: Apple Health signals against your usual, two weeks of check-in averages, and how often each curve matched how you felt"),
+    ("plan", 2, "images/screen-plan.webp", "Prime days for an exam: the best days in the next 30, the first on Tuesday, November 17"),
 ]
 
 STEPS = [
@@ -155,7 +159,8 @@ STEPS = [
 def scene():
     warp = "[" + ", ".join(f"[{p}, {f:.4f}]" for p, f in WARP) + "]"
     screens = "".join(
-        f'<img class="how-screen" data-step="{step}" data-from="{STEP_FROM[key]}" src="{src}" width="804" height="1748" alt="{html.escape(alt)}" loading="lazy">'
+        f'<picture class="themed"><source srcset="{src.replace(".webp", "-dark.webp")}?v={SCREEN_VERSION}" media="(prefers-color-scheme: dark)" data-dark>'
+        f'<img class="how-screen" data-step="{step}" data-from="{STEP_FROM[key]}" src="{src}?v={SCREEN_VERSION}" width="804" height="1748" alt="{html.escape(alt)}" loading="lazy"></picture>'
         for key, step, src, alt in SCREENS)
     steps = "\n".join(
         f'                    <li class="how-step"><h3>{html.escape(h)}</h3><p>{html.escape(p)}</p></li>' for h, p in STEPS)

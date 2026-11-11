@@ -325,6 +325,9 @@ p, li, dd, dt { max-width: 62ch; }
     width: calc(var(--sw) * 100% + 2 * var(--bleed)); height: calc(var(--sh) * 100% + 2 * var(--bleed));
     border-radius: calc(var(--sr) * var(--pw) + var(--bleed));
 }
+/* light and dark screens: a <picture> whose dark <source> follows the page theme (site.js); the picture adds no box,
+   so the img lays out as if it stood alone */
+picture.themed { display: contents; }
 .phone__screen img { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; object-fit: fill; }
 img.phone__frame { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; pointer-events: none; }
 

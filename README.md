@@ -42,7 +42,7 @@
   <tr>
     <td align="center"><img src="images/screen-plan.webp" width="230" alt="Prime days: the best days in the next 30 for an exam"><br><b>Prime days</b><br>The best days for what's coming up</td>
     <td align="center"><img src="images/screen-compatibility.webp" width="230" alt="Biorhythm compatibility with Anna: a 46% match, both curves on one chart and a day-by-day strip"><br><b>Compatibility</b><br>Your rhythm next to someone else's</td>
-    <td align="center"><img src="images/screen-people.webp" width="230" alt="People: Dad, Anna and Mark with their match and next good day to talk"><br><b>People</b><br>Everyone, with their next good day to talk</td>
+    <td align="center"><img src="images/screen-people.webp" width="230" alt="People: Anna, starred, then Dad and Mark with their match and next good day to talk"><br><b>People</b><br>Everyone, with their next good day to talk</td>
   </tr>
 </table>
 

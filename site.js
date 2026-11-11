@@ -135,12 +135,22 @@
             if (allowedThemes.indexOf(theme) === -1) theme = "system";
             html.setAttribute("data-theme", theme);
             writePreference(THEME_KEY, theme);
+            syncThemedImages(theme);
 
             controls.forEach(function (control) {
                 var selected = control.dataset.themeValue === theme;
                 control.checked = selected;
                 control.closest(".theme-option").classList.toggle("active", selected);
                 if (selected && moveFocus) control.focus();
+            });
+        }
+
+        // Screens come in light and dark: each <picture> has a dark <source data-dark>. Its media query follows
+        // the system on its own; a picked theme overrides it, and the browser swaps the image when media changes.
+        function syncThemedImages(theme) {
+            var media = theme === "dark" ? "all" : theme === "light" ? "not all" : "(prefers-color-scheme: dark)";
+            document.querySelectorAll("source[data-dark]").forEach(function (source) {
+                if (source.getAttribute("media") !== media) source.setAttribute("media", media);
             });
         }
 
