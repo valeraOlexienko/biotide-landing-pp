@@ -31,7 +31,9 @@
   var START = new Date(wrap.getAttribute('data-start') + 'T12:00:00');
   var DAYS = +wrap.getAttribute('data-days');
   var WEIGHT = +wrap.getAttribute('data-weight');
-  var fmt = new Intl.DateTimeFormat('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+  // The page's own language (the language pages set <html lang>); English keeps the US form, "Tue, Nov 10".
+  var lang = document.documentElement.lang || 'en';
+  var fmt = new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : lang, { weekday: 'short', month: 'short', day: 'numeric' });
   var W = 1000, last = -1;
   function clamp(v, a, b) { return v < a ? a : v > b ? b : v; }
   function drawn(p) {

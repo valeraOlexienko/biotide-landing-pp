@@ -20,3 +20,6 @@ waitlist-*.csv
 
 # Rendered social image sources are committed; the headless-Chrome scratch output is not
 tools/out/
+
+# Python bytecode from tools/ (tools/render_og_langs.py imports tools/i18n.py)
+__pycache__/

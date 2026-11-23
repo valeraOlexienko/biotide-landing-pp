@@ -106,6 +106,17 @@ p, li, dd, dt { max-width: 62ch; }
 .lang-panel a[aria-current="true"] { font-weight: 600; }
 .lang-panel a[aria-current="true"]::after { content: "\2713"; color: var(--accent-ink); font-weight: 600; }
 
+/* Korean breaks between words, never inside one; Japanese headings break between phrases where the browser can tell
+   (auto-phrase), and hand-marked phrases (.phrase in the translation) never break inside, so the hero holds everywhere. */
+:lang(ko) { word-break: keep-all; overflow-wrap: anywhere; }
+/* A long word (German compounds, French legal terms) breaks rather than widening a phone screen; German body text
+   hyphenates, as German readers expect on narrow screens. */
+p, li, dd, dt, h1, h2, h3, summary { overflow-wrap: break-word; }
+:lang(de) p, :lang(de) li, :lang(de) dd { -webkit-hyphens: auto; hyphens: auto; }
+:lang(ja) { line-break: strict; }  /* no line starts with ー, small kana or closing punctuation */
+:lang(ja) h1, :lang(ja) h2, :lang(ja) h3 { word-break: auto-phrase; }
+.phrase { display: inline-block; }
+
 /* ---------- hero ---------- */
 .hero { background: var(--hero-bg); border-bottom: 1px solid var(--line); overflow: hidden; }
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); gap: 2rem 4rem; align-items: end; }
@@ -245,8 +256,8 @@ p, li, dd, dt { max-width: 62ch; }
     background: var(--ink); color: var(--paper); padding: 0.9rem 1.25rem; border-radius: var(--radius);
     max-width: 760px; box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
 }
-.cookie-content p { font-size: 0.9375rem; flex: 1 1 320px; max-width: none; }
-.cookie-buttons { display: flex; gap: 0.5rem; }
+.cookie-content p { font-size: 0.9375rem; flex: 1 1 240px; min-width: 0; max-width: none; }
+.cookie-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .cookie-btn { border: 1px solid transparent; border-radius: 999px; padding: 0.55rem 1.1rem; font: inherit; font-weight: 600; cursor: pointer; min-height: 40px; }
 .cookie-btn.accept { background: var(--paper); color: var(--ink); }
 .cookie-btn.reject { background: transparent; color: var(--paper); border-color: rgba(255, 255, 255, 0.35); }

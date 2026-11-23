@@ -56,10 +56,14 @@ def site_base() -> str:
     return f"https://{cname}/"
 
 
+# Language folders built by tools/i18n.py; their pages get mirrors too.
+LANGS = ["uk", "ja", "de", "fr", "es", "ko"]
+
+
 def page_url(base: str, html_name: str) -> str:
-    """Canonical URL of a page. index.html maps to the bare domain."""
-    if html_name == "index.html":
-        return base
+    """Canonical URL of a page. index.html maps to its folder (the bare domain at the top)."""
+    if html_name == "index.html" or html_name.endswith("/index.html"):
+        return urljoin(base, html_name[: -len("index.html")])
     return urljoin(base, html_name)
 
 
@@ -130,9 +134,10 @@ def convert(html_path: Path, base: str) -> str:
     )
     body = tidy(body)
 
-    url = page_url(base, html_path.name)
+    rel = html_path.relative_to(ROOT).as_posix()
+    url = page_url(base, rel)
     header = (
-        f"<!-- AUTO-GENERATED from {html_path.name}. Do not edit by hand; "
+        f"<!-- AUTO-GENERATED from {rel}. Do not edit by hand; "
         f"edit the HTML and run python3 scripts/html_to_md.py. -->\n\n"
         f"> **Markdown version** of [{url}]({url}) — a clean, agent-friendly "
         f"mirror of the HTML page.\n\n"
@@ -142,14 +147,16 @@ def convert(html_path: Path, base: str) -> str:
 
 def main(argv: list[str]) -> int:
     base = site_base()
-    targets = [ROOT / a for a in argv] if argv else sorted(p for p in ROOT.glob("*.html") if p.name != "404.html")
+    targets = [ROOT / a for a in argv] if argv else (
+        sorted(p for p in ROOT.glob("*.html") if p.name != "404.html")
+        + [p for lang in LANGS for p in sorted((ROOT / lang).glob("*.html"))])
     if not targets:
         print("No HTML files found.")
         return 1
     for html_path in targets:
         out = html_path.with_name(html_path.name + ".md")
         out.write_text(convert(html_path, base), encoding="utf-8")
-        print(f"  {html_path.name} -> {out.name}")
+        print(f"  {html_path.relative_to(ROOT).as_posix()} -> {out.name}")
     return 0
 
 

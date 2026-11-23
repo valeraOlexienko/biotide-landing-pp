@@ -14,6 +14,7 @@ social network accepts WebP), `favicon.png` and `apple-touch-icon.png` (platform
 | `screenshot-1..N.webp` | ~560 px wide | the App Store frames, once they exist (not yet) |
 | `screen-*.webp` | 804x1748 | real app screens in light, also the schema screenshots (see below) |
 | `screen-*-dark.webp` | 804x1748 | the same screens in dark, shown when the page is dark |
+| `<lang>/screen-*.webp`, `<lang>/screen-*-dark.webp` | 804x1748 | the six app screens in that language (uk, ja, de, fr, es, ko), same recipe with `-AppleLanguages "(<lang>)" -AppleLocale <region>`; the language pages use them (`tools/i18n.py`). Tidy stays English, so there is no `<lang>/screen-tidy` |
 | `iphone17-black.webp` | 675x1380 | Apple's iPhone 17 bezel (Black), from developer.apple.com/design/resources; used as is |
 
 The icons are the app's own 1024 px icon (`Biotide/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png`
@@ -36,3 +37,7 @@ media="(prefers-color-scheme: dark)">`: the system's appearance picks it with no
 
 Rules: every `<img>` has `alt`, `width` and `height` (the SEO check enforces it). Bump the
 `?v=` on an image URL when its content changes; Pages caches images for a week.
+
+The status bar override is `xcrun simctl status_bar <udid> override --time 9:41 --batteryState discharging
+--batteryLevel 100 --cellularMode active --cellularBars 4 --wifiBars 3 --dataNetwork wifi`. `discharging`, not
+"discharged": an invalid value fails the whole command, and the captures come out without signal bars.

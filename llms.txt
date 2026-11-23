@@ -63,6 +63,17 @@ A: Yes; there is no account and no server of Biotide's own, data stays on the de
 
 - [Biotide homepage](https://biotide.app/index.html.md): features, pricing, supported devices, FAQ (HTML: https://biotide.app/)
 
+## Other languages
+
+The homepage and privacy policy in each language the app speaks (the English pages above are the source):
+
+- Українська: [Головна](https://biotide.app/uk/index.html.md), [Політика конфіденційності](https://biotide.app/uk/privacy.html.md) (HTML: https://biotide.app/uk/)
+- 日本語: [ホーム](https://biotide.app/ja/index.html.md), [プライバシーポリシー](https://biotide.app/ja/privacy.html.md) (HTML: https://biotide.app/ja/)
+- Deutsch: [Startseite](https://biotide.app/de/index.html.md), [Datenschutzerklärung](https://biotide.app/de/privacy.html.md) (HTML: https://biotide.app/de/)
+- Français: [Accueil](https://biotide.app/fr/index.html.md), [Politique de confidentialité](https://biotide.app/fr/privacy.html.md) (HTML: https://biotide.app/fr/)
+- Español: [Inicio](https://biotide.app/es/index.html.md), [Política de privacidad](https://biotide.app/es/privacy.html.md) (HTML: https://biotide.app/es/)
+- 한국어: [홈](https://biotide.app/ko/index.html.md), [개인정보 처리방침](https://biotide.app/ko/privacy.html.md) (HTML: https://biotide.app/ko/)
+
 ## Guides
 
 <!-- - [Guide title](https://biotide.app/<slug>.html.md): one line on what it answers (HTML: https://biotide.app/<slug>.html) -->

@@ -292,26 +292,31 @@
         // Three banner variants: opt-in (EEA), mixed (UK: analytics on, ad
         // measurement waits), opt-out notice (everywhere else). The wording
         // mentions ads only when the pixel is configured.
+        // The language pages (tools/i18n.py) put their wording on the banner as data-msg, data-accept, data-reject,
+        // data-ok and data-turn-off; English is the fallback. The ad wording exists in English only, since the pixel
+        // is off.
+        var words = banner.dataset;
+        function say(key, english) { return words[key] || english; }
         function renderBanner() {
             var ads = Boolean(OAI_PIXEL_ID);
             if (region === "eea") {
                 message.textContent = ads
                     ? "We use cookies for analytics and to measure our ads"
-                    : "We use cookies for analytics to improve your experience";
-                accept.textContent = "Accept";
-                reject.textContent = "Reject";
+                    : say("msg", "We use cookies for analytics to improve your experience");
+                accept.textContent = say("accept", "Accept");
+                reject.textContent = say("reject", "Reject");
             } else if (region === "uk") {
                 message.textContent = ads
                     ? "We use cookies for analytics, and with your OK to measure our ads"
-                    : "We use cookies for analytics to improve your experience";
-                accept.textContent = ads ? "Accept" : "OK";
-                reject.textContent = ads ? "Reject all" : "Turn off";
+                    : say("msg", "We use cookies for analytics to improve your experience");
+                accept.textContent = ads ? say("accept", "Accept") : say("ok", "OK");
+                reject.textContent = ads ? "Reject all" : say("turnOff", "Turn off");
             } else {
                 message.textContent = ads
                     ? "We use cookies for analytics and to measure our ads"
-                    : "We use cookies for analytics to improve your experience";
-                accept.textContent = "OK";
-                reject.textContent = "Turn off";
+                    : say("msg", "We use cookies for analytics to improve your experience");
+                accept.textContent = say("ok", "OK");
+                reject.textContent = say("turnOff", "Turn off");
             }
         }
 

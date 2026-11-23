@@ -9,7 +9,8 @@ Run before every commit (the pre-commit hook in .githooks/ does this):
 Errors block the commit; warnings are printed and let it through.
 Standard library only, so it runs without installing anything.
 
-Rules, per indexable page (every top-level *.html without a noindex robots meta):
+Rules, per indexable page (every top-level *.html, and every *.html in a language folder of LANGS, without a
+noindex robots meta):
   - one <title> (warn over 60 chars), one meta description (max 160), one <h1>
   - absolute self-referencing canonical, and a text/markdown alternate link
   - every <img> has alt, width and height
@@ -23,6 +24,7 @@ Rules, per indexable page (every top-level *.html without a noindex robots meta)
   - BreadcrumbList @id = <url>#breadcrumb, FAQPage @id = <url>#faq
   - FAQPage questions match the visible <summary> text word for word
   - a visible "Last updated <date>" matches the schema dateModified
+  - hreflang alternates, when present, include the page itself and point only at indexable pages
 Site-wide:
   - sitemap.xml lists exactly the indexable pages; lastmod is an ISO date and,
     for articles, equals dateModified
@@ -52,6 +54,8 @@ APP = BASE + "/#app"
 REQUIRED_FOOTER_TEXT = ""
 MAX_DESCRIPTION = 160
 MAX_TITLE = 60
+# Language folders (tools/i18n.py builds them from the English pages). Each one's index.html is a homepage.
+LANGS = ["uk", "ja", "de", "fr", "es", "ko"]
 
 
 class Page(HTMLParser):
@@ -62,6 +66,7 @@ class Page(HTMLParser):
         self.robots = ""
         self.canonicals: list[str] = []
         self.md_alternates: list[str] = []
+        self.hreflangs: dict[str, str] = {}
         self.h1 = 0
         self.imgs: list[dict] = []
         self.hrefs: list[str] = []
@@ -82,6 +87,8 @@ class Page(HTMLParser):
             self.canonicals.append(a.get("href", ""))
         elif tag == "link" and a.get("rel") == "alternate" and a.get("type") == "text/markdown":
             self.md_alternates.append(a.get("href", ""))
+        elif tag == "link" and a.get("rel") == "alternate" and a.get("hreflang"):
+            self.hreflangs[a["hreflang"]] = a.get("href", "")
         elif tag == "h1":
             self.h1 += 1
         elif tag == "img":
@@ -131,8 +138,12 @@ def iso(value) -> date | None:
         return None
 
 
+def is_home(name: str) -> bool:
+    return name == "index.html" or name.endswith("/index.html")
+
+
 def page_url(name: str) -> str:
-    return BASE + "/" + ("" if name == "index.html" else name)
+    return BASE + "/" + (name[: -len("index.html")] if is_home(name) else name)
 
 
 def collect_ids(node, out: set[str], refs: set[str]):
@@ -167,7 +178,7 @@ def check_schema(name: str, p: Page, text: str) -> str | None:
     for need in (ORG, SITE):
         if need not in defined:
             err(name, f"@graph does not define {need}")
-    allowed_external = {APP} if name != "index.html" else set()
+    allowed_external = {APP} if not is_home(name) else set()
     for ref in sorted(refs - defined - allowed_external):
         err(name, f"@id reference does not resolve in this page: {ref}")
 
@@ -188,15 +199,15 @@ def check_schema(name: str, p: Page, text: str) -> str | None:
             if not n.get("headline"):
                 err(name, "Article has no headline")
             modified = n.get("dateModified")
-        elif t == "WebPage" and name != "index.html":
+        elif t == "WebPage" and not is_home(name):
             if n.get("isPartOf") != {"@id": SITE}:
                 err(name, f'WebPage isPartOf should be {{"@id": "{SITE}"}}')
             modified = modified or n.get("dateModified")
-        elif t == "BreadcrumbList" and name != "index.html":
+        elif t == "BreadcrumbList" and not is_home(name):
             if n.get("@id") != url + "#breadcrumb":
                 err(name, f"BreadcrumbList @id should be {url}#breadcrumb")
         elif t == "FAQPage":
-            if name != "index.html" and n.get("@id") != url + "#faq":
+            if not is_home(name) and n.get("@id") != url + "#faq":
                 err(name, f"FAQPage @id should be {url}#faq")
             visible = set(p.summaries)
             for q in n.get("mainEntity", []):
@@ -247,6 +258,9 @@ def check_page(name: str) -> tuple[bool, str | None]:
         err(name, "required footer line is missing")
     if "__" in text and re.search(r"__[A-Z_]+__", text):
         err(name, f"unfilled template token: {re.search(r'__[A-Z_]+__', text).group(0)}")
+    if p.hreflangs and url not in p.hreflangs.values():
+        err(name, "hreflang alternates do not include the page itself")
+    hreflang_targets[name] = set(p.hreflangs.values())
     return True, check_schema(name, p, text)
 
 
@@ -284,12 +298,21 @@ def check_llms(pages: dict[str, str | None]):
             err("llms.txt", f"no [title](url) link to {name}")
 
 
+hreflang_targets: dict[str, set[str]] = {}
+
+
 def main() -> int:
     pages: dict[str, str | None] = {}
-    for f in sorted(ROOT.glob("*.html")):
-        indexable, modified = check_page(f.name)
+    files = sorted(ROOT.glob("*.html")) + [f for lang in LANGS for f in sorted((ROOT / lang).glob("*.html"))]
+    for f in files:
+        name = f.relative_to(ROOT).as_posix()
+        indexable, modified = check_page(name)
         if indexable:
-            pages[f.name] = modified
+            pages[name] = modified
+    known = {page_url(n) for n in pages}
+    for name, targets in hreflang_targets.items():
+        for href in sorted(targets - known):
+            err(name, f"hreflang points at a page that is not indexable or does not exist: {href}")
     check_sitemap(pages)
     check_llms(pages)
 

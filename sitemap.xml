@@ -1,11 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://biotide.app/</loc>
         <lastmod>2026-11-23</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://biotide.app/"/>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://biotide.app/uk/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://biotide.app/ja/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://biotide.app/de/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://biotide.app/fr/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://biotide.app/es/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://biotide.app/ko/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://biotide.app/"/>
+    </url>
+    <url>
+        <loc>https://biotide.app/uk/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://biotide.app/"/>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://biotide.app/uk/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://biotide.app/ja/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://biotide.app/de/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://biotide.app/fr/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://biotide.app/es/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://biotide.app/ko/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://biotide.app/"/>
+    </url>
+    <url>
+        <loc>https://biotide.app/ja/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://biotide.app/"/>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://biotide.app/uk/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://biotide.app/ja/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://biotide.app/de/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://biotide.app/fr/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://biotide.app/es/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://biotide.app/ko/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://biotide.app/"/>
+    </url>
+    <url>
+        <loc>https://biotide.app/de/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://biotide.app/"/>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://biotide.app/uk/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://biotide.app/ja/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://biotide.app/de/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://biotide.app/fr/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://biotide.app/es/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://biotide.app/ko/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://biotide.app/"/>
+    </url>
+    <url>
+        <loc>https://biotide.app/fr/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://biotide.app/"/>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://biotide.app/uk/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://biotide.app/ja/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://biotide.app/de/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://biotide.app/fr/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://biotide.app/es/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://biotide.app/ko/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://biotide.app/"/>
+    </url>
+    <url>
+        <loc>https://biotide.app/es/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://biotide.app/"/>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://biotide.app/uk/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://biotide.app/ja/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://biotide.app/de/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://biotide.app/fr/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://biotide.app/es/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://biotide.app/ko/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://biotide.app/"/>
+    </url>
+    <url>
+        <loc>https://biotide.app/ko/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://biotide.app/"/>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://biotide.app/uk/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://biotide.app/ja/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://biotide.app/de/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://biotide.app/fr/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://biotide.app/es/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://biotide.app/ko/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://biotide.app/"/>
     </url>
     <url>
         <loc>https://biotide.app/privacy.html</loc>
         <lastmod>2026-11-23</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://biotide.app/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://biotide.app/uk/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://biotide.app/ja/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://biotide.app/de/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://biotide.app/fr/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://biotide.app/es/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://biotide.app/ko/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://biotide.app/privacy.html"/>
+    </url>
+    <url>
+        <loc>https://biotide.app/uk/privacy.html</loc>
+        <lastmod>2026-11-23</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://biotide.app/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://biotide.app/uk/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://biotide.app/ja/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://biotide.app/de/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://biotide.app/fr/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://biotide.app/es/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://biotide.app/ko/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://biotide.app/privacy.html"/>
+    </url>
+    <url>
+        <loc>https://biotide.app/ja/privacy.html</loc>
+        <lastmod>2026-11-23</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://biotide.app/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://biotide.app/uk/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://biotide.app/ja/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://biotide.app/de/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://biotide.app/fr/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://biotide.app/es/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://biotide.app/ko/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://biotide.app/privacy.html"/>
+    </url>
+    <url>
+        <loc>https://biotide.app/de/privacy.html</loc>
+        <lastmod>2026-11-23</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://biotide.app/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://biotide.app/uk/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://biotide.app/ja/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://biotide.app/de/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://biotide.app/fr/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://biotide.app/es/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://biotide.app/ko/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://biotide.app/privacy.html"/>
+    </url>
+    <url>
+        <loc>https://biotide.app/fr/privacy.html</loc>
+        <lastmod>2026-11-23</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://biotide.app/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://biotide.app/uk/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://biotide.app/ja/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://biotide.app/de/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://biotide.app/fr/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://biotide.app/es/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://biotide.app/ko/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://biotide.app/privacy.html"/>
+    </url>
+    <url>
+        <loc>https://biotide.app/es/privacy.html</loc>
+        <lastmod>2026-11-23</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://biotide.app/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://biotide.app/uk/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://biotide.app/ja/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://biotide.app/de/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://biotide.app/fr/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://biotide.app/es/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://biotide.app/ko/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://biotide.app/privacy.html"/>
+    </url>
+    <url>
+        <loc>https://biotide.app/ko/privacy.html</loc>
+        <lastmod>2026-11-23</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://biotide.app/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://biotide.app/uk/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://biotide.app/ja/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://biotide.app/de/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://biotide.app/fr/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://biotide.app/es/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://biotide.app/ko/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://biotide.app/privacy.html"/>
     </url>
 </urlset>

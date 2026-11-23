@@ -8,7 +8,7 @@
     <meta name="theme-color" content="#0f1217" media="(prefers-color-scheme: dark)">
     <link rel="preload" href="fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="themes/default.css?v=2">
-    <link rel="stylesheet" href="styles.css?v=10">
+    <link rel="stylesheet" href="styles.css?v=13">
     <link rel="stylesheet" href="scrollcraft.css?v=1">
     <link rel="stylesheet" href="landing.css?v=2">
     <!-- Title: under 60 characters, brand + what it is + platform. Add "Official Site" only if other products share the name. -->
@@ -20,6 +20,16 @@
     <script>try{document.documentElement.dataset.theme=localStorage.getItem('biotide_theme')||'system'}catch(e){document.documentElement.dataset.theme='system'}</script>
     <link rel="canonical" href="https://biotide.app/">
     <link rel="alternate" type="text/markdown" href="https://biotide.app/index.html.md" title="Markdown version for AI agents">
+    <!-- hreflang (tools/i18n.py build) -->
+    <link rel="alternate" hreflang="en" href="https://biotide.app/">
+    <link rel="alternate" hreflang="uk" href="https://biotide.app/uk/">
+    <link rel="alternate" hreflang="ja" href="https://biotide.app/ja/">
+    <link rel="alternate" hreflang="de" href="https://biotide.app/de/">
+    <link rel="alternate" hreflang="fr" href="https://biotide.app/fr/">
+    <link rel="alternate" hreflang="es" href="https://biotide.app/es/">
+    <link rel="alternate" hreflang="ko" href="https://biotide.app/ko/">
+    <link rel="alternate" hreflang="x-default" href="https://biotide.app/">
+    <!-- /hreflang -->
 
     <!-- Open Graph -->
     <meta property="og:title" content="Biotide: Daily Biorhythm Chart & Energy Tracker">
@@ -32,6 +42,12 @@
     <meta property="og:image:alt" content="Biotide's icon and the headline Check if it's really your rhythm beside an iPhone showing the app's Today screen">
     <meta property="og:site_name" content="Biotide">
     <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="uk_UA">
+    <meta property="og:locale:alternate" content="ja_JP">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="ko_KR">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
@@ -280,8 +296,6 @@
             <a href="/#faq">FAQ</a>
             <!-- On release day: <a class="nav-cta" href="https://apps.apple.com/app/id6829585627" data-cta="nav">Get the app</a> -->
         </nav>
-        <!-- Language menu (built 2026-11-23; styles.css .lang-menu, site.js "languages"). Switch it on together with
-             the translated pages, listing only the languages that have them:
         <details class="lang-menu">
             <summary aria-label="Language: English">
                 <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.25"/><path d="M2.75 12h18.5M12 2.75c2.5 2.6 3.75 5.7 3.75 9.25S14.5 18.65 12 21.25M12 2.75C9.5 5.35 8.25 8.45 8.25 12s1.25 6.65 3.75 9.25"/></svg>
@@ -300,7 +314,6 @@
                 </ul>
             </div>
         </details>
-        -->
         <div class="theme-toggle">
         <fieldset class="theme-toggle-group">
             <legend class="visually-hidden">Theme</legend>
@@ -695,6 +708,6 @@
 <script src="site.js?v=4"></script>
 <script src="scrollcraft.js?v=1"></script>
 <script>ScrollCraft.mount(document.body);</script>
-<script src="landing.js?v=1"></script>
+<script src="landing.js?v=2"></script>
 </body>
 </html>

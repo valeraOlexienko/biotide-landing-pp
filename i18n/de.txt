@@ -1,0 +1,283 @@
+# German ("du", as in the app). "<id> <translation>"; ids from tools/i18n.py extract. Names in the screens: Anna, Papa, Max.
+@ogLocale de_DE
+@og.headline Prüfe, ob es wirklich dein Rhythmus ist
+@og.line Ein tägliches Biorhythmus-Diagramm, das die drei klassischen Kurven an deinem echten Befinden prüft. Fürs iPhone.
+@menuLabel Sprache
+@privacyNote Dies ist eine Übersetzung zur besseren Verständlichkeit. Rechtlich maßgeblich ist die <a href="/privacy.html" hreflang="en">englische Fassung</a>.
+@banner.msg Wir verwenden Cookies für Analysen, um die Website zu verbessern
+@banner.accept Akzeptieren
+@banner.reject Ablehnen
+@banner.ok OK
+@banner.turnOff Ausschalten
+615886c0 Biotide: Biorhythmus-Diagramm und Energie-Tracker
+e8fa8779 Tägliches Biorhythmus-Diagramm und Energie-Tracker fürs iPhone, der die drei Zyklen an deinem Befinden prüft, mit Partnervergleich und besten Tagen.
+b9692d32 Markdown-Version für KI-Agenten
+d98aaff4 Das Biotide-Icon und die Überschrift „Prüfe, ob es wirklich dein Rhythmus ist“ neben einem iPhone mit dem Heute-Bildschirm der App
+7f858ab4 Zum Inhalt springen
+1d2774fa Hauptmenü
+0c8d1cb6 Funktionen
+4e75fde8 So funktioniert’s
+7d4f187b Preise
+43aec685 FAQ
+5b54bb80 Darstellung
+0bff4b46 Hell
+a9ec4c46 Dunkel
+5763a1b7 Wie im System
+da2ba6dc Analyse-Einstellungen
+4122af50 Wir verwenden Cookies für Analysen, um die Website zu verbessern
+93b92fb3 Akzeptieren
+706b1c58 Ablehnen
+c4380c9c <span class="hero-kicker">Tägliches Biorhythmus-Diagramm &amp; Energie-Tracker</span> Prüfe, ob es wirklich dein Rhythmus ist
+0673ca82 Biotide zeichnet deine drei Biorhythmus-Zyklen aus deinem Geburtsdatum und prüft sie dann an dir. Ein Eintrag von dreißig Sekunden jeden Abend zeigt, welche Kurven zu deinem echten Befinden passen, und nur die passenden prägen deine Tagesdeutung und deine besten Tage. Fürs iPhone.
+a50a5aa4 Bald im App&nbsp;Store
+72dda506 So funktioniert’s
+543d68c2 Auf einen Blick
+c6fbb954 Kostenlos laden
+74cba0db Keine Werbung, kein Konto
+714e3dd8 Daten bleiben auf deinem Gerät
+7d85838d iOS 26 oder neuer
+59a2a445 Zum Nachdenken und Planen. Biorhythmen sind keine bewiesene Wissenschaft und kein medizinischer Rat.
+28ef9681 Das tägliche Biorhythmus-Diagramm von Biotide für Dienstag, 10. November: körperlich 0, emotional +78, intellektuell −37, die drei Kurven über den Monat und der Tag in Worten: ein Übergangstag (körperlich), gut für Zeit mit Menschen
+d05307b1 Die meisten Biorhythmus-Apps sagen dir etwas. Biotide fragt dich.
+568e6f6b Die drei Kurven sind die Vermutung der Theorie. Deine abendlichen Einträge sind der Test: Energie, Stimmung, Fokus und Schlaf, jeweils von 1 bis 5. Nach 14 Einträgen zeigt Biotide Plus, wie oft jede Kurve zu deinem Befinden gepasst hat. Eine Kurve, die passt, behält ihr Gewicht; eine, die nicht passt, zählt in Tagesdeutungen und Plänen weniger und kann ganz wegfallen. Auch deine Schlaf- und Herzsignale aus Apple Health können mitprüfen.
+83336bea Was in der App steckt
+c1902e17 Der klassische Biorhythmus-Rechner und sein Diagramm, jeden Abend an dir geprüft.
+63db0b02 Ist es wirklich dein Rhythmus?
+7df35410 Mit Plus zeigt Biotide nach 14 Einträgen, wie oft jede Kurve zu deinem Befinden gepasst hat. Eine Kurve, die nicht zu dir passt, zählt in Tagesdeutungen und Plänen weniger und kann ganz wegfallen.
+d439e8aa Tägliches Biorhythmus-Diagramm
+1c3b0964 Körperliche, emotionale und intellektuelle Werte für jeden Tag, berechnet aus deinem Geburtsdatum. Zieh das Diagramm durch die Zeit, von einer Woche bis zu drei Monaten auf einen Blick.
+41a2f830 Dein Tag in Worten
+fa7b4fe5 Eine kurze Deutung, wofür der Tag gut ist und wobei du sachte sein solltest, mit Übergangstagen, den klassischen „kritischen Tagen“, schon vorher markiert.
+aaeb0894 Eintrag in dreißig Sekunden
+9e7523c4 Bewerte jeden Abend Energie, Stimmung, Fokus und den Schlaf der letzten Nacht von 1 bis 5. Eine sanfte Erinnerung hilft und lässt Tage aus, die du schon eingetragen hast.
+5ca5ea19 Beste Tage, mit Plus
+bc660fc9 Wähle, was ansteht, von einer Prüfung oder einem Vorstellungsgespräch bis zu einem Date, einem Wettkampf oder einem wichtigen Gespräch, und erhalte die besten Tage der nächsten 30, 60 oder 90 Tage. Hast du schon einen Termin? Sieh, wie er aussieht und ob ein Tag in der Nähe besser ist.
+c45b72da Biorhythmus-Vergleich, mit Plus
+f92477bd Füge Menschen per Geburtstag hinzu oder hol sie aus deinen Kontakten. Sieh, wie eure Zyklen zusammenpassen, als Prozentwert, Tag für Tag, mit dem nächsten guten Tag zum Reden.
+2239321a Apple Health, mit Plus
+df0035d7 Schlaf, Herzfrequenzvariabilität, Ruhepuls und Atemfrequenz, verglichen mit deinem eigenen Üblichen, nie mit Normwerten. Nach 14 Tagen prüft dein Körper auch die körperliche Kurve. Nur lesend, und nichts verlässt dein Gerät.
+6e933130 Frag Tidy, mit Plus
+b399554f Frag in einfachen Worten nach deinen Tagen, etwa „When&rsquo;s a good day for a hard talk with Anna?“. Die Antwort kommt aus deinen eigenen Daten und wird auf deinem iPhone von Apples On-Device-Modell formuliert. Auf Englisch, auf iPhones mit Apple Intelligence.
+739a4619 Widgets, mit Plus
+c8ea78ca Dein Tag, deine Tage mit jemandem, eure Kurven und deine Lieblingsmenschen, auf dem Home-Bildschirm und dem Sperrbildschirm.
+7bbc7499 Datenschutz
+7a119ecc Kein Konto und keine Werbung. Deine Daten bleiben auf deinem Gerät oder in deiner eigenen iCloud, wenn du den Sync mit Plus einschaltest. Die App zählt, welche Bildschirme und Funktionen genutzt werden, nie, was du eingibst, und das lässt sich in den Einstellungen ausschalten.
+5e53a9f6 Sprachen
+7af19c21 Englisch, Ukrainisch, Japanisch, Deutsch, Französisch, Spanisch und Koreanisch.
+e3a6a54f Vom Geburtsdatum zu deinen besten Tagen, in drei Schritten.
+80247cfd Di., 10. Nov.
+8a5aaed4 Beste Tage für eine Prüfung
+40e20b7e Heute
+c2f52f65 Nov.
+f8d0d69b Wie oft jede Kurve gepasst hat
+3b304e6a Körperlich
+2941d461 passt
+1a54dcfe Emotional
+a2ae759a zählt weniger
+9ac83101 Intellektuell
+4a294939 Beispieldaten wie auf den Bildschirmen: die Zyklen für den Geburtstag 12. März 1988, zwei Wochen Einträge und die besten Tage für eine Prüfung. Die Schätzung der Kurven.
+28957453 Eintragen
+3366a143 Dein Geburtsdatum zeichnet die drei Kurven. Bewerte jeden Abend in etwa dreißig Sekunden Energie, Stimmung, Fokus und Schlaf, und jeder Eintrag landet im Diagramm.
+04d26e81 Sehen, was passt
+ebc2948d Nach 14 Einträgen zeigt Biotide, wie oft jede Kurve zu deinem Befinden gepasst hat. Hier passte die emotionale Kurve nur zu 57 %, also zählt sie weniger.
+a1fdc550 Vorausplanen
+d8cb445c Wähle eine Prüfung, ein Vorstellungsgespräch oder ein wichtiges Gespräch, und Biotide ordnet die kommenden Tage mit den Kurven, die zu dir passen: hier der 15., 17. und 19.
+61b7ddc7 Der Heute-Bildschirm von Biotide für Dienstag, 10. November: körperlich 0, emotional +78, intellektuell −37 und die drei Kurven über den Monat
+4659831b Der tägliche Eintrag: Energie, Stimmung, Fokus und Schlaf der letzten Nacht, jeweils von 1 bis 5, mit optionaler Notiz
+4444bb90 Einblicke: Signale aus Apple Health im Vergleich zu deinem Üblichen, Durchschnittswerte aus zwei Wochen Einträgen und wie oft jede Kurve zu deinen Einträgen und deinem Körper gepasst hat
+e84c37ca Beste Tage für eine Prüfung: die besten Tage der nächsten 30, der erste am Dienstag, 17. November
+4fa979ca Frag nach deinen Tagen
+d857f569 Tidy beantwortet Fragen zu deinen Kurven, Einträgen, deinem Schlaf und deinen Menschen, direkt auf deinem iPhone. Vorerst auf Englisch.
+31924809 Fragen, die du stellen kannst
+e9c8f25a Biotide findet die Antwort in deinen eigenen Daten und formuliert sie auf dem iPhone, mit Apples On-Device-Modell. Die Tage oder Kurven dahinter erscheinen unter der Antwort, mit einer Zeile, woher sie stammt. Nichts, was du fragst, verlässt dein iPhone.
+fc14389c Mit Biotide Plus, auf Englisch, auf iPhones mit Apple Intelligence.
+1a5342c0 Tidy, auf Englisch gefragt, wann ein guter Tag für ein schwieriges Gespräch mit Anna ist, antwortet Samstag, 5., und Montag, 7. Dezember, mit diesen Tagen unter der Antwort und der Zeile „The curves’ guess.“
+b8c4d543 Was es kostet
+006df28c Das Diagramm, dein Tag in Worten und der abendliche Eintrag bleiben kostenlos. Plus bringt die Menschen, die Planung und das, was deine Einträge sagen.
+4263d005 Kostenlos
+b784caaa Dein tägliches Diagramm, deine Tagesdeutung und deine Einträge.
+9a34a9d5 Tägliches Biorhythmus-Diagramm und dein Tag in Worten
+564fe6ba Der abendliche Eintrag, mit Erinnerung
+7a7bd889 Übergangstage, schon vorher markiert
+1c6b83c2 Daten als JSON oder CSV exportieren
+8b6d9503 Optional
+fcd5dc4f $0.99&nbsp;pro&nbsp;Woche · $2.99&nbsp;pro&nbsp;Monat · $19.99&nbsp;pro&nbsp;Jahr · $34.99&nbsp;einmalig
+8567fc4b Wöchentlich, monatlich oder jährlich, mit 3 Tagen gratis bei Monats- und Jahresabo, oder als Einmalkauf. Preise in den USA; der App Store zeigt deine.
+8b69b2c0 Menschen und Partnervergleich, aus den Kontakten oder per Geburtstag
+e4777dea Beste Tage und der Prognose-Kalender, allein oder mit jemandem
+8c35ce4e Wie oft jede Kurve zu dir passt, mit Tagesdeutungen und Plänen danach
+e932b104 Schlaf, Herzfrequenzvariabilität, Ruhepuls und Atmung aus Apple Health, verglichen mit deinem Üblichen
+2c32d54f Tidy, um nach deinen Tagen zu fragen, auf iPhones mit Apple Intelligence
+7d73e0eb iCloud-Sync und alle Widgets
+6e8f4741 Die Preise legt der App Store fest und zeigt sie vor dem Kauf in deiner Währung. Abos verlängern sich, bis du sie in den Einstellungen deines Apple Accounts kündigst.
+f38ba1ed Die App, Bildschirm für Bildschirm
+787fb4bf Echte Bildschirme der App mit Beispieldaten: Heute, der Eintrag, Einblicke, Beste Tage, ein Partnervergleich und Menschen.
+47f4ed4a iPhone-Bildschirmfotos
+e553072e Heute: die drei Zykluswerte und das tägliche Biorhythmus-Diagramm für den Monat
+bd1f0a1a Der tägliche Eintrag: Energie, Stimmung, Fokus und Schlaf, jeweils von 1 bis 5
+b693d80a Einblicke: Signale aus Apple Health im Vergleich zu deinem Üblichen und wie oft jede Kurve zu deinen Einträgen und deinem Körper gepasst hat
+64baba73 Beste Tage: die besten Tage der nächsten 30 für eine Prüfung
+92bcf90b Biorhythmus-Vergleich mit Anna: 46 % Passung, der Anteil jedes Zyklus, beide Kurven in einem Diagramm und ein Tagesstreifen für ein wichtiges Gespräch
+0739b398 Menschen: Anna mit Stern, dann Papa und Max, mit ihrer Passung und ihrem nächsten guten Tag zum Reden
+e98627b1 Offen gesagt
+9ff79d3a Die Biorhythmus-Theorie, beliebt seit den 1970ern, sagt, dass mit der Geburt drei Zyklen beginnen: körperlich über 23 Tage, emotional über 28 und intellektuell über 33. Als Forschende die Kurven mit Unfällen, Sportergebnissen, Prüfungsnoten und Stimmungen verglichen, schnitten sie nicht besser ab als der Zufall, und eine Übersichtsarbeit über 134 Studien kam 1998 zu dem Schluss, dass die Theorie nicht gestützt wird (Hines, <cite>Psychological Reports</cite>, 1998).
+7321f1ea Deshalb behandelt Biotide die Kurven als Ausgangsvermutung, die du prüfen kannst, nie als Vorhersage. Wie viel jede Kurve zählt, entscheiden deine eigenen Einträge. Signale aus Apple Health werden mit deinem Üblichen verglichen, nie mit Normwerten, und nichts wird diagnostiziert. Biotide dient dem Nachdenken und Planen und ist kein medizinischer Rat: Wenn es dir nicht gut geht, sprich mit einer Ärztin oder einem Arzt.
+ed036a1b Biotide auf einen Blick
+79192c7a Was es ist
+debc5fa5 Von wem
+e337f02b Von einem unabhängigen Entwickler. Dies ist die offizielle Website.
+0997cace Wo es das gibt
+3d5df5a0 Bald im App Store, fürs iPhone mit iOS 26 oder neuer. Eine iPad- oder Android-Version gibt es nicht.
+34145df5 Preis
+641ea437 Kostenlos laden, keine Werbung. Biotide Plus ist optional: wöchentlich, monatlich, jährlich oder als Einmalkauf.
+2974728a Konto
+2d054b31 Keins. Deine Daten bleiben auf deinem Gerät oder in deiner eigenen iCloud, wenn du den Sync einschaltest (Plus).
+af49ad81 Apple Health
+9da84627 Optional, mit Plus. Nur lesend: Schlaf, Herzfrequenzvariabilität, Ruhepuls und Atemfrequenz.
+3a6a185d Die Wissenschaft
+03257537 Die Biorhythmus-Theorie wird von der Forschung nicht gestützt. Biotide behandelt sie als Vermutung, die du an deinen eigenen Einträgen prüfst.
+7d2dc488 Häufige Fragen
+0ae1695f Was ist ein Biorhythmus?
+af5464f8 Ein Biorhythmus ist einer von drei Zyklen, die nach einer seit den 1970ern beliebten Theorie mit der Geburt beginnen: körperlich über 23 Tage, emotional über 28 Tage und intellektuell über 33 Tage. Biotide berechnet alle drei aus deinem Geburtsdatum und zeichnet sie als tägliches Biorhythmus-Diagramm.
+aaa4ac48 Was unterscheidet Biotide von anderen Biorhythmus-Apps?
+4a948a4a Die meisten Biorhythmus-Apps zeichnen die Kurven und sagen dir, wie dein Tag wird. Biotide fragt dich außerdem, mit einem abendlichen Eintrag von dreißig Sekunden zu Energie, Stimmung, Fokus und Schlaf. Mit Biotide Plus zeigt es nach 14 Einträgen, wie oft jede Kurve zu deinem Befinden gepasst hat, und eine Kurve, die nicht zu dir passt, zählt in Tagesdeutungen und Plänen weniger oder fällt ganz weg.
+376a1d2b Was sind kritische Tage im Biorhythmus?
+2dea38f5 Kritische Tage sind die Tage, an denen ein Zyklus die Null kreuzt, auf dem Weg von der oberen in die untere Hälfte oder zurück. Biotide nennt sie Übergangstage und markiert sie schon vorher; die Theorie hält sie für empfindliche Tage dieses Zyklus.
+720aa9b4 Wie funktioniert der Biorhythmus-Vergleich?
+8f5ca5d4 Biotide vergleicht deine drei Zyklen mit denen einer anderen Person, berechnet aus beiden Geburtstagen, und zeigt als Prozentwert, wie gut sie zusammenpassen. Außerdem zeigt es Tag für Tag, welche Tage für euch beide gut aussehen, etwa den nächsten guten Tag für ein wichtiges Gespräch. Der Vergleich gehört zu Biotide Plus.
+b712683a Was kostet Biotide?
+cd72ec53 Biotide ist kostenlos zu laden und ohne Werbung. Das heutige Diagramm, dein Tag in Worten, der abendliche Eintrag, Erinnerungen und der Export sind kostenlos. Biotide Plus, ein optionales Wochen-, Monats- oder Jahresabo oder ein Einmalkauf, bringt Menschen und Partnervergleich, beste Tage und den Prognose-Kalender, wie oft jede Kurve zu dir passt samt angepasster Tagesdeutung, Apple Health, Tidy, iCloud-Sync und alle Widgets.
+70cddb1c Kann ich Biotide Fragen zu meinen Tagen stellen?
+769cd52c Ja, mit Biotide Plus auf einem iPhone mit Apple Intelligence, auf Englisch. Frag Tidy etwa „When&rsquo;s a good day for a hard talk with Anna?“ oder „What&rsquo;s my day like tomorrow?“. Biotide sucht die Antwort in deinem Diagramm, deinen Einträgen, Signalen aus Apple Health und deinen Menschen, Apples On-Device-Modell formuliert sie, und die Tage oder Kurven dahinter erscheinen unter der Antwort. Deine Fragen verlassen nie das iPhone.
+a3942662 Sind meine Daten privat?
+ae277a10 Ja. Biotide hat kein Konto und keine eigenen Server: Geburtsdatum, Einträge und Menschen bleiben auf deinem Gerät oder in deiner eigenen iCloud, wenn du den Sync einschaltest. Apple-Health-Daten werden nur gelesen, nie geschrieben, und verlassen nie das Gerät, und Tidy antwortet direkt auf dem iPhone. Die App zählt über Google Analytics for Firebase, welche Bildschirme und Funktionen genutzt werden, nie, was du eingibst, und du kannst das in den Einstellungen ausschalten. Details stehen in der <a href="privacy.html">Datenschutzerklärung</a>.
+af46f447 Auf welchen Geräten läuft Biotide?
+bd4c8ad0 Auf dem iPhone mit iOS 26 oder neuer, mit Widgets für Home-Bildschirm und Sperrbildschirm. Eine iPad- oder Android-Version gibt es nicht.
+684856cf Wer macht Biotide?
+7a5de03a Biotide ist eine unabhängige App, und biotide.app ist ihre offizielle Website. Fragen an <a href="mailto:support@biotide.app">support@biotide.app</a>.
+05d1adb4 Prüf die Kurven an dir selbst.
+328e7a06 Bald im App Store fürs iPhone, kostenlos zu laden. Kein Konto, und deine Daten bleiben bei dir.
+8a33bd7d Bald im App Store
+1dd1599a Rubriken
+3de8c446 <a href="/#how">So funktioniert’s</a>
+0341559f <a href="/#pricing">Preise</a>
+459a3668 <a href="/#accuracy">Offen gesagt</a>
+67b8025c <a href="/#faq">FAQ</a>
+e478a390 Rechtliches
+2816654f <a href="privacy.html">Datenschutzerklärung</a>
+36454021 <a href="#" id="cookie-settings">Cookie-Einstellungen</a>
+40ab4658 Bitte beachten
+f52af66b Biotide dient dem Nachdenken und Planen. Die Biorhythmus-Theorie wird von der Forschung nicht gestützt, und nichts in der App ist medizinischer Rat.
+4415c64b &copy; <span id="year">2026</span> Biotide. Alle Rechte vorbehalten.
+59ab5dfc Tägliches Biorhythmus-Diagramm und Energie-Tracker fürs iPhone, der die drei Zyklen an deinem Befinden prüft, mit Partnervergleich und besten Tagen.
+aa7085b7 iOS 26 oder neuer
+058f16db Tägliches Biorhythmus-Diagramm: körperlicher, emotionaler und intellektueller Zyklus aus deinem Geburtsdatum
+41546d41 Übergangstage (kritische Tage), schon vorher markiert
+b1b52e1f Dein Tag in Worten: wofür er gut ist und wobei du sachte sein solltest
+5ca395a1 Täglicher Eintrag in dreißig Sekunden: Energie, Stimmung, Fokus und Schlaf
+e22b4186 Wie oft jede Kurve zu deinem Befinden gepasst hat, nach 14 Einträgen (Plus)
+5d8cdaff Beste Tage: die besten Tage für Prüfung, Vorstellungsgespräch, Date, Wettkampf oder wichtiges Gespräch (Plus)
+667fc1a2 Biorhythmus-Vergleich mit den Menschen um dich, aus den Kontakten oder per Geburtstag (Plus)
+174374c3 Schlaf, Herzfrequenzvariabilität, Ruhepuls und Atemfrequenz aus Apple Health im Vergleich zu deinem Üblichen, und als zweite Prüfung der körperlichen Kurve (Plus)
+2eb2cdbd Tidy: Fragen zu deinen Tagen, auf dem iPhone von Apples On-Device-Modell beantwortet, auf Englisch, auf iPhones mit Apple Intelligence (Plus)
+4b80e787 Widgets für Home- und Sperrbildschirm: dein Tag, deine Tage mit jemandem, eure Kurven und deine Menschen (Plus)
+46c347b0 iCloud-Sync, aus, bis du ihn einschaltest (Plus)
+6c560b69 Kein Konto und keine Werbung; anonyme Nutzungsstatistik, die du ausschalten kannst
+0fa9aadb Heute: die drei Zykluswerte, ihre Kurven über den Monat und der Tag in Worten
+e87ac2d5 Der tägliche Eintrag: Energie, Stimmung, Fokus und Schlaf, jeweils von 1 bis 5
+e6e8c8fc Einblicke: Signale aus Apple Health im Vergleich zu deinem Üblichen und wie oft jede Kurve zu deinen Einträgen und deinem Körper gepasst hat
+86383fab Beste Tage: die besten Tage des nächsten Monats für eine Prüfung, ein Gespräch oder einen Wettkampf
+43da9bf8 Partnervergleich: wie die Zyklen zweier Menschen zusammenpassen, und die guten Tage für beide
+1f2725c4 Menschen: alle, die du hinzugefügt hast, mit ihrer Passung und ihrem nächsten guten Tag zum Reden
+2b57fc45 Start
+4559ed00 Datenschutzerklärung | Biotide
+82d864a4 Datenschutzerklärung von Biotide: kein Konto nötig, Daten bleiben auf deinem Gerät, und wie die Website biotide.app Besuche misst.
+358f6666 Datenschutzerklärung - Biotide
+2509b5f8 Datenschutzerklärung für Biotide. Kein Konto nötig, und deine Daten bleiben auf deinem Gerät.
+00b9f69b Zurück zur Startseite
+bdc121ce Datenschutzerklärung
+0cbd2240 Zuletzt aktualisiert: 23. November 2026
+18cc376d Biotide („wir“, „unser“ oder „die App“) schützt deine Privatsphäre. Diese Datenschutzerklärung erklärt, welche Informationen wir und unsere Dienstleister verarbeiten, wenn du unsere iOS-App, die Website biotide.app und zugehörige Dienste nutzt.
+f3161265 <strong>Kurz gesagt:</strong> Biotide hat kein Konto, keinen eigenen Server und keine Werbung. Was du eingibst und was die App aus Apple Health liest, bleibt auf deinem Gerät. Wir sehen es nie. Die App zählt, welche ihrer Bildschirme und Funktionen genutzt werden, ohne irgendwelche dieser Daten, und du kannst das in den Einstellungen ausschalten.
+52454d3b Welche Informationen wir erheben
+f0d0170a Biotide erfordert keine Registrierung und keine Anmeldung.
+27a2681a <strong>Nur lokal auf deinem Gerät gespeichert:</strong>
+4fbd2e9d Dein Geburtsdatum, um deine drei Zyklen zu zeichnen
+5db8d2a0 Deine täglichen Einträge: Bewertungen von Energie, Stimmung, Fokus und Schlaf und eine optionale Notiz
+60d82bbf Die Menschen, die du hinzufügst: Name, Geburtstag, Beziehung und ein Foto, wenn du eines wählst
+55c05fd3 App-Einstellungen, etwa Uhrzeiten von Erinnerungen
+b6e1a205 Diese Informationen liegen im privaten Speicher der App auf deinem Gerät. Die Widgets lesen dein Geburtsdatum aus einem Speicherbereich, den nur Biotide und seine Widgets teilen.
+2ad7751b Wenn du Apple Health verbindest (Teil von Biotide Plus), liest Biotide vier Datentypen: Schlafanalyse, Herzfrequenzvariabilität, Ruhepuls und Atemfrequenz. Nichts wird gelesen, bevor du es im Berechtigungsdialog des Systems erlaubst. Biotide vergleicht diese Werte auf deinem Gerät mit deinen eigenen vorherigen 28 Tagen und zeigt das Ergebnis in der App. Sobald 14 Tage davon vorliegen, nutzt es sie auf deinem Gerät auch, um zu prüfen, wie gut deine körperliche Kurve zu dir passt.
+d5fd3082 Biotide schreibt nie in Apple Health, kopiert nie Health-Daten von deinem Gerät, speichert sie nie in iCloud und nutzt sie nie für Werbung oder teilt sie mit jemandem. Du kannst den Zugriff jederzeit in der Health-App oder unter Einstellungen, Datenschutz &amp; Sicherheit, Health ausschalten.
+2e0c6b63 Tidy
+321f1a78 Tidy, Teil von Biotide Plus auf iPhones mit Apple Intelligence, beantwortet Fragen zu deinen Tagen. Biotide sucht die Antwort in den Daten, die schon auf deinem Gerät sind, und Apples On-Device-Sprachmodell formuliert sie. Deine Fragen und Tidys Antworten werden auf deinem iPhone verarbeitet, nie an uns oder sonst jemanden gesendet und nach dem Schließen von Tidy nicht aufbewahrt.
+d4ecdc53 Kontakte
+aaf5b3ae Wenn du es erlaubst, liest Biotide die Namen, Geburtstage und Fotos in deinen Kontakten, um unter Menschen alle mit Geburtstag zu zeigen. iOS lässt dich alle Kontakte oder nur ausgewählte freigeben, und du kannst das jederzeit in den Einstellungen ändern. Was Biotide speichert, bleibt auf deinem Gerät und wird nie hochgeladen. Du kannst auch eine einzelne Person über die Kontaktauswahl des Systems hinzufügen, die Biotide nur diesen Kontakt gibt.
+ad89c217 iCloud-Sync
+8b12b922 Der iCloud-Sync, Teil von Biotide Plus, ist aus, bis du ihn in den Einstellungen der App unter „Daten &amp; Sync“ einschaltest. Ist er an, werden dein Geburtsdatum, deine Einträge und die Menschen, die du hinzugefügt hast (mit einem gewählten Foto), über Apples CloudKit in deiner eigenen privaten iCloud-Datenbank gespeichert, damit deine anderen Apple-Geräte sie zeigen können. Diesen Sync betreibt Apple, nicht wir, und es gilt die <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Datenschutzrichtlinie von Apple</a>. Wir können deine iCloud nicht lesen. Apple-Health-Daten, Kontaktfotos und deine Kontakte selbst werden nie synchronisiert. Wenn du den Sync ausschaltest, kannst du wählen, ob die Daten von Biotide aus iCloud gelöscht werden.
+f245ecb2 Kalender und Mitteilungen
+1fe61e90 Einen Tag in den Kalender einzutragen nutzt den Kalender-Editor des Systems; Biotide liest deinen Kalender nicht. Erinnerungen und Hinweise zu Übergangstagen werden auf deinem Gerät geplant, und du kannst sie in der App oder in den Einstellungen ausschalten.
+5b89fda8 Käufe
+b9f5c93c Abos von Biotide Plus und der Einmalkauf werden von Apple über den App Store abgewickelt. Wir erhalten weder deine Zahlungsdaten noch deine Apple-ID oder deinen Namen; die App erfährt nur, ob Plus für deinen Account aktiv ist.
+7b6fcd63 Nutzungsstatistik in der App
+3a59fd83 Die App teilt uns mit, welche ihrer Bildschirme und Funktionen genutzt werden, damit wir wissen, was wir verbessern sollten. Das geschieht über Google Analytics for Firebase, einen Dienst von Google. Sie ist an, bis du sie ausschaltest.
+d081037d <strong>Was gesendet wird:</strong> Ereignisse wie das Speichern eines Eintrags (nie seine Bewertungen oder Notiz), die Nutzung eines Zoom-Chips im Diagramm oder eines Menüs in „Planen“, das Hinzufügen einer Person (nie wer), das Verbinden von Apple Health, ein abgeschlossener Kauf oder eine Wiederherstellung und welche Bildschirme geöffnet werden; dazu einige Einstellungen in groben Stufen, etwa ob Erinnerungen, Apple Health oder der iCloud-Sync an sind, welches Abo du hast und wie viele Menschen oder Einträge du hast, als Bereich. Firebase fügt eine zufällige App-Instanz-ID, das Gerätemodell, die iOS- und App-Version, die Sprache und einen ungefähren Standort (Land oder Region) hinzu, den Google aus der Netzwerkadresse ableitet.
+0df1f4c1 <strong>Was nie gesendet wird:</strong> dein Geburtsdatum oder Alter, die Bewertungen und Notizen deiner Einträge, jeder Wert aus Apple Health, alles über die Menschen, die du hinzufügst (Namen, Geburtstage, Fotos, Passung in Prozent), die Daten, die du ansiehst, was du Tidy fragst, oder sonst etwas, das du eingibst. Die App sendet nur eine feste Liste von Ereignisnamen und Werten, ohne Möglichkeit, freien Text zu übertragen.
+10dca4d0 <strong>Keine Werbung und kein Tracking:</strong> Die App nutzt die Werbe-ID (IDFA) nicht, Google Signals und Datenweitergabe sind ausgeschaltet, und diese Daten werden nicht mit Daten aus Apps oder Websites anderer Unternehmen zusammengeführt.
+b2b5d566 <strong>Speicherdauer:</strong> Google Analytics bewahrt die Ereignisdaten 14 Monate auf; wir sehen sie nur als Summen.
+684bfccb <strong>Ausschalten:</strong> Schalte <em>Nutzungsstatistik teilen</em> in den Einstellungen der App unter „Daten &amp; Sync“ aus; dann sendet die App nichts mehr und bittet Google Analytics, die auf diesem Gerät erhobenen Daten zu löschen.
+f8d72260 Externe Dienstleister
+30202cad Je nachdem, wie du die App und diese Website nutzt, können folgende Dritte Daten verarbeiten:
+445e0051 <strong>Apple</strong> — Vertrieb über den App Store und, falls eingeschaltet, der iCloud-Sync — <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Datenschutzrichtlinie</a>
+04fb3f80 <strong>Google (Firebase)</strong> — Google Analytics for Firebase, die Nutzungsstatistik der App (in den Einstellungen abschaltbar) — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Datenschutzerklärung von Google</a>
+68c09df9 <strong>Google Analytics</strong> — optionale Analyse dieser Website (die Nutzungsstatistik der App ist oben beschrieben) — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Datenschutzerklärung von Google</a>
+9bedb2c3 <strong>Cloudflare Web Analytics</strong> — cookielose, zusammengefasste Seitenaufrufe nur auf dieser Website (nicht in der App); setzt keine Cookies, speichert nichts in deinem Browser und identifiziert oder verfolgt dich nicht über Websites hinweg — <a href="https://www.cloudflare.com/web-analytics/" target="_blank" rel="noopener">Cloudflare Web Analytics</a>
+81047b29 Website-Analyse und Einwilligung
+85921f72 Diese Website nutzt ein optionales Messwerkzeug, Google Analytics, das uns zeigt, wie die Website genutzt wird. Ob es läuft, bevor du eine Wahl triffst, hängt davon ab, wo du bist:
+1c8235f8 <strong>Europäischer Wirtschaftsraum:</strong> Google Analytics wird erst geladen, wenn du im Banner „Akzeptieren“ wählst.
+fd3a9b3a <strong>Vereinigtes Königreich:</strong> Google Analytics läuft ab dem ersten Seitenaufruf, um zusammengefasste Statistiken zu erstellen, die uns helfen, die Website zu verbessern, wie es das britische Recht erlaubt, mit ausgeschalteten Google Signals und ausgeschalteter Anzeigenpersonalisierung. „Ausschalten“ deaktiviert es.
+3a05309e <strong>Schweiz und überall sonst:</strong> Google Analytics läuft ab dem ersten Seitenaufruf, und im Banner kannst du es ausschalten.
+089a6542 Deine Wahl wird in deinem Browser gespeichert und gilt für spätere Besuche. Die Region bestimmen wir anhand der Zeitzone und der Spracheinstellungen deines Geräts, wobei unklare europäische Fälle nach den Regeln des Europäischen Wirtschaftsraums behandelt werden, und der Consent Mode von Google wendet zusätzlich die Voreinstellung des Europäischen Wirtschaftsraums anhand deines Netzwerkstandorts an. Diese Website ändert ihr Verhalten nicht aufgrund von Do-Not-Track-Signalen des Browsers; nutze stattdessen die „Cookie-Einstellungen“.
+cff84b70 Wenn es läuft, kann Google Analytics die aufgerufene Seite, die verweisende Seite, den Zeitpunkt, Browser- und Gerätemerkmale, die Bildschirmgröße, einen aus der Netzwerkanfrage abgeleiteten ungefähren Standort und Klicks auf App-Store-Links verarbeiten. Es erhält weder deinen Namen noch deine E-Mail-Adresse noch etwas aus der App. Wir zeigen weder auf dieser Website noch in der App Werbung.
+70c51ba1 Du kannst deine Wahl jederzeit über die „Cookie-Einstellungen“ in der Fußzeile ändern. Wenn du die Analyse ausschaltest, nachdem sie lief, werden sofort keine weiteren Analyse-Ereignisse mehr erfasst und die Seite wird ohne das Google-Analytics-Skript neu geladen.
+3044987d Unabhängig von Google Analytics zählt diese Website Seitenaufrufe mit Cloudflare Web Analytics. Das läuft ohne Banner, weil es keine Cookies nutzt, nichts auf deinem Gerät speichert und kein Profil von dir erstellt: Cloudflare erhält die aufgerufene Seite, die verweisende Seite sowie grobe Browser- und Länderangaben und meldet sie uns nur als Gesamtsummen.
+4c8d5a32 Daten, die wir nicht erheben
+2488a5a4 Wir erhalten nie deinen Namen, deine E-Mail-Adresse, Telefonnummer, Anschrift oder andere identifizierende Informationen. Die Namen und Geburtstage, die du für Menschen eingibst, bleiben auf deinem Gerät.
+c21edbd3 Wir verlangen keine Kontoerstellung und keine Anmeldung.
+9e9ba7e9 Wir verkaufen, vermieten oder tauschen keine Daten mit Dritten, weder für Werbung noch für einen anderen Zweck.
+3a3b6de8 Wir verwenden in der iOS-App keine Cookies, und sie verfolgt dich nicht über Apps oder Websites anderer Unternehmen hinweg.
+bd9e621a Speicherung und deine Kontrolle
+566a7f42 Alle App-Daten werden lokal auf deinem Gerät gespeichert (und in deiner eigenen iCloud, wenn du den Sync eingeschaltet hast). Du hast sie jederzeit in der Hand:
+58297893 Einzelne Einträge und Menschen in der App bearbeiten oder löschen
+cabf1fab Alles als JSON oder deine Einträge als CSV exportieren, in den Einstellungen der App unter „Daten &amp; Sync“
+61b4b7b1 Alle Daten der App am selben Ort löschen; mit eingeschaltetem iCloud-Sync auch aus iCloud
+0c634620 Die App löschen, was ihre Daten auf diesem Gerät löscht
+9ad6d0aa Nutzer in Europa (DSGVO)
+52a33592 Wenn du dich im Europäischen Wirtschaftsraum, im Vereinigten Königreich oder in der Schweiz befindest, hast du nach der Datenschutz-Grundverordnung folgende Rechte bezüglich personenbezogener Daten, die wir über dich verarbeiten (beschränkt auf die Nutzungsstatistik der App und die oben beschriebene Messung der Website; alles andere in der App bleibt auf deinem Gerät):
+0c4cf6ca <strong>Auskunftsrecht</strong> — eine Kopie der Daten anfordern, die wir haben
+dc207704 <strong>Recht auf Berichtigung</strong> — die Korrektur unrichtiger Daten verlangen
+6070a0c3 <strong>Recht auf Löschung</strong> — die Löschung deiner Daten verlangen
+8b17a11e <strong>Recht auf Einschränkung der Verarbeitung oder Widerspruch</strong>
+6f2d75d9 <strong>Recht auf Datenübertragbarkeit</strong>
+85e60252 <strong>Recht auf Beschwerde</strong> bei deiner nationalen Datenschutzbehörde
+ec844a12 Rechtsgrundlage für die Nutzungsstatistik der App ist unser berechtigtes Interesse, zu erfahren, welche Funktionen genutzt werden, um die App zu verbessern (Art. 6 Abs. 1 lit. f DSGVO); du kannst jederzeit widersprechen, indem du sie in den Einstellungen der App unter „Daten &amp; Sync“ ausschaltest. Rechtsgrundlage für das cookielose, zusammengefasste Zählen von Seitenaufrufen mit Cloudflare Web Analytics ist unser berechtigtes Interesse, zu wissen, wie viele Menschen diese Website lesen (Art. 6 Abs. 1 lit. f DSGVO); dabei werden keine Cookies oder Kennungen verwendet. Im Europäischen Wirtschaftsraum ist die Rechtsgrundlage für Google Analytics deine Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO, die du jederzeit über die Cookie-Einstellungen widerrufen kannst. Im Vereinigten Königreich, in der Schweiz und anderswo läuft Google Analytics auf Grundlage unseres berechtigten Interesses, zu verstehen, wie die Website genutzt wird, um sie zu verbessern, und du kannst jederzeit über die Cookie-Einstellungen widersprechen. Um eines der oben genannten Rechte auszuüben, schreib an <a href="mailto:privacy@biotide.app">privacy@biotide.app</a>; wir antworten innerhalb von 30 Tagen.
+5895f083 Nutzer in Kalifornien (CCPA / CPRA)
+df7937a0 Wenn du in Kalifornien wohnst, hast du nach dem California Consumer Privacy Act und dem California Privacy Rights Act folgende Rechte bezüglich personenbezogener Informationen, die wir verarbeiten:
+779aa7ac Das Recht zu erfahren, welche Kategorien personenbezogener Informationen wir erheben und wie wir sie nutzen
+d5039f8d Das Recht auf Löschung personenbezogener Informationen, die wir haben (vorbehaltlich gesetzlicher Ausnahmen)
+2562c274 Das Recht auf Berichtigung unrichtiger personenbezogener Informationen
+9958c95f Das Recht, jedem „Verkauf“ oder jeder „Weitergabe“ personenbezogener Informationen zu widersprechen — wir verkaufen oder teilen keine personenbezogenen Informationen, daher gilt dieser Widerspruch für unsere Nutzer faktisch immer
+d1bf9ee1 Das Recht, wegen der Ausübung dieser Rechte nicht benachteiligt zu werden
+e0269798 Um diese Rechte auszuüben, schreib an <a href="mailto:privacy@biotide.app">privacy@biotide.app</a>.
+a1b3331b Datensicherheit
+2b5e8ee4 Deine Daten bleiben auf deinem Gerät unter dem Schutz von iOS. Jeder Datenverkehr der App oder dieser Website ist mit HTTPS/TLS verschlüsselt. Wir haben keinen Zugriff auf deine Apple-ID oder deine Zahlungsdaten.
+dde46f0e Datenschutz für Kinder
+00d451c6 Die App richtet sich nicht an Kinder unter 13 Jahren in den USA oder unter 16 Jahren im Europäischen Wirtschaftsraum. Wir erheben wissentlich keine Informationen von Kindern unter diesem Alter. Wenn du glaubst, dass wir versehentlich solche Informationen erhalten haben, kontaktiere uns bitte, und wir löschen sie.
+015dbb77 Änderungen dieser Erklärung
+1e821456 Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren, besonders wenn sich die App weiterentwickelt. Die neue Fassung veröffentlichen wir auf dieser Seite und aktualisieren das Datum „Zuletzt aktualisiert“ oben.
+37dfcaf2 Kontakt
+73a04673 Bei Fragen zu dieser Datenschutzerklärung oder wenn du eines der oben beschriebenen Rechte ausüben möchtest, schreib bitte an:
+746c94bc Bei Fragen zur App erreichst du uns unter unserer allgemeinen Support-Adresse:
+494716ec Datenschutzerklärung - Biotide
+15d80182 Datenschutzerklärung für die App und die Website von Biotide
+886618d8 Datenschutzerklärung
