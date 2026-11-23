@@ -21,7 +21,8 @@ in the app repo), scaled down, square and opaque. `tools/placeholder_icons.py` w
 them: don't run it again.
 
 The screens come from the app's screenshot mode (sample data, never a real person's) on the
-iPhone 17 Pro spare simulator, US region (12-hour clock) and the status bar set to 9:41, full
+iPhone 17 Pro spare simulator, US region (12-hour clock; the simulator's own region, `AppleLocale` `en_US` in its
+global preferences, since `-AppleLocale` reaches only the app and a non-US region turns the status bar into 09:41) and the status bar set to 9:41, full
 battery: `-SCREENSHOT_MODE -SCREENSHOT_DAY 20261110 -SCREENSHOT_SCREEN <today|checkIn|insights|plan|compatibility|people>`,
 once in the light appearance and once in dark (`xcrun simctl ui <udid> appearance dark`), then
 `xcrun simctl io <udid> screenshot`, scaled from 1206x2622 to 804x1748 and saved with

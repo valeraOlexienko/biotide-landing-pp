@@ -17,7 +17,7 @@ Coming soon to the App Store
 
 For reflection and planning. Biorhythms are not proven science or medical advice.
 
-![Biotide's daily biorhythm chart for Tuesday, November 10: physical 0, emotional +78, intellectual −37, the three curves across the month, and the day in words: a transition day for the physical cycle, good for time with people](https://biotide.app/images/screen-today.webp?v=2)
+![Biotide's daily biorhythm chart for Tuesday, November 10: physical 0, emotional +78, intellectual −37, the three curves across the month, and the day in words: a transition day for the physical cycle, good for time with people](https://biotide.app/images/screen-today.webp?v=3)
 
 ## Most biorhythm apps tell you. Biotide asks you.
 
@@ -46,16 +46,19 @@ Biorhythm compatibility, with Plus
 :   Add people by birthday or bring them in from Contacts. See how your cycles line up as a match percentage, day by day, with the next good day to talk.
 
 Apple Health, with Plus
-:   Sleep, heart rate variability, resting heart rate and breathing rate, compared with your own usual, never with norms. Read only, and it never leaves your device.
+:   Sleep, heart rate variability, resting heart rate and breathing rate, compared with your own usual, never with norms. After 14 days your body also tests the physical curve. Read only, and it never leaves your device.
+
+Ask Tidy, with Plus
+:   Ask about your days in plain words, like “When’s a good day for a hard talk with Anna?” The answer comes from your own data, worded on your iPhone by Apple’s on-device model. In English, on iPhones with Apple Intelligence.
 
 Widgets, with Plus
-:   Today’s three values on the Home Screen and the Lock Screen, in every size.
+:   Your day, your days with someone, your curves together and your favorite people, on the Home Screen and the Lock Screen.
 
 Privacy
-:   No account, no servers, no ads and no analytics in the app. Your data stays on your device, or in your own iCloud if you turn on sync with Plus.
+:   No account and no ads. Your data stays on your device, or in your own iCloud if you turn on sync with Plus. The app counts which screens and features are used, never what you enter, and Settings turns that off.
 
 Languages
-:   English and Ukrainian.
+:   English, Ukrainian, Japanese, German, French, Spanish and Korean.
 
 ## How it works
 
@@ -73,7 +76,21 @@ Sample data, as on the screens: the cycles for a birth date of 12 March 1988, tw
 
    Pick an exam, an interview or an important conversation, and Biotide ranks the days ahead with the curves that fit you: here, the 15th, 17th and 19th.
 
-![Biotide's Today screen for Tuesday, November 10: physical 0, emotional +78, intellectual −37 and the three curves across the month](https://biotide.app/images/screen-today.webp?v=2)![The daily check-in: energy, mood, focus and last night's sleep, each rated from 1 to 5, with an optional note](https://biotide.app/images/screen-checkin.webp?v=2)![Insights: Apple Health signals against your usual, two weeks of check-in averages, and how often each curve matched how you felt](https://biotide.app/images/screen-insights.webp?v=2)![Prime days for an exam: the best days in the next 30, the first on Tuesday, November 17](https://biotide.app/images/screen-plan.webp?v=2)
+![Biotide's Today screen for Tuesday, November 10: physical 0, emotional +78, intellectual −37 and the three curves across the month](https://biotide.app/images/screen-today.webp?v=3)![The daily check-in: energy, mood, focus and last night's sleep, each rated from 1 to 5, with an optional note](https://biotide.app/images/screen-checkin.webp?v=3)![Insights: Apple Health signals against your usual, two weeks of check-in averages, how often each curve matched your check-ins and your body, and the Ask Tidy button](https://biotide.app/images/screen-insights.webp?v=3)![Prime days for an exam: the best days in the next 30, the first on Tuesday, November 17](https://biotide.app/images/screen-plan.webp?v=3)
+
+## Ask about your days
+
+Tidy answers questions about your curves, your check-ins, your sleep and your people, right on your iPhone.
+
+- When’s a good day for a hard talk with Anna?
+- What’s my day like tomorrow?
+- Do my moods follow the emotional curve?
+
+Biotide finds the answer in your own data and puts it into words on the phone, with Apple’s on-device model. The days or curves behind it are drawn under the reply, with a line saying where it came from. Nothing you ask leaves your iPhone.
+
+With Biotide Plus, in English, on iPhones with Apple Intelligence.
+
+![Tidy, asked when’s a good day for a hard talk with Anna, answers Saturday 5 and Monday 7 December, with those days drawn under the reply and the line “The curves’ guess.”](https://biotide.app/images/screen-tidy.webp?v=1)
 
 ## What it costs
 
@@ -95,12 +112,15 @@ Your daily chart, your reading and your check-ins.
 
 Optional
 
-Weekly, monthly or yearly, with a free trial on the monthly and yearly plans, or a one-time purchase.
+$0.99 a week · $2.99 a month · $19.99 a year · $34.99 once
+
+Weekly, monthly or yearly, with 3 days free on the monthly and yearly plans, or a one-time purchase. Prices in the US; the App Store shows yours.
 
 - People and compatibility, from Contacts or by birthday
 - Prime days and the forecast calendar, alone or with someone
 - How often each curve fits you, with readings and plans tuned to it
 - Sleep, heart rate variability, resting heart rate and breathing from Apple Health, against your own usual
+- Tidy, to ask about your days, on iPhones with Apple Intelligence
 - iCloud sync and every widget
 
 Prices are set by the App Store and shown in your currency before you buy. Subscriptions renew until you cancel them in your Apple Account settings.
@@ -109,12 +129,12 @@ Prices are set by the App Store and shown in your currency before you buy. Subsc
 
 Real screens from the app, with sample data: today, the check-in, Insights, Prime days, a compatibility view and People.
 
-![Today: the three cycle values and the daily biorhythm chart for the month](https://biotide.app/images/screen-today.webp?v=2)
-![The daily check-in: energy, mood, focus and sleep, each from 1 to 5](https://biotide.app/images/screen-checkin.webp?v=2)
-![Insights: Apple Health signals against your usual and how often each curve matched how you felt](https://biotide.app/images/screen-insights.webp?v=2)
-![Prime days: the best days in the next 30 for an exam](https://biotide.app/images/screen-plan.webp?v=2)
-![Biorhythm compatibility with Anna: a 46% match, each cycle's share, both curves on one chart and a day-by-day strip for an important conversation](https://biotide.app/images/screen-compatibility.webp?v=2)
-![People: Anna, starred, then Dad and Mark, with their match and their next good day to talk](https://biotide.app/images/screen-people.webp?v=2)
+![Today: the three cycle values and the daily biorhythm chart for the month](https://biotide.app/images/screen-today.webp?v=3)
+![The daily check-in: energy, mood, focus and sleep, each from 1 to 5](https://biotide.app/images/screen-checkin.webp?v=3)
+![Insights: Apple Health signals against your usual, how often each curve matched your check-ins and your body, and Ask Tidy](https://biotide.app/images/screen-insights.webp?v=3)
+![Prime days: the best days in the next 30 for an exam](https://biotide.app/images/screen-plan.webp?v=3)
+![Biorhythm compatibility with Anna: a 46% match, each cycle's share, both curves on one chart and a day-by-day strip for an important conversation](https://biotide.app/images/screen-compatibility.webp?v=3)
+![People: Anna, starred, then Dad and Mark, with their match and their next good day to talk](https://biotide.app/images/screen-people.webp?v=3)
 
 ## Stated plainly
 
@@ -143,7 +163,7 @@ Apple Health
 :   Optional, with Plus. Read only: sleep, heart rate variability, resting heart rate and respiratory rate.
 
 Languages
-:   English and Ukrainian.
+:   English, Ukrainian, Japanese, German, French, Spanish and Korean.
 
 The science
 :   Biorhythm theory is not supported by research. Biotide treats it as a guess to test against your own check-ins.
@@ -168,11 +188,15 @@ Biotide compares your three cycles with another person's, worked out from both b
 
 ### What does Biotide cost?
 
-Biotide is free to download, with no ads. Today’s chart, your day in words, the evening check-in, reminders and export are free. Biotide Plus, an optional weekly, monthly or yearly subscription or a one-time purchase, adds people and compatibility, Prime days and the forecast calendar, how often each curve fits you with readings tuned to it, Apple Health, iCloud sync and every widget.
+Biotide is free to download, with no ads. Today’s chart, your day in words, the evening check-in, reminders and export are free. Biotide Plus, an optional weekly, monthly or yearly subscription or a one-time purchase, adds people and compatibility, Prime days and the forecast calendar, how often each curve fits you with readings tuned to it, Apple Health, Tidy, iCloud sync and every widget.
+
+### Can I ask Biotide questions about my days?
+
+Yes, with Biotide Plus on an iPhone with Apple Intelligence, in English. Ask Tidy something like “When’s a good day for a hard talk with Anna?” or “What’s my day like tomorrow?” Biotide looks the answer up in your own chart, check-ins, Apple Health signals and people, Apple’s on-device model puts it into words, and the days or curves behind it are drawn under the reply. Your questions never leave the iPhone.
 
 ### Is my data private?
 
-Yes. Biotide has no account, no servers and no analytics in the app: your birth date, check-ins and people stay on your device, or in your own iCloud if you turn on sync. Apple Health data is only read, never written, and never leaves the device. The [privacy policy](https://biotide.app/privacy.html.md) has the details.
+Yes. Biotide has no account and no servers of its own: your birth date, check-ins and people stay on your device, or in your own iCloud if you turn on sync. Apple Health data is only read, never written, and never leaves the device, and Tidy answers on the iPhone itself. The app counts which screens and features are used, through Google Analytics for Firebase, never what you enter, and you can turn that off in Settings. The [privacy policy](https://biotide.app/privacy.html.md) has the details.
 
 ### Which devices does Biotide run on?
 

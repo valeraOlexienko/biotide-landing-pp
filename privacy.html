@@ -10,7 +10,7 @@
     <meta name="robots" content="index, follow">
     <link rel="preload" href="fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="themes/default.css?v=2">
-    <link rel="stylesheet" href="styles.css?v=6">
+    <link rel="stylesheet" href="styles.css?v=10">
     <script>try{document.documentElement.dataset.theme=localStorage.getItem('biotide_theme')||'system'}catch(e){document.documentElement.dataset.theme='system'}</script>
     <link rel="canonical" href="https://biotide.app/privacy.html">
     <link rel="alternate" type="text/markdown" href="https://biotide.app/privacy.html.md" title="Markdown version for AI agents">
@@ -27,8 +27,8 @@
     <meta property="og:image:alt" content="Biotide's icon and the headline Check if it's really your rhythm beside an iPhone showing the app's Today screen">
     <meta name="twitter:card" content="summary_large_image">
 
-    <link rel="icon" type="image/png" href="images/favicon.png?v=2" sizes="64x64">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png?v=2" sizes="180x180">
+    <link rel="icon" type="image/png" href="images/favicon.png?v=3" sizes="64x64">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png?v=3" sizes="180x180">
 
     <script type="application/ld+json">
     {
@@ -54,7 +54,7 @@
                 "name": "Privacy Policy - Biotide",
                 "description": "Privacy Policy for the Biotide app and website",
                 "url": "https://biotide.app/privacy.html",
-                "dateModified": "2026-11-11",
+                "dateModified": "2026-11-23",
                 "inLanguage": "en",
                 "isPartOf": {"@id": "https://biotide.app/#website"},
                 "about": {"@id": "https://biotide.app/#app"},
@@ -85,6 +85,27 @@
             <a href="/#faq">FAQ</a>
             <!-- On release day: <a class="nav-cta" href="https://apps.apple.com/app/id6829585627" data-cta="nav">Get the app</a> -->
         </nav>
+        <!-- Language menu (built 2026-11-23; styles.css .lang-menu, site.js "languages"). Switch it on together with
+             the translated pages, listing only the languages that have them:
+        <details class="lang-menu">
+            <summary aria-label="Language: English">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.25"/><path d="M2.75 12h18.5M12 2.75c2.5 2.6 3.75 5.7 3.75 9.25S14.5 18.65 12 21.25M12 2.75C9.5 5.35 8.25 8.45 8.25 12s1.25 6.65 3.75 9.25"/></svg>
+                <span class="lang-code" aria-hidden="true">EN</span>
+            </summary>
+            <div class="lang-panel">
+                <p class="lang-title">Language</p>
+                <ul>
+                    <li><a href="/" hreflang="en" lang="en" aria-current="true">English</a></li>
+                    <li><a href="/uk/" hreflang="uk" lang="uk">Українська</a></li>
+                    <li><a href="/ja/" hreflang="ja" lang="ja">日本語</a></li>
+                    <li><a href="/de/" hreflang="de" lang="de">Deutsch</a></li>
+                    <li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li>
+                    <li><a href="/es/" hreflang="es" lang="es">Español</a></li>
+                    <li><a href="/ko/" hreflang="ko" lang="ko">한국어</a></li>
+                </ul>
+            </div>
+        </details>
+        -->
         <div class="theme-toggle">
         <fieldset class="theme-toggle-group">
             <legend class="visually-hidden">Theme</legend>
@@ -126,10 +147,10 @@
     <a href="/" class="back-link">Back to home</a>
     <h1>Privacy Policy</h1>
     <!-- "Last updated" must equal the schema dateModified and the sitemap lastmod. Bump all three together. -->
-    <p class="last-updated">Last updated: November 11, 2026</p>
+    <p class="last-updated">Last updated: November 23, 2026</p>
 
     <p>Biotide ("we", "our", or "the app") is committed to protecting your privacy. This Privacy Policy explains what information we and our service providers handle when you use our iOS application, the biotide.app website, and related services.</p>
-    <p><strong>The short version:</strong> Biotide has no account, no server, no analytics and no advertising in the app. What you enter and what the app reads from Apple Health stays on your device. We never see it.</p>
+    <p><strong>The short version:</strong> Biotide has no account, no server of its own and no advertising. What you enter and what the app reads from Apple Health stays on your device. We never see it. The app counts which of its screens and features are used, without any of that data, and you can turn this off in Settings.</p>
 
     <h2>Information We Collect</h2>
     <p>Biotide does not require account registration or login.</p>
@@ -143,8 +164,11 @@
     <p>This information is kept in the app's private storage on your device. The widgets read your birth date from a storage area shared only between Biotide and its widgets.</p>
 
     <h2>Apple Health</h2>
-    <p>If you choose to connect Apple Health (part of Biotide Plus), Biotide reads four types: sleep analysis, heart rate variability, resting heart rate and respiratory rate. Nothing is read until you allow it in the system permission sheet. Biotide compares these values with your own previous 28 days on your device and shows the result in the app.</p>
+    <p>If you choose to connect Apple Health (part of Biotide Plus), Biotide reads four types: sleep analysis, heart rate variability, resting heart rate and respiratory rate. Nothing is read until you allow it in the system permission sheet. Biotide compares these values with your own previous 28 days on your device and shows the result in the app. Once there are 14 days of them, it also uses them on your device to test how well your physical curve fits you.</p>
     <p>Biotide never writes to Apple Health, never copies Health data off your device, never stores it in iCloud, and never uses it for advertising or shares it with anyone. You can turn off access at any time in the Health app or in Settings, Privacy &amp; Security, Health.</p>
+
+    <h2>Tidy</h2>
+    <p>Tidy, part of Biotide Plus on iPhones with Apple Intelligence, answers questions about your days. Biotide looks the answer up in the data already on your device, and Apple's on-device language model puts it into words. Your questions and Tidy's answers are processed on your iPhone, are never sent to us or anyone else, and are not kept after you close Tidy.</p>
 
     <h2>Contacts</h2>
     <p>If you allow it, Biotide reads the names, birthdays and photos in your contacts to show everyone with a birthday in People. iOS lets you share all your contacts or only the ones you choose, and you can change that at any time in Settings. What Biotide keeps stays on your device and is never uploaded. You can also add a single person through the system contact picker, which gives Biotide only that contact.</p>
@@ -158,11 +182,22 @@
     <h2>Purchases</h2>
     <p>Biotide Plus subscriptions and the one-time purchase are handled by Apple through the App Store. We do not receive your payment details, your Apple ID or your name; the app only learns whether Plus is active on your account.</p>
 
+    <h2>Usage Statistics in the App</h2>
+    <p>The app tells us which of its screens and features are used, so we know what to improve. It does this through Google Analytics for Firebase, a Google service. It is on unless you turn it off.</p>
+    <ul>
+        <li><strong>What is sent:</strong> events such as a check-in being saved (never its ratings or note), a chart zoom chip or a Plan menu being used, a person being added (never who), Apple Health being connected, a purchase or restore finishing, and which screens are opened; and a few settings in broad bands, such as whether reminders, Apple Health or iCloud sync are on, which plan you have, and how many people or check-ins you have as a range. Firebase adds a random app-instance identifier, the device model, iOS and app version, language, and an approximate location (country or region) that Google derives from the network address.</li>
+        <li><strong>What is never sent:</strong> your birth date or age, your check-in ratings and notes, any Apple Health value, anything about the people you add (names, birthdays, photos, match percentages), the dates you look at, what you ask Tidy, or anything else you type. The app sends only a fixed list of event names and values, with no way to pass free text.</li>
+        <li><strong>No advertising and no tracking:</strong> the app does not use the advertising identifier (IDFA), Google signals and data sharing are switched off, and this data is not combined with data from other companies' apps or websites.</li>
+        <li><strong>Retention:</strong> Google Analytics keeps the event data for 14 months; we see it only as totals.</li>
+        <li><strong>Turning it off:</strong> switch off <em>Share Usage Statistics</em> in the app's Settings, under Data &amp; Sync, and the app stops sending and asks Google Analytics to clear what it has collected on that device.</li>
+    </ul>
+
     <h2>Third-Party Service Providers</h2>
     <p>Depending on how you use the app and this website, the following third parties may process data:</p>
     <ul>
         <li><strong>Apple</strong> — App Store distribution and, if enabled, iCloud sync — <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Privacy Policy</a></li>
-        <li><strong>Google Analytics</strong> — optional website analytics on this site only (not in the app) — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+        <li><strong>Google (Firebase)</strong> — Google Analytics for Firebase, the app's usage statistics (can be turned off in Settings) — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+        <li><strong>Google Analytics</strong> — optional website analytics on this site (the app's usage statistics are described above) — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
         <li><strong>Cloudflare Web Analytics</strong> — cookieless, aggregate page-view counts on this site only (not in the app); it sets no cookies, stores nothing in your browser, and does not identify or track you across sites — <a href="https://www.cloudflare.com/web-analytics/" target="_blank" rel="noopener">Cloudflare Web Analytics</a></li>
     </ul>
 
@@ -186,7 +221,7 @@
         <li>We never receive your name, email, phone number, address, or any other identifying information. The names and birthdays you enter for people stay on your device.</li>
         <li>We do not require account creation or login.</li>
         <li>We do not sell, rent, or trade any data to third parties for advertising or any other purpose.</li>
-        <li>We do not use cookies or tracking technologies in the iOS app.</li>
+        <li>We do not use cookies in the iOS app, and it does not track you across other companies' apps or websites.</li>
     </ul>
 
     <h2>Data Retention and Your Control</h2>
@@ -199,7 +234,7 @@
     </ul>
 
     <h2>European Users (GDPR)</h2>
-    <p>If you are in the European Economic Area, United Kingdom, or Switzerland, you have the following rights under the General Data Protection Regulation regarding personal data we process about you (limited to the website measurement described above; the app involves no processing by us):</p>
+    <p>If you are in the European Economic Area, United Kingdom, or Switzerland, you have the following rights under the General Data Protection Regulation regarding personal data we process about you (limited to the app's usage statistics and the website measurement described above; everything else in the app stays on your device):</p>
     <ul>
         <li><strong>Right of access</strong> — request a copy of the data we hold</li>
         <li><strong>Right to rectification</strong> — request correction of inaccurate data</li>
@@ -208,7 +243,7 @@
         <li><strong>Right to data portability</strong></li>
         <li><strong>Right to lodge a complaint</strong> with your national data-protection authority</li>
     </ul>
-    <p>The legal basis for cookieless aggregate page-view counting with Cloudflare Web Analytics is our legitimate interest in knowing how many people read this site (GDPR Article 6(1)(f)); it involves no cookies or identifiers. In the European Economic Area, the legal basis for Google Analytics is your consent under GDPR Article 6(1)(a), which you can withdraw at any time through Cookie Settings. In the United Kingdom, Switzerland and elsewhere, Google Analytics runs on our legitimate interest in understanding how the site is used so we can improve it, and you can object at any time through Cookie Settings. To exercise any right above, email <a href="mailto:privacy@biotide.app">privacy@biotide.app</a>; we will respond within 30 days.</p>
+    <p>The legal basis for the app's usage statistics is our legitimate interest in learning which features are used so we can improve the app (GDPR Article 6(1)(f)); you can object at any time by turning them off in the app's Settings, under Data &amp; Sync. The legal basis for cookieless aggregate page-view counting with Cloudflare Web Analytics is our legitimate interest in knowing how many people read this site (GDPR Article 6(1)(f)); it involves no cookies or identifiers. In the European Economic Area, the legal basis for Google Analytics is your consent under GDPR Article 6(1)(a), which you can withdraw at any time through Cookie Settings. In the United Kingdom, Switzerland and elsewhere, Google Analytics runs on our legitimate interest in understanding how the site is used so we can improve it, and you can object at any time through Cookie Settings. To exercise any right above, email <a href="mailto:privacy@biotide.app">privacy@biotide.app</a>; we will respond within 30 days.</p>
 
     <h2>California Users (CCPA / CPRA)</h2>
     <p>If you are a California resident, you have the following rights under the California Consumer Privacy Act and California Privacy Rights Act regarding personal information we process:</p>
@@ -271,6 +306,6 @@
     <p class="copyright">&copy; <span id="year">2026</span> Biotide. All rights reserved.</p>
 </footer>
 <!-- /chrome:footer -->
-<script src="site.js?v=3"></script>
+<script src="site.js?v=4"></script>
 </body>
 </html>

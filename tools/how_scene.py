@@ -140,12 +140,12 @@ def svg():
 
 # Each screen comes in light and dark (images/screen-NAME.webp and screen-NAME-dark.webp); the dark one is a
 # <source data-dark> that site.js points at the page's theme.
-SCREEN_VERSION = 2
+SCREEN_VERSION = 3
 
 SCREENS = [
     ("today", 0, "images/screen-today.webp", "Biotide's Today screen for Tuesday, November 10: physical 0, emotional +78, intellectual −37 and the three curves across the month"),
     ("checkin", 0, "images/screen-checkin.webp", "The daily check-in: energy, mood, focus and last night's sleep, each rated from 1 to 5, with an optional note"),
-    ("insights", 1, "images/screen-insights.webp", "Insights: Apple Health signals against your usual, two weeks of check-in averages, and how often each curve matched how you felt"),
+    ("insights", 1, "images/screen-insights.webp", "Insights: Apple Health signals against your usual, two weeks of check-in averages, how often each curve matched your check-ins and your body, and the Ask Tidy button"),
     ("plan", 2, "images/screen-plan.webp", "Prime days for an exam: the best days in the next 30, the first on Tuesday, November 17"),
 ]
 

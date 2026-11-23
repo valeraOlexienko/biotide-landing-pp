@@ -8,7 +8,7 @@
     <meta name="theme-color" content="#0f1217" media="(prefers-color-scheme: dark)">
     <link rel="preload" href="fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="themes/default.css?v=2">
-    <link rel="stylesheet" href="styles.css?v=6">
+    <link rel="stylesheet" href="styles.css?v=10">
     <link rel="stylesheet" href="scrollcraft.css?v=1">
     <link rel="stylesheet" href="landing.css?v=2">
     <!-- Title: under 60 characters, brand + what it is + platform. Add "Official Site" only if other products share the name. -->
@@ -43,8 +43,8 @@
     <!-- Apple Smart App Banner: back on release day: <meta name="apple-itunes-app" content="app-id=6829585627"> -->
 
     <!-- Favicon (platform formats on purpose; everything else on the site is WebP) -->
-    <link rel="icon" type="image/png" href="images/favicon.png?v=2" sizes="64x64">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png?v=2" sizes="180x180">
+    <link rel="icon" type="image/png" href="images/favicon.png?v=3" sizes="64x64">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png?v=3" sizes="180x180">
 
     <!-- JSON-LD: exactly one block per page, one @graph. #organization and #website are
          defined on every page; #app is defined here only and may be referenced from other
@@ -93,10 +93,15 @@
                 ],
                 "softwareVersion": "1.0",
                 "datePublished": "2026-11-08",
-                "dateModified": "2026-11-11",
+                "dateModified": "2026-11-23",
                 "inLanguage": [
                     "en",
-                    "uk"
+                    "uk",
+                    "ja",
+                    "de",
+                    "fr",
+                    "es",
+                    "ko"
                 ],
                 "offers": {
                     "@type": "Offer",
@@ -114,10 +119,11 @@
                     "How often each curve matched how you felt, after 14 check-ins (Plus)",
                     "Prime days: the best days for an exam, interview, date, race or important conversation (Plus)",
                     "Biorhythm compatibility with the people around you, imported from Contacts or added by birthday (Plus)",
-                    "Apple Health sleep, heart rate variability, resting heart rate and respiratory rate against your own usual (Plus)",
-                    "Home Screen and Lock Screen widgets (Plus)",
+                    "Apple Health sleep, heart rate variability, resting heart rate and respiratory rate against your own usual, and as a second test of the physical curve (Plus)",
+                    "Tidy: questions about your days answered on the iPhone by Apple's on-device model, in English, on iPhones with Apple Intelligence (Plus)",
+                    "Home Screen and Lock Screen widgets: your day, your days with someone, your curves together and your people (Plus)",
                     "iCloud sync, off until you turn it on (Plus)",
-                    "No account, no ads, no analytics in the app"
+                    "No account and no ads; anonymous usage statistics you can turn off"
                 ],
                 "screenshot": [
                     {
@@ -139,7 +145,7 @@
                         "url": "https://biotide.app/images/screen-insights.webp",
                         "width": 804,
                         "height": 1748,
-                        "caption": "Insights: Apple Health signals against your usual and how often each curve matched how you felt"
+                        "caption": "Insights: Apple Health signals against your usual, how often each curve matched your check-ins and your body, and Ask Tidy"
                     },
                     {
                         "@type": "ImageObject",
@@ -208,7 +214,15 @@
                         "name": "What does Biotide cost?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Biotide is free to download, with no ads. Today's chart, your day in words, the evening check-in, reminders and export are free. Biotide Plus, an optional weekly, monthly or yearly subscription or a one-time purchase, adds people and compatibility, Prime days and the forecast calendar, how often each curve fits you with readings tuned to it, Apple Health, iCloud sync and every widget."
+                            "text": "Biotide is free to download, with no ads. Today's chart, your day in words, the evening check-in, reminders and export are free. Biotide Plus, an optional weekly, monthly or yearly subscription or a one-time purchase, adds people and compatibility, Prime days and the forecast calendar, how often each curve fits you with readings tuned to it, Apple Health, Tidy, iCloud sync and every widget."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Can I ask Biotide questions about my days?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes, with Biotide Plus on an iPhone with Apple Intelligence, in English. Ask Tidy something like \"When's a good day for a hard talk with Anna?\" or \"What's my day like tomorrow?\" Biotide looks the answer up in your own chart, check-ins, Apple Health signals and people, Apple's on-device model puts it into words, and the days or curves behind it are drawn under the reply. Your questions never leave the iPhone."
                         }
                     },
                     {
@@ -216,7 +230,7 @@
                         "name": "Is my data private?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Yes. Biotide has no account, no servers and no analytics in the app: your birth date, check-ins and people stay on your device, or in your own iCloud if you turn on sync. Apple Health data is only read, never written, and never leaves the device."
+                            "text": "Yes. Biotide has no account and no servers of its own: your birth date, check-ins and people stay on your device, or in your own iCloud if you turn on sync. Apple Health data is only read, never written, and never leaves the device, and Tidy answers on the iPhone itself. The app counts which screens and features are used, through Google Analytics for Firebase, never what you enter, and you can turn that off in Settings."
                         }
                     },
                     {
@@ -266,6 +280,27 @@
             <a href="/#faq">FAQ</a>
             <!-- On release day: <a class="nav-cta" href="https://apps.apple.com/app/id6829585627" data-cta="nav">Get the app</a> -->
         </nav>
+        <!-- Language menu (built 2026-11-23; styles.css .lang-menu, site.js "languages"). Switch it on together with
+             the translated pages, listing only the languages that have them:
+        <details class="lang-menu">
+            <summary aria-label="Language: English">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.25"/><path d="M2.75 12h18.5M12 2.75c2.5 2.6 3.75 5.7 3.75 9.25S14.5 18.65 12 21.25M12 2.75C9.5 5.35 8.25 8.45 8.25 12s1.25 6.65 3.75 9.25"/></svg>
+                <span class="lang-code" aria-hidden="true">EN</span>
+            </summary>
+            <div class="lang-panel">
+                <p class="lang-title">Language</p>
+                <ul>
+                    <li><a href="/" hreflang="en" lang="en" aria-current="true">English</a></li>
+                    <li><a href="/uk/" hreflang="uk" lang="uk">Українська</a></li>
+                    <li><a href="/ja/" hreflang="ja" lang="ja">日本語</a></li>
+                    <li><a href="/de/" hreflang="de" lang="de">Deutsch</a></li>
+                    <li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li>
+                    <li><a href="/es/" hreflang="es" lang="es">Español</a></li>
+                    <li><a href="/ko/" hreflang="ko" lang="ko">한국어</a></li>
+                </ul>
+            </div>
+        </details>
+        -->
         <div class="theme-toggle">
         <fieldset class="theme-toggle-group">
             <legend class="visually-hidden">Theme</legend>
@@ -330,7 +365,7 @@
                 <!-- Apple's iPhone 17 bezel, used as is, with a real screen from the app's screenshot
                      mode (iPhone 17 Pro simulator, 1206x2622, exported at 804x1748). Never a drawn phone. -->
                 <div class="phone hero-phone">
-                    <div class="phone__screen"><picture class="themed"><source srcset="images/screen-today-dark.webp?v=2" media="(prefers-color-scheme: dark)" data-dark><img src="images/screen-today.webp?v=2" width="804" height="1748" alt="Biotide's daily biorhythm chart for Tuesday, November 10: physical 0, emotional +78, intellectual −37, the three curves across the month, and the day in words: a transition day for the physical cycle, good for time with people" fetchpriority="high"></picture></div>
+                    <div class="phone__screen"><picture class="themed"><source srcset="images/screen-today-dark.webp?v=3" media="(prefers-color-scheme: dark)" data-dark><img src="images/screen-today.webp?v=3" width="804" height="1748" alt="Biotide's daily biorhythm chart for Tuesday, November 10: physical 0, emotional +78, intellectual −37, the three curves across the month, and the day in words: a transition day for the physical cycle, good for time with people" fetchpriority="high"></picture></div>
                     <img class="phone__frame" src="images/iphone17-black.webp" width="675" height="1380" alt="" aria-hidden="true">
                 </div>
             </div>
@@ -361,10 +396,11 @@
                 <div><dt>Thirty-second check-in</dt><dd>Rate your energy, mood, focus and last night&rsquo;s sleep from 1 to 5 each evening. A gentle reminder helps, and skips the days you have already logged.</dd></div>
                 <div><dt>Prime days, with Plus</dt><dd>Pick what is coming, from an exam or a job interview to a date, a race or an important conversation, and get the best days in the next 30, 60 or 90 days. Already have a date? See how it looks and whether a nearby day is better.</dd></div>
                 <div><dt>Biorhythm compatibility, with Plus</dt><dd>Add people by birthday or bring them in from Contacts. See how your cycles line up as a match percentage, day by day, with the next good day to talk.</dd></div>
-                <div><dt>Apple Health, with Plus</dt><dd>Sleep, heart rate variability, resting heart rate and breathing rate, compared with your own usual, never with norms. Read only, and it never leaves your device.</dd></div>
-                <div><dt>Widgets, with Plus</dt><dd>Today&rsquo;s three values on the Home Screen and the Lock Screen, in every size.</dd></div>
-                <div><dt>Privacy</dt><dd>No account, no servers, no ads and no analytics in the app. Your data stays on your device, or in your own iCloud if you turn on sync with Plus.</dd></div>
-                <div><dt>Languages</dt><dd>English and Ukrainian.</dd></div>
+                <div><dt>Apple Health, with Plus</dt><dd>Sleep, heart rate variability, resting heart rate and breathing rate, compared with your own usual, never with norms. After 14 days your body also tests the physical curve. Read only, and it never leaves your device.</dd></div>
+                <div><dt>Ask Tidy, with Plus</dt><dd>Ask about your days in plain words, like &ldquo;When&rsquo;s a good day for a hard talk with Anna?&rdquo; The answer comes from your own data, worded on your iPhone by Apple&rsquo;s on-device model. In English, on iPhones with Apple Intelligence.</dd></div>
+                <div><dt>Widgets, with Plus</dt><dd>Your day, your days with someone, your curves together and your favorite people, on the Home Screen and the Lock Screen.</dd></div>
+                <div><dt>Privacy</dt><dd>No account and no ads. Your data stays on your device, or in your own iCloud if you turn on sync with Plus. The app counts which screens and features are used, never what you enter, and Settings turns that off.</dd></div>
+                <div><dt>Languages</dt><dd>English, Ukrainian, Japanese, German, French, Spanish and Korean.</dd></div>
             </dl>
         </div>
     </section>
@@ -436,14 +472,39 @@
                     <li class="how-step"><h3>See what fits</h3><p>After 14 check-ins Biotide shows how often each curve matched how you felt. Here the emotional curve matched only 57% of the time, so it counts for less.</p></li>
                     <li class="how-step"><h3>Plan ahead</h3><p>Pick an exam, an interview or an important conversation, and Biotide ranks the days ahead with the curves that fit you: here, the 15th, 17th and 19th.</p></li>
                 </ol>
-                <div class="phone how-phone"><div class="phone__screen"><picture class="themed"><source srcset="images/screen-today-dark.webp?v=2" media="(prefers-color-scheme: dark)" data-dark><img class="how-screen" data-step="0" data-from="0.0" src="images/screen-today.webp?v=2" width="804" height="1748" alt="Biotide&#x27;s Today screen for Tuesday, November 10: physical 0, emotional +78, intellectual −37 and the three curves across the month" loading="lazy"></picture><picture class="themed"><source srcset="images/screen-checkin-dark.webp?v=2" media="(prefers-color-scheme: dark)" data-dark><img class="how-screen" data-step="0" data-from="0.17" src="images/screen-checkin.webp?v=2" width="804" height="1748" alt="The daily check-in: energy, mood, focus and last night&#x27;s sleep, each rated from 1 to 5, with an optional note" loading="lazy"></picture><picture class="themed"><source srcset="images/screen-insights-dark.webp?v=2" media="(prefers-color-scheme: dark)" data-dark><img class="how-screen" data-step="1" data-from="0.4" src="images/screen-insights.webp?v=2" width="804" height="1748" alt="Insights: Apple Health signals against your usual, two weeks of check-in averages, and how often each curve matched how you felt" loading="lazy"></picture><picture class="themed"><source srcset="images/screen-plan-dark.webp?v=2" media="(prefers-color-scheme: dark)" data-dark><img class="how-screen" data-step="2" data-from="0.62" src="images/screen-plan.webp?v=2" width="804" height="1748" alt="Prime days for an exam: the best days in the next 30, the first on Tuesday, November 17" loading="lazy"></picture></div><img class="phone__frame" src="images/iphone17-black.webp" width="675" height="1380" alt="" aria-hidden="true" loading="lazy"></div>
+                <div class="phone how-phone"><div class="phone__screen"><picture class="themed"><source srcset="images/screen-today-dark.webp?v=3" media="(prefers-color-scheme: dark)" data-dark><img class="how-screen" data-step="0" data-from="0.0" src="images/screen-today.webp?v=3" width="804" height="1748" alt="Biotide&#x27;s Today screen for Tuesday, November 10: physical 0, emotional +78, intellectual −37 and the three curves across the month" loading="lazy"></picture><picture class="themed"><source srcset="images/screen-checkin-dark.webp?v=3" media="(prefers-color-scheme: dark)" data-dark><img class="how-screen" data-step="0" data-from="0.17" src="images/screen-checkin.webp?v=3" width="804" height="1748" alt="The daily check-in: energy, mood, focus and last night&#x27;s sleep, each rated from 1 to 5, with an optional note" loading="lazy"></picture><picture class="themed"><source srcset="images/screen-insights-dark.webp?v=3" media="(prefers-color-scheme: dark)" data-dark><img class="how-screen" data-step="1" data-from="0.4" src="images/screen-insights.webp?v=3" width="804" height="1748" alt="Insights: Apple Health signals against your usual, two weeks of check-in averages, how often each curve matched your check-ins and your body, and the Ask Tidy button" loading="lazy"></picture><picture class="themed"><source srcset="images/screen-plan-dark.webp?v=3" media="(prefers-color-scheme: dark)" data-dark><img class="how-screen" data-step="2" data-from="0.62" src="images/screen-plan.webp?v=3" width="804" height="1748" alt="Prime days for an exam: the best days in the next 30, the first on Tuesday, November 17" loading="lazy"></picture></div><img class="phone__frame" src="images/iphone17-black.webp" width="675" height="1380" alt="" aria-hidden="true" loading="lazy"></div>
             </div>
         </div>
     </section>
     <!-- /scene:how -->
 
-    <!-- PRICING. No prices until the products are live in App Store Connect: any number here must
-         equal the live listing (CLAUDE.md, GEO). -->
+    <!-- TIDY: questions about your days, answered on the phone. A real Tidy screen (screenshot mode's canned answer,
+         iPhone 17 Pro simulator) in Apple's bezel, used as is, like the hero. Plus, English and Apple Intelligence
+         only: the last line says so, so the section never promises it to everyone. -->
+    <section class="section" id="tidy">
+        <div class="wrap tidy-grid">
+            <div class="tidy-copy">
+                <h2>Ask about your days</h2>
+                <p class="lead">Tidy answers questions about your curves, your check-ins, your sleep and your people, right on your iPhone.</p>
+                <ul class="tidy-asks" aria-label="Questions you can ask">
+                    <li>When&rsquo;s a good day for a hard talk with Anna?</li>
+                    <li>What&rsquo;s my day like tomorrow?</li>
+                    <li>Do my moods follow the emotional curve?</li>
+                </ul>
+                <p class="tidy-how">Biotide finds the answer in your own data and puts it into words on the phone, with Apple&rsquo;s on-device model. The days or curves behind it are drawn under the reply, with a line saying where it came from. Nothing you ask leaves your iPhone.</p>
+                <p class="tidy-note">With Biotide Plus, in English, on iPhones with Apple Intelligence.</p>
+            </div>
+            <div class="tidy-visual">
+                <div class="phone tidy-phone">
+                    <div class="phone__screen"><picture class="themed"><source srcset="images/screen-tidy-dark.webp?v=1" media="(prefers-color-scheme: dark)" data-dark><img src="images/screen-tidy.webp?v=1" width="804" height="1748" alt="Tidy, asked when&rsquo;s a good day for a hard talk with Anna, answers Saturday 5 and Monday 7 December, with those days drawn under the reply and the line &ldquo;The curves&rsquo; guess.&rdquo;" loading="lazy"></picture></div>
+                    <img class="phone__frame" src="images/iphone17-black.webp" width="675" height="1380" alt="" aria-hidden="true" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING. The US prices set in App Store Connect (11 Nov 2026: weekly, monthly, yearly, lifetime); any number
+         here must equal the listing (CLAUDE.md, GEO). Other countries get Apple's equalized prices. -->
     <section class="section" id="pricing">
         <div class="wrap">
             <div class="section-head">
@@ -466,12 +527,14 @@
                 <div class="price">
                     <h3>Biotide Plus</h3>
                     <p class="figure">Optional</p>
-                    <p>Weekly, monthly or yearly, with a free trial on the monthly and yearly plans, or a one-time purchase.</p>
+                    <p class="price-plans num">$0.99&nbsp;a&nbsp;week · $2.99&nbsp;a&nbsp;month · $19.99&nbsp;a&nbsp;year · $34.99&nbsp;once</p>
+                    <p>Weekly, monthly or yearly, with 3 days free on the monthly and yearly plans, or a one-time purchase. Prices in the US; the App Store shows yours.</p>
                     <ul>
                         <li>People and compatibility, from Contacts or by birthday</li>
                         <li>Prime days and the forecast calendar, alone or with someone</li>
                         <li>How often each curve fits you, with readings and plans tuned to it</li>
                         <li>Sleep, heart rate variability, resting heart rate and breathing from Apple Health, against your own usual</li>
+                        <li>Tidy, to ask about your days, on iPhones with Apple Intelligence</li>
                         <li>iCloud sync and every widget</li>
                     </ul>
                 </div>
@@ -490,12 +553,12 @@
         </div>
         <div class="marquee" aria-label="iPhone screenshots">
             <div class="marquee-group">
-                <picture class="themed"><source srcset="images/screen-today-dark.webp?v=2" media="(prefers-color-scheme: dark)" data-dark><img src="images/screen-today.webp?v=2" width="804" height="1748" alt="Today: the three cycle values and the daily biorhythm chart for the month" loading="lazy"></picture>
-                <picture class="themed"><source srcset="images/screen-checkin-dark.webp?v=2" media="(prefers-color-scheme: dark)" data-dark><img src="images/screen-checkin.webp?v=2" width="804" height="1748" alt="The daily check-in: energy, mood, focus and sleep, each from 1 to 5" loading="lazy"></picture>
-                <picture class="themed"><source srcset="images/screen-insights-dark.webp?v=2" media="(prefers-color-scheme: dark)" data-dark><img src="images/screen-insights.webp?v=2" width="804" height="1748" alt="Insights: Apple Health signals against your usual and how often each curve matched how you felt" loading="lazy"></picture>
-                <picture class="themed"><source srcset="images/screen-plan-dark.webp?v=2" media="(prefers-color-scheme: dark)" data-dark><img src="images/screen-plan.webp?v=2" width="804" height="1748" alt="Prime days: the best days in the next 30 for an exam" loading="lazy"></picture>
-                <picture class="themed"><source srcset="images/screen-compatibility-dark.webp?v=2" media="(prefers-color-scheme: dark)" data-dark><img src="images/screen-compatibility.webp?v=2" width="804" height="1748" alt="Biorhythm compatibility with Anna: a 46% match, each cycle's share, both curves on one chart and a day-by-day strip for an important conversation" loading="lazy"></picture>
-                <picture class="themed"><source srcset="images/screen-people-dark.webp?v=2" media="(prefers-color-scheme: dark)" data-dark><img src="images/screen-people.webp?v=2" width="804" height="1748" alt="People: Anna, starred, then Dad and Mark, with their match and their next good day to talk" loading="lazy"></picture>
+                <picture class="themed"><source srcset="images/screen-today-dark.webp?v=3" media="(prefers-color-scheme: dark)" data-dark><img src="images/screen-today.webp?v=3" width="804" height="1748" alt="Today: the three cycle values and the daily biorhythm chart for the month" loading="lazy"></picture>
+                <picture class="themed"><source srcset="images/screen-checkin-dark.webp?v=3" media="(prefers-color-scheme: dark)" data-dark><img src="images/screen-checkin.webp?v=3" width="804" height="1748" alt="The daily check-in: energy, mood, focus and sleep, each from 1 to 5" loading="lazy"></picture>
+                <picture class="themed"><source srcset="images/screen-insights-dark.webp?v=3" media="(prefers-color-scheme: dark)" data-dark><img src="images/screen-insights.webp?v=3" width="804" height="1748" alt="Insights: Apple Health signals against your usual, how often each curve matched your check-ins and your body, and Ask Tidy" loading="lazy"></picture>
+                <picture class="themed"><source srcset="images/screen-plan-dark.webp?v=3" media="(prefers-color-scheme: dark)" data-dark><img src="images/screen-plan.webp?v=3" width="804" height="1748" alt="Prime days: the best days in the next 30 for an exam" loading="lazy"></picture>
+                <picture class="themed"><source srcset="images/screen-compatibility-dark.webp?v=3" media="(prefers-color-scheme: dark)" data-dark><img src="images/screen-compatibility.webp?v=3" width="804" height="1748" alt="Biorhythm compatibility with Anna: a 46% match, each cycle's share, both curves on one chart and a day-by-day strip for an important conversation" loading="lazy"></picture>
+                <picture class="themed"><source srcset="images/screen-people-dark.webp?v=3" media="(prefers-color-scheme: dark)" data-dark><img src="images/screen-people.webp?v=3" width="804" height="1748" alt="People: Anna, starred, then Dad and Mark, with their match and their next good day to talk" loading="lazy"></picture>
             </div>
         </div>
     </section>
@@ -531,7 +594,7 @@
                 <dt>Apple Health</dt>
                 <dd>Optional, with Plus. Read only: sleep, heart rate variability, resting heart rate and respiratory rate.</dd>
                 <dt>Languages</dt>
-                <dd>English and Ukrainian.</dd>
+                <dd>English, Ukrainian, Japanese, German, French, Spanish and Korean.</dd>
                 <dt>The science</dt>
                 <dd>Biorhythm theory is not supported by research. Biotide treats it as a guess to test against your own check-ins.</dd>
             </dl>
@@ -563,11 +626,15 @@
                 </details>
                 <details class="faq-item">
                     <summary>What does Biotide cost?</summary>
-                    <p>Biotide is free to download, with no ads. Today&rsquo;s chart, your day in words, the evening check-in, reminders and export are free. Biotide Plus, an optional weekly, monthly or yearly subscription or a one-time purchase, adds people and compatibility, Prime days and the forecast calendar, how often each curve fits you with readings tuned to it, Apple Health, iCloud sync and every widget.</p>
+                    <p>Biotide is free to download, with no ads. Today&rsquo;s chart, your day in words, the evening check-in, reminders and export are free. Biotide Plus, an optional weekly, monthly or yearly subscription or a one-time purchase, adds people and compatibility, Prime days and the forecast calendar, how often each curve fits you with readings tuned to it, Apple Health, Tidy, iCloud sync and every widget.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Can I ask Biotide questions about my days?</summary>
+                    <p>Yes, with Biotide Plus on an iPhone with Apple Intelligence, in English. Ask Tidy something like &ldquo;When&rsquo;s a good day for a hard talk with Anna?&rdquo; or &ldquo;What&rsquo;s my day like tomorrow?&rdquo; Biotide looks the answer up in your own chart, check-ins, Apple Health signals and people, Apple&rsquo;s on-device model puts it into words, and the days or curves behind it are drawn under the reply. Your questions never leave the iPhone.</p>
                 </details>
                 <details class="faq-item">
                     <summary>Is my data private?</summary>
-                    <p>Yes. Biotide has no account, no servers and no analytics in the app: your birth date, check-ins and people stay on your device, or in your own iCloud if you turn on sync. Apple Health data is only read, never written, and never leaves the device. The <a href="privacy.html">privacy policy</a> has the details.</p>
+                    <p>Yes. Biotide has no account and no servers of its own: your birth date, check-ins and people stay on your device, or in your own iCloud if you turn on sync. Apple Health data is only read, never written, and never leaves the device, and Tidy answers on the iPhone itself. The app counts which screens and features are used, through Google Analytics for Firebase, never what you enter, and you can turn that off in Settings. The <a href="privacy.html">privacy policy</a> has the details.</p>
                 </details>
                 <details class="faq-item">
                     <summary>Which devices does Biotide run on?</summary>
@@ -625,7 +692,7 @@
     <p class="copyright">&copy; <span id="year">2026</span> Biotide. All rights reserved.</p>
 </footer>
 <!-- /chrome:footer -->
-<script src="site.js?v=3"></script>
+<script src="site.js?v=4"></script>
 <script src="scrollcraft.js?v=1"></script>
 <script>ScrollCraft.mount(document.body);</script>
 <script src="landing.js?v=1"></script>

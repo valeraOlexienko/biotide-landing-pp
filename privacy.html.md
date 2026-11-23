@@ -4,11 +4,11 @@
 
 # Privacy Policy
 
-Last updated: November 11, 2026
+Last updated: November 23, 2026
 
 Biotide ("we", "our", or "the app") is committed to protecting your privacy. This Privacy Policy explains what information we and our service providers handle when you use our iOS application, the biotide.app website, and related services.
 
-**The short version:** Biotide has no account, no server, no analytics and no advertising in the app. What you enter and what the app reads from Apple Health stays on your device. We never see it.
+**The short version:** Biotide has no account, no server of its own and no advertising. What you enter and what the app reads from Apple Health stays on your device. We never see it. The app counts which of its screens and features are used, without any of that data, and you can turn this off in Settings.
 
 ## Information We Collect
 
@@ -25,9 +25,13 @@ This information is kept in the app's private storage on your device. The widget
 
 ## Apple Health
 
-If you choose to connect Apple Health (part of Biotide Plus), Biotide reads four types: sleep analysis, heart rate variability, resting heart rate and respiratory rate. Nothing is read until you allow it in the system permission sheet. Biotide compares these values with your own previous 28 days on your device and shows the result in the app.
+If you choose to connect Apple Health (part of Biotide Plus), Biotide reads four types: sleep analysis, heart rate variability, resting heart rate and respiratory rate. Nothing is read until you allow it in the system permission sheet. Biotide compares these values with your own previous 28 days on your device and shows the result in the app. Once there are 14 days of them, it also uses them on your device to test how well your physical curve fits you.
 
 Biotide never writes to Apple Health, never copies Health data off your device, never stores it in iCloud, and never uses it for advertising or shares it with anyone. You can turn off access at any time in the Health app or in Settings, Privacy & Security, Health.
+
+## Tidy
+
+Tidy, part of Biotide Plus on iPhones with Apple Intelligence, answers questions about your days. Biotide looks the answer up in the data already on your device, and Apple's on-device language model puts it into words. Your questions and Tidy's answers are processed on your iPhone, are never sent to us or anyone else, and are not kept after you close Tidy.
 
 ## Contacts
 
@@ -45,12 +49,23 @@ Adding a day to your calendar uses the system calendar editor; Biotide does not 
 
 Biotide Plus subscriptions and the one-time purchase are handled by Apple through the App Store. We do not receive your payment details, your Apple ID or your name; the app only learns whether Plus is active on your account.
 
+## Usage Statistics in the App
+
+The app tells us which of its screens and features are used, so we know what to improve. It does this through Google Analytics for Firebase, a Google service. It is on unless you turn it off.
+
+- **What is sent:** events such as a check-in being saved (never its ratings or note), a chart zoom chip or a Plan menu being used, a person being added (never who), Apple Health being connected, a purchase or restore finishing, and which screens are opened; and a few settings in broad bands, such as whether reminders, Apple Health or iCloud sync are on, which plan you have, and how many people or check-ins you have as a range. Firebase adds a random app-instance identifier, the device model, iOS and app version, language, and an approximate location (country or region) that Google derives from the network address.
+- **What is never sent:** your birth date or age, your check-in ratings and notes, any Apple Health value, anything about the people you add (names, birthdays, photos, match percentages), the dates you look at, what you ask Tidy, or anything else you type. The app sends only a fixed list of event names and values, with no way to pass free text.
+- **No advertising and no tracking:** the app does not use the advertising identifier (IDFA), Google signals and data sharing are switched off, and this data is not combined with data from other companies' apps or websites.
+- **Retention:** Google Analytics keeps the event data for 14 months; we see it only as totals.
+- **Turning it off:** switch off *Share Usage Statistics* in the app's Settings, under Data & Sync, and the app stops sending and asks Google Analytics to clear what it has collected on that device.
+
 ## Third-Party Service Providers
 
 Depending on how you use the app and this website, the following third parties may process data:
 
 - **Apple** — App Store distribution and, if enabled, iCloud sync — [Privacy Policy](https://www.apple.com/legal/privacy/)
-- **Google Analytics** — optional website analytics on this site only (not in the app) — [Google Privacy Policy](https://policies.google.com/privacy)
+- **Google (Firebase)** — Google Analytics for Firebase, the app's usage statistics (can be turned off in Settings) — [Google Privacy Policy](https://policies.google.com/privacy)
+- **Google Analytics** — optional website analytics on this site (the app's usage statistics are described above) — [Google Privacy Policy](https://policies.google.com/privacy)
 - **Cloudflare Web Analytics** — cookieless, aggregate page-view counts on this site only (not in the app); it sets no cookies, stores nothing in your browser, and does not identify or track you across sites — [Cloudflare Web Analytics](https://www.cloudflare.com/web-analytics/)
 
 ## Website Analytics and Consent
@@ -74,7 +89,7 @@ Separately from Google Analytics, this website counts page views with Cloudflare
 - We never receive your name, email, phone number, address, or any other identifying information. The names and birthdays you enter for people stay on your device.
 - We do not require account creation or login.
 - We do not sell, rent, or trade any data to third parties for advertising or any other purpose.
-- We do not use cookies or tracking technologies in the iOS app.
+- We do not use cookies in the iOS app, and it does not track you across other companies' apps or websites.
 
 ## Data Retention and Your Control
 
@@ -87,7 +102,7 @@ All app data is stored locally on your device (and in your own iCloud if you tur
 
 ## European Users (GDPR)
 
-If you are in the European Economic Area, United Kingdom, or Switzerland, you have the following rights under the General Data Protection Regulation regarding personal data we process about you (limited to the website measurement described above; the app involves no processing by us):
+If you are in the European Economic Area, United Kingdom, or Switzerland, you have the following rights under the General Data Protection Regulation regarding personal data we process about you (limited to the app's usage statistics and the website measurement described above; everything else in the app stays on your device):
 
 - **Right of access** — request a copy of the data we hold
 - **Right to rectification** — request correction of inaccurate data
@@ -96,7 +111,7 @@ If you are in the European Economic Area, United Kingdom, or Switzerland, you ha
 - **Right to data portability**
 - **Right to lodge a complaint** with your national data-protection authority
 
-The legal basis for cookieless aggregate page-view counting with Cloudflare Web Analytics is our legitimate interest in knowing how many people read this site (GDPR Article 6(1)(f)); it involves no cookies or identifiers. In the European Economic Area, the legal basis for Google Analytics is your consent under GDPR Article 6(1)(a), which you can withdraw at any time through Cookie Settings. In the United Kingdom, Switzerland and elsewhere, Google Analytics runs on our legitimate interest in understanding how the site is used so we can improve it, and you can object at any time through Cookie Settings. To exercise any right above, email [privacy@biotide.app](mailto:privacy@biotide.app); we will respond within 30 days.
+The legal basis for the app's usage statistics is our legitimate interest in learning which features are used so we can improve the app (GDPR Article 6(1)(f)); you can object at any time by turning them off in the app's Settings, under Data & Sync. The legal basis for cookieless aggregate page-view counting with Cloudflare Web Analytics is our legitimate interest in knowing how many people read this site (GDPR Article 6(1)(f)); it involves no cookies or identifiers. In the European Economic Area, the legal basis for Google Analytics is your consent under GDPR Article 6(1)(a), which you can withdraw at any time through Cookie Settings. In the United Kingdom, Switzerland and elsewhere, Google Analytics runs on our legitimate interest in understanding how the site is used so we can improve it, and you can object at any time through Cookie Settings. To exercise any right above, email [privacy@biotide.app](mailto:privacy@biotide.app); we will respond within 30 days.
 
 ## California Users (CCPA / CPRA)
 

@@ -87,6 +87,25 @@ p, li, dd, dt { max-width: 62ch; }
 .theme-option svg { width: 17px; height: 17px; fill: none; stroke: var(--ink); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 .theme-option .icon-mobile { display: none; }
 
+/* language menu: a globe pill like the theme switch; a popover on wide screens, a sheet from the bottom on phones.
+   <details> needs no script; the open summary's ::before is a backdrop, so a tap outside closes it; site.js adds Escape. */
+.lang-menu { position: relative; }
+.lang-menu > summary { list-style: none; display: inline-flex; align-items: center; gap: 0.35rem; min-height: 40px; padding: 0 0.85rem 0 0.7rem; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--ink); cursor: pointer; font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.04em; -webkit-user-select: none; user-select: none; }
+.lang-menu > summary::-webkit-details-marker { display: none; }
+.lang-menu > summary svg { width: 18px; height: 18px; fill: none; stroke: var(--ink); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.lang-menu > summary:hover { border-color: color-mix(in srgb, var(--ink) 25%, var(--line)); }
+.lang-menu > summary:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.lang-menu[open] > summary::before { content: ""; position: fixed; inset: 0; z-index: 2; cursor: default; }
+.lang-panel { position: absolute; right: 0; top: calc(100% + 0.5rem); z-index: 3; min-width: 14rem; padding: 0.4rem; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 16px 40px color-mix(in srgb, var(--ink) 16%, transparent); }
+.lang-title { margin: 0.4rem 0.75rem 0.25rem; font-size: 0.8125rem; color: var(--muted); }
+.lang-panel ul { list-style: none; margin: 0; padding: 0; }
+.lang-panel li { max-width: none; margin: 0; }
+.lang-panel a { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 44px; padding: 0 0.75rem; border-radius: calc(var(--radius) - 4px); color: var(--ink); text-decoration: none; font-size: 1rem; }
+.lang-panel a:hover { background: var(--surface); text-decoration: none; }
+.lang-panel a:focus-visible { outline: 3px solid var(--focus); outline-offset: -3px; }
+.lang-panel a[aria-current="true"] { font-weight: 600; }
+.lang-panel a[aria-current="true"]::after { content: "\2713"; color: var(--accent-ink); font-weight: 600; }
+
 /* ---------- hero ---------- */
 .hero { background: var(--hero-bg); border-bottom: 1px solid var(--line); overflow: hidden; }
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); gap: 2rem 4rem; align-items: end; }
@@ -141,6 +160,7 @@ p, li, dd, dt { max-width: 62ch; }
 .price ul { margin-top: 1rem; padding-left: 1.1rem; color: var(--muted); }
 .price li { margin: 0.35rem 0; }
 .price-note { margin-top: 1.5rem; color: var(--muted); font-size: 0.9375rem; }
+.price .price-plans { margin-top: 0.75rem; font-size: 0.9375rem; }
 
 /* screens: endless strip of the App Store frames.
    The markup holds one group. site.js measures the strip and adds as many cloned
@@ -278,6 +298,14 @@ p, li, dd, dt { max-width: 62ch; }
     /* phones: brand + toggle on the first row, the nav as a scrollable second row */
     .site-header-inner { padding: 0.5rem var(--gutter) 0.4rem; gap: 0.25rem 1rem; }
     .theme-toggle { order: 1; }
+    .lang-menu { order: 1; }
+    /* the header's blur would make it the containing block of the fixed sheet: drop it while the menu is open */
+    .site-header:has(.lang-menu[open]) { -webkit-backdrop-filter: none; backdrop-filter: none; background: var(--paper); }
+    .lang-menu[open] > summary::before { background: rgba(0, 0, 0, 0.35); }
+    .lang-panel { position: fixed; top: auto; right: 0; bottom: 0; left: 0; min-width: 0; padding: 0.6rem var(--gutter) calc(1rem + env(safe-area-inset-bottom)); border-width: 1px 0 0; border-radius: var(--radius-lg) var(--radius-lg) 0 0; box-shadow: 0 -12px 40px rgba(0, 0, 0, 0.18); }
+    .lang-panel::before { content: ""; display: block; width: 36px; height: 5px; margin: 0 auto 0.6rem; border-radius: 3px; background: var(--line); }
+    .lang-title { margin: 0 0.75rem 0.4rem; }
+    .lang-panel a { min-height: 52px; font-size: 1.0625rem; }
     .site-header .site-nav { order: 2; flex: 1 0 100%; flex-wrap: nowrap; overflow-x: auto; gap: 1rem; padding: 0 1.75rem 0.2rem 0; scrollbar-width: none; -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 2rem), transparent); mask-image: linear-gradient(to right, #000 calc(100% - 2rem), transparent); }
     .site-header .site-nav::-webkit-scrollbar { display: none; }
     .site-header .site-nav a { white-space: nowrap; font-size: 0.9rem; padding: 0.25rem 0; }
@@ -336,6 +364,20 @@ img.phone__frame { position: absolute; inset: 0; width: 100%; height: 100%; max-
 .hero-visual { height: auto; display: flex; justify-content: center; padding: clamp(2rem, 1rem + 3vw, 4rem) 0; }
 .hero-phone { width: auto; height: min(74vh, 640px); --pw: calc(min(74vh, 640px) * 0.4891); }
 .hero-visual .phone img { left: 0; top: 0; transform: none; filter: none; width: 100%; }
+/* Tidy: the copy beside a real Tidy screen in the bezel, like the hero; the questions look like the app's ink
+   question bubbles (light on dark in the dark theme, as in the app) */
+.tidy-grid { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2rem 4.5rem; align-items: center; }
+.tidy-copy .lead { margin-top: 1rem; max-width: 50ch; }
+.tidy-asks { list-style: none; padding: 0; margin: 1.75rem 0 0; display: grid; justify-items: start; gap: .6rem; }
+.tidy-asks li { max-width: 34ch; padding: .6rem 1rem; background: var(--ink); color: var(--paper); border-radius: 18px 18px 6px 18px; font-size: 1rem; line-height: 1.4; }
+.tidy-how { margin-top: 1.75rem; max-width: 52ch; color: var(--muted); }
+.tidy-note { margin-top: 1rem; font-size: .9375rem; color: var(--muted); }
+.tidy-visual { display: flex; justify-content: center; }
+.tidy-phone { width: auto; height: min(74vh, 640px); --pw: calc(min(74vh, 640px) * 0.4891); }
+@media (max-width: 760px) {
+    .tidy-grid { grid-template-columns: 1fr; }
+    .tidy-phone { height: auto; width: min(62vw, 280px); --pw: min(62vw, 280px); }
+}
 @media (max-width: 760px) {
     .hero-visual { padding: .5rem 0 2.5rem; }
     .hero-phone { height: auto; width: min(62vw, 280px); --pw: min(62vw, 280px); }

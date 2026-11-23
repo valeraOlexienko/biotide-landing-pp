@@ -450,4 +450,26 @@
     setupAnalyticsEvents();
     setFooterYear();
     setupMarquee();
+
+    // --------------------------------------------------------------- languages
+    // The menu's links go to each language's homepage (/ja/); on any other page, point them at the same page
+    // there (/ja/privacy.html). Escape closes the menu and gives focus back to the globe.
+    (function () {
+        var codes = ['uk', 'ja', 'de', 'fr', 'es', 'ko'];
+        var parts = location.pathname.split('/').filter(Boolean);
+        if (parts.length && codes.indexOf(parts[0]) !== -1) parts.shift();
+        var page = parts.join('/');
+        if (page && page !== 'index.html') {
+            document.querySelectorAll('.lang-panel a[hreflang]').forEach(function (a) {
+                a.setAttribute('href', a.getAttribute('href') + page);
+            });
+        }
+        document.addEventListener('keydown', function (e) {
+            if (e.key !== 'Escape') return;
+            document.querySelectorAll('.lang-menu[open]').forEach(function (menu) {
+                menu.open = false;
+                menu.querySelector('summary').focus();
+            });
+        });
+    })();
 })();
